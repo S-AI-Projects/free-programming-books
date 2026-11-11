@@ -1,0 +1,1 @@
+self-test OK: fixture + 3 real entries (lines 18, 19, 24)

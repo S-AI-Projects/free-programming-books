@@ -1,0 +1,2 @@
+FAIL: deliberate failure (demo of non-zero exit)
+exit code: 1
