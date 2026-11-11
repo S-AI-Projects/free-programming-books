@@ -1,0 +1,11 @@
+fixture line=3 observed=200/None recommendation=keep          decision=pending
+fixture line=4 observed=200/None recommendation=manual_review decision=pending
+fixture line=5 observed=301/None recommendation=manual_review decision=pending
+fixture line=6 observed=404/None recommendation=manual_review decision=pending
+fixture line=7 observed=None/timeout recommendation=retry_later   decision=pending
+fixture line=8 observed=403/None recommendation=keep          decision=pending
+catalogue line 15: Spark Internals | category=Apache Spark
+catalogue line 20: บทเรียนภาษา C# | category=<a id="csharp"></a>C\
+catalogue line 25: AI และ Claude Code สำหรับงานออกแบบเกมในทางปฏิบัติ | category=Game Development
+FAIL: deliberate failure (demo of non-zero exit)
+exit code: 1

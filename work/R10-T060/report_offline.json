@@ -1,0 +1,97 @@
+{
+  "entries": [
+    {
+      "after": {
+        "category": "Apache Spark",
+        "meta": "Lijie Xu, Bhuridech Sudsee",
+        "name": "Spark Internals",
+        "url": "https://github.com/JerryLead/SparkInternals/tree/HEAD/markdown/thai"
+      },
+      "before": {
+        "category": "Apache Spark",
+        "meta": "Lijie Xu, Bhuridech Sudsee",
+        "name": "Spark Internals",
+        "url": "https://github.com/JerryLead/SparkInternals/tree/HEAD/markdown/thai"
+      },
+      "manual_decision": "pending",
+      "observed": {
+        "checked": false,
+        "error": null,
+        "location": null,
+        "status": null
+      },
+      "recommendation": {
+        "action": "not_checked",
+        "reason": "offline report; no request made"
+      },
+      "source": {
+        "file": "books/free-programming-books-th.md",
+        "line": 15,
+        "raw": "* [Spark Internals](https://github.com/JerryLead/SparkInternals/tree/HEAD/markdown/thai) - Lijie Xu, Bhuridech Sudsee"
+      }
+    },
+    {
+      "after": {
+        "category": "<a id=\"csharp\"></a>C\\",
+        "meta": "MarcusCode",
+        "name": "บทเรียนภาษา C#",
+        "url": "http://marcuscode.com/lang/csharp"
+      },
+      "before": {
+        "category": "<a id=\"csharp\"></a>C\\",
+        "meta": "MarcusCode",
+        "name": "บทเรียนภาษา C#",
+        "url": "http://marcuscode.com/lang/csharp"
+      },
+      "manual_decision": "pending",
+      "observed": {
+        "checked": false,
+        "error": null,
+        "location": null,
+        "status": null
+      },
+      "recommendation": {
+        "action": "not_checked",
+        "reason": "offline report; no request made"
+      },
+      "source": {
+        "file": "books/free-programming-books-th.md",
+        "line": 20,
+        "raw": "* [บทเรียนภาษา C#](http://marcuscode.com/lang/csharp) - MarcusCode"
+      }
+    },
+    {
+      "after": {
+        "category": "Game Development",
+        "meta": "Minsoo Lee",
+        "name": "AI และ Claude Code สำหรับงานออกแบบเกมในทางปฏิบัติ",
+        "url": "https://github.com/eremes81/game-design-ai-practice-th"
+      },
+      "before": {
+        "category": "Game Development",
+        "meta": "Minsoo Lee",
+        "name": "AI และ Claude Code สำหรับงานออกแบบเกมในทางปฏิบัติ",
+        "url": "https://github.com/eremes81/game-design-ai-practice-th"
+      },
+      "manual_decision": "pending",
+      "observed": {
+        "checked": false,
+        "error": null,
+        "location": null,
+        "status": null
+      },
+      "recommendation": {
+        "action": "not_checked",
+        "reason": "offline report; no request made"
+      },
+      "source": {
+        "file": "books/free-programming-books-th.md",
+        "line": 25,
+        "raw": "* [AI และ Claude Code สำหรับงานออกแบบเกมในทางปฏิบัติ](https://github.com/eremes81/game-design-ai-practice-th) - Minsoo Lee"
+      }
+    }
+  ],
+  "file": "books/free-programming-books-th.md",
+  "note": "observed = facts from a request; recommendation = suggested action. after equals before unless a manual decision changes it. No link is removed automatically.",
+  "observed_date": "offline"
+}

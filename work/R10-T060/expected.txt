@@ -1,0 +1,4 @@
+Fixtures (6 entries): 200 https -> keep; 200 over http -> manual_review (check for https); 301 -> manual_review (confirm official target); 404 -> manual_review (manual confirmation before any removal); timeout -> retry_later; 403 -> keep (blocked, not missing).
+Report: every entry names its exact source line; observed facts and recommendations are separate; before/after metadata are equal and manual_decision is pending; no automated removal.
+Stability: two runs on the same fixtures produce byte-identical output (the offline report has no timestamp).
+Catalogue: the 3 selected entries are each found once, with original line numbers and Markdown links preserved.
