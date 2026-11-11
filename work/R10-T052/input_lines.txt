@@ -1,0 +1,4 @@
+84:* [Введение в методы машинной обработки данных](https://mkurnosov.net/files/dsa-book-2020.pdf) - Курносов М.Г. (PDF)
+85:* [Документация по Markdown: Спецификация стандарта языка текстовой разметки](https://github.com/Cultus-Tenebrae/Markdown-documentation/releases/latest) - Изергиль Ван Дер Вельде (PDF)
+86:* [Операционные системы](https://vseloved.github.io/pdf/os-ru.pdf) - Всеволод Дёмкин (PDF)
+136:* [Документация по языку текстовой разметки — Markdown](https://github.com/Cultus-Tenebrae/Markdown-documentation/releases/latest/download/Markdown-documentation.pdf) - Изергиль Ван Дер Вельде (PDF) (MIT)

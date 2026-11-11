@@ -1,0 +1,51 @@
+[
+  {
+    "status": "ok",
+    "final_url": "https://mkurnosov.net/files/dsa-book-2020.pdf",
+    "hops": 0,
+    "chain": [
+      "https://mkurnosov.net/files/dsa-book-2020.pdf"
+    ],
+    "permanent": true,
+    "detail": "HTTP 200",
+    "url": "https://mkurnosov.net/files/dsa-book-2020.pdf",
+    "observed": "2026-11-10",
+    "action": "keep",
+    "note": "reachable, no redirect",
+    "line": 84,
+    "name": "Введение в методы машинной обработки данных"
+  },
+  {
+    "status": "moved",
+    "final_url": "https://github.com/Cultus-Tenebrae/Markdown-documentation/releases/tag/Release-v1.10.1",
+    "hops": 1,
+    "chain": [
+      "https://github.com/Cultus-Tenebrae/Markdown-documentation/releases/latest",
+      "https://github.com/Cultus-Tenebrae/Markdown-documentation/releases/tag/Release-v1.10.1"
+    ],
+    "permanent": false,
+    "detail": "HTTP 200 after 1 redirect(s)",
+    "url": "https://github.com/Cultus-Tenebrae/Markdown-documentation/releases/latest",
+    "observed": "2026-11-10",
+    "action": "keep",
+    "note": "temporary redirect; keep the original URL",
+    "line": 85,
+    "name": "Документация по Markdown: Спецификация стандарта языка текстовой разметки"
+  },
+  {
+    "status": "ok",
+    "final_url": "https://vseloved.github.io/pdf/os-ru.pdf",
+    "hops": 0,
+    "chain": [
+      "https://vseloved.github.io/pdf/os-ru.pdf"
+    ],
+    "permanent": true,
+    "detail": "HTTP 200",
+    "url": "https://vseloved.github.io/pdf/os-ru.pdf",
+    "observed": "2026-11-10",
+    "action": "keep",
+    "note": "reachable, no redirect",
+    "line": 86,
+    "name": "Операционные системы"
+  }
+]

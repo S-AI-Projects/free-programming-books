@@ -1,0 +1,3 @@
+Offline fixtures: 200->ok, 301->200->moved, 302->200->moved, loop->redirect_loop, timeout->transient, 503->transient, login redirect->login_wall, 403->login_wall, 404->not_found, 9 hops->redirect_budget_exceeded.
+No fixture result may produce a "remove" action (allowed: keep, update, retry_later, manual_review).
+Live: each of the 3 selected entries gets final_url, observation date and a recommended action.

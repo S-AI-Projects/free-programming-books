@@ -1,0 +1,14 @@
+200 direct         expected=ok                         actual=ok                         action=keep
+301 -> 200         expected=moved                      actual=moved                      action=update
+302 -> 200         expected=moved                      actual=moved                      action=keep
+redirect loop      expected=redirect_loop              actual=redirect_loop              action=manual_review
+timeout            expected=transient                  actual=transient                  action=retry_later
+HTTP 503           expected=transient                  actual=transient                  action=retry_later
+redirect to login  expected=login_wall                 actual=login_wall                 action=keep
+HTTP 403           expected=login_wall                 actual=login_wall                 action=keep
+HTTP 404           expected=not_found                  actual=not_found                  action=manual_review
+too many hops      expected=redirect_budget_exceeded   actual=redirect_budget_exceeded   action=manual_review
+catalogue line 84: https://mkurnosov.net/files/dsa-book-2020.pdf
+catalogue line 85: https://github.com/Cultus-Tenebrae/Markdown-documentation/releases/latest
+catalogue line 86: https://vseloved.github.io/pdf/os-ru.pdf
+self-test OK: 10 redirect cases + 3 catalogue entries
