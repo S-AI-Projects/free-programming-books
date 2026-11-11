@@ -1,0 +1,33 @@
+{
+  "file": "books/free-programming-books-langs.md",
+  "entries_parsed": 1661,
+  "headings": 226,
+  "selected": [
+    {
+      "line": 239,
+      "name": "SAP AWS Technical Documentation",
+      "url": "https://aws.amazon.com/sap/docs/",
+      "meta": "",
+      "category": "ABAP",
+      "heading_line": 237
+    },
+    {
+      "line": 240,
+      "name": "SAP Code Style Guides - Clean ABAP",
+      "url": "https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md",
+      "meta": "",
+      "category": "ABAP",
+      "heading_line": 237
+    },
+    {
+      "line": 245,
+      "name": "A Guide to Ada for C and C++ Programmers",
+      "url": "https://www.cs.uni.edu/~mccormic/4740/guide-c2ada.pdf",
+      "meta": "Simon Johnston (PDF)",
+      "category": "Ada",
+      "heading_line": 243
+    }
+  ],
+  "repeated_headings_touching_selected": [],
+  "all_repeated_headings": []
+}

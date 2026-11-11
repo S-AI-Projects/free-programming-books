@@ -1,0 +1,3 @@
+Fixtures: a deliberately misplaced entry (Ada guide filed under Rust) is flagged "misplaced" with action manual_review; a correctly filed entry is kept "ok" (valid category preserved); entries without a confirmed subject are never reclassified; a repeated heading (Ada at lines 3 and 5) is flagged for manual review; a fenced heading and entry are ignored.
+Every proposed move needs the resource's actual subject as evidence. No automatic move or deletion.
+Catalogue: the 3 selected entries are each found once, with their original line numbers and categories.

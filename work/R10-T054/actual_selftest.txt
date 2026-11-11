@@ -1,0 +1,7 @@
+fixture repeated headings: [('Ada', [3, 5])]
+fixture ok        line=4 current=Ada expected=Ada action=keep
+fixture misplaced line=9 current=Rust expected=Ada action=manual_review
+catalogue line 239: SAP AWS Technical Documentation | category=ABAP
+catalogue line 240: SAP Code Style Guides - Clean ABAP | category=ABAP
+catalogue line 245: A Guide to Ada for C and C++ Programmers | category=Ada
+self-test OK: fixture placement + repeated headings + 3 catalogue entries
