@@ -1,0 +1,3 @@
+10:* [codefiction](https://codefiction.tech) (podcast)
+11:* [devPod](https://devpod.org) (screencast)
+12:* [kodpod](https://kodpod.live) (podcast)

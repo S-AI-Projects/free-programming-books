@@ -1,0 +1,3 @@
+Fixtures: 200 -> ok; 404 -> missing_resource; 429 -> blocked_or_rate_limited; HEAD 405 then GET 200 -> ok (GET fallback used); HEAD 405 then GET 404 -> missing_resource; timeout -> timeout; DNS failure -> dns_failure; HEAD 403 then GET 403 -> blocked_or_rate_limited; HTTP 503 -> server_error.
+Only a manually confirmed missing resource may be recommended for removal. 403/429 are never removals. No automated result alone removes a link.
+Live: each of the 3 selected entries gets a label, the request steps (HEAD/GET), the observation date and a recommended action.

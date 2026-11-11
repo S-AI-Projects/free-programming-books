@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://codefiction.tech",
+    "label": "ok",
+    "action": "keep",
+    "note": "reachable",
+    "observed": "2026-11-10",
+    "steps": [
+      {
+        "method": "HEAD",
+        "code": 200,
+        "error": null
+      }
+    ],
+    "line": 10,
+    "name": "codefiction"
+  },
+  {
+    "url": "https://devpod.org",
+    "label": "connection_error",
+    "action": "retry_later",
+    "note": "transient failure; repeat the check later",
+    "observed": "2026-11-10",
+    "steps": [
+      {
+        "method": "HEAD",
+        "code": null,
+        "error": "connection_error"
+      }
+    ],
+    "line": 11,
+    "name": "devPod"
+  },
+  {
+    "url": "https://kodpod.live",
+    "label": "dns_failure",
+    "action": "manual_review",
+    "note": "needs manual confirmation; one automated result is not enough to remove a link",
+    "observed": "2026-11-10",
+    "steps": [
+      {
+        "method": "HEAD",
+        "code": null,
+        "error": "dns"
+      }
+    ],
+    "line": 12,
+    "name": "kodpod"
+  }
+]

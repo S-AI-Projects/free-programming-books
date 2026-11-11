@@ -1,0 +1,14 @@
+200                expected=ok                       actual=ok                       action=keep
+404                expected=missing_resource         actual=missing_resource         action=manual_review
+429                expected=blocked_or_rate_limited  actual=blocked_or_rate_limited  action=keep
+HEAD-405/GET-200   expected=ok                       actual=ok                       action=keep
+HEAD-405/GET-404   expected=missing_resource         actual=missing_resource         action=manual_review
+timeout            expected=timeout                  actual=timeout                  action=retry_later
+DNS failure        expected=dns_failure              actual=dns_failure              action=manual_review
+HEAD-403/GET-403   expected=blocked_or_rate_limited  actual=blocked_or_rate_limited  action=keep
+HTTP 503           expected=server_error             actual=server_error             action=retry_later
+catalogue line 10: codefiction -> https://codefiction.tech
+catalogue line 11: devPod -> https://devpod.org
+catalogue line 12: kodpod -> https://kodpod.live
+FAIL: deliberate failure (demo of non-zero exit)
+exit code: 1
