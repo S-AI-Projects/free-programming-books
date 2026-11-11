@@ -1,0 +1,3 @@
+Fixtures: exact duplicate (lines 2,3) -> exact; http/www/trailing-slash variant (lines 4,5) -> probable; different fragments (6,7) -> distinct_anchor, not merged; different query strings (8,9) -> query_dependent, not merged; fenced fake link ignored.
+Every proposed deletion carries a keep/delete pair with reviewed=false. No automatic deletion.
+Catalogue: the 3 selected entries are each found once, with their original line numbers.

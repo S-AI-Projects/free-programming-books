@@ -1,0 +1,8 @@
+fixture exact            lines=[2, 3] action=manual_review
+fixture probable         lines=[4, 5] action=manual_review
+fixture distinct_anchor  lines=[6, 7] action=keep_all
+fixture query_dependent  lines=[8, 9] action=keep_all
+catalogue line 8: Better Software Design -> https://bettersoftwaredesign.pl
+catalogue line 9: Biznes Myśli -> https://www.youtube.com/playlist?list=PLYQwwHlHNdgjSEgrmGv0fbHuxd5p7f5qA
+catalogue line 10: Chwila Dla Admina -> https://www.youtube.com/playlist?list=PLdHokABybL4nu6h5C3ig4XSG2Ni6XeED0
+self-test OK: 4 fixture groups + 3 catalogue entries

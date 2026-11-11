@@ -1,0 +1,77 @@
+{
+  "file": "casts/free-podcasts-screencasts-pl.md",
+  "entries_parsed": 12,
+  "selected": [
+    {
+      "line": 8,
+      "name": "Better Software Design",
+      "url": "https://bettersoftwaredesign.pl",
+      "category": "Niezależne od języka programowania",
+      "meta": "Mariusz Gil (podcast)"
+    },
+    {
+      "line": 9,
+      "name": "Biznes Myśli",
+      "url": "https://www.youtube.com/playlist?list=PLYQwwHlHNdgjSEgrmGv0fbHuxd5p7f5qA",
+      "category": "Niezależne od języka programowania",
+      "meta": "Vladimir Alekseichenko (podcast)"
+    },
+    {
+      "line": 10,
+      "name": "Chwila Dla Admina",
+      "url": "https://www.youtube.com/playlist?list=PLdHokABybL4nu6h5C3ig4XSG2Ni6XeED0",
+      "category": "Niezależne od języka programowania",
+      "meta": "Artur Molendowski (podcast)"
+    }
+  ],
+  "groups_touching_selected": [
+    {
+      "kind": "query_dependent",
+      "lines": [
+        9,
+        10,
+        14,
+        18
+      ],
+      "names": [
+        "Biznes Myśli",
+        "Chwila Dla Admina",
+        "Piątki po deployu",
+        "Rozmowa Kontrolowana"
+      ],
+      "urls": [
+        "https://www.youtube.com/playlist?list=PLYQwwHlHNdgjSEgrmGv0fbHuxd5p7f5qA",
+        "https://www.youtube.com/playlist?list=PLdHokABybL4nu6h5C3ig4XSG2Ni6XeED0",
+        "https://www.youtube.com/playlist?list=PLLewE5KdsaqWFXAcVN1F4MUCuJxyt5I5E",
+        "https://www.youtube.com/playlist?list=PLTKLAGr6FHxOcW4NRX3BCkU7Zml92WU1u"
+      ],
+      "action": "keep_all",
+      "proposed_deletion": null
+    }
+  ],
+  "all_groups": [
+    {
+      "kind": "query_dependent",
+      "lines": [
+        9,
+        10,
+        14,
+        18
+      ],
+      "names": [
+        "Biznes Myśli",
+        "Chwila Dla Admina",
+        "Piątki po deployu",
+        "Rozmowa Kontrolowana"
+      ],
+      "urls": [
+        "https://www.youtube.com/playlist?list=PLYQwwHlHNdgjSEgrmGv0fbHuxd5p7f5qA",
+        "https://www.youtube.com/playlist?list=PLdHokABybL4nu6h5C3ig4XSG2Ni6XeED0",
+        "https://www.youtube.com/playlist?list=PLLewE5KdsaqWFXAcVN1F4MUCuJxyt5I5E",
+        "https://www.youtube.com/playlist?list=PLTKLAGr6FHxOcW4NRX3BCkU7Zml92WU1u"
+      ],
+      "action": "keep_all",
+      "proposed_deletion": null
+    }
+  ]
+}
