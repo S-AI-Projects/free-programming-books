@@ -1,0 +1,14 @@
+open                   expected=open_no_login          actual=open_no_login         
+login redirect         expected=login_required         actual=login_required        
+HTTP 403               expected=login_required         actual=login_required        
+HTTP 402               expected=payment_required       actual=payment_required      
+HTTP 404               expected=unverified             actual=unverified            
+timeout                expected=unverified             actual=unverified            
+DNS failure            expected=unverified             actual=unverified            
+HTTP 429               expected=unverified             actual=unverified            
+plain redirect         expected=unverified             actual=unverified            
+page mentions pricing  expected=payment_possible       actual=payment_possible      
+page mentions sign up  expected=registration_possible  actual=registration_possible 
+catalogue line 8: Обектно ориентирано програмиране с PHP | category=PHP
+FAIL: deliberate failure (demo of non-zero exit)
+exit code: 1

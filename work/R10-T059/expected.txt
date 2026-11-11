@@ -1,0 +1,4 @@
+Fixtures: open page -> open_no_login; redirect to a login page -> login_required; HTTP 403 -> login_required; HTTP 402 -> payment_required; HTTP 404, timeout, DNS failure, HTTP 429 and a plain redirect -> unverified (never labelled free or broken); page text mentioning pricing -> payment_possible; page text mentioning sign up -> registration_possible.
+Every claim cites its source URL and observation date. No credential is stored or sent; no cookies are kept.
+Catalogue: the selected entry is found once, with its original line number and Markdown link preserved.
+Live: the selected entry gets a label, the source URL, the observation date and a suggested description action.

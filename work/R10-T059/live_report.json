@@ -1,0 +1,20 @@
+[
+  {
+    "line": 8,
+    "name": "Обектно ориентирано програмиране с PHP",
+    "url": "https://www.youtube.com/playlist?list=PL1zMmEDXa_Z8uHtKAl-zSrBFDRNq8JDFG",
+    "label": "open_no_login",
+    "claim": "no authentication needed (observed)",
+    "note": "HTTP 200 without credentials; no login or payment wall seen",
+    "source": "https://www.youtube.com/playlist?list=PL1zMmEDXa_Z8uHtKAl-zSrBFDRNq8JDFG",
+    "observed": "2026-11-11",
+    "evidence": {
+      "url": "https://www.youtube.com/playlist?list=PL1zMmEDXa_Z8uHtKAl-zSrBFDRNq8JDFG",
+      "status": 200,
+      "location": null,
+      "error": null
+    },
+    "credentials_stored": false,
+    "suggested_description": "keep_as_is"
+  }
+]
