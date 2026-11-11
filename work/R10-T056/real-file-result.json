@@ -1,0 +1,16 @@
+{
+  "entry_count": 16,
+  "malformed": [],
+  "bad_urls": [],
+  "targets": {
+    "https://chinese.freecodecamp.org": [
+      13
+    ],
+    "https://github.com/microsoft/Generative-AI-for-beginners-dotnet/tree/main/translations/zh": [
+      18
+    ],
+    "https://zh.d2l.ai/index.html": [
+      19
+    ]
+  }
+}

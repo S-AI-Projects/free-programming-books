@@ -1,0 +1,134 @@
+{
+  "python": "3.15.2",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "results": [
+    {
+      "fixture": "valid_rows",
+      "input": "### 示例\n\n* [freeCodeCamp](https://chinese.freecodecamp.org)\n* [初学者的生成式 AI .NET - 一门课程](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/tree/main/translations/zh)\n* [动手学深度学习](https://zh.d2l.ai/index.html) - 张三\n",
+      "expected": {
+        "entry_count": 3,
+        "malformed": [],
+        "bad_urls": [],
+        "targets": {
+          "https://chinese.freecodecamp.org": [
+            3
+          ],
+          "https://github.com/microsoft/Generative-AI-for-beginners-dotnet/tree/main/translations/zh": [
+            4
+          ],
+          "https://zh.d2l.ai/index.html": [
+            5
+          ]
+        }
+      },
+      "actual": {
+        "entry_count": 3,
+        "malformed": [],
+        "bad_urls": [],
+        "targets": {
+          "https://chinese.freecodecamp.org": [
+            3
+          ],
+          "https://github.com/microsoft/Generative-AI-for-beginners-dotnet/tree/main/translations/zh": [
+            4
+          ],
+          "https://zh.d2l.ai/index.html": [
+            5
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "fixture": "malformed_rows",
+      "input": "* [Broken](https://example.org\n* [NoUrl]()\n* [Ok](https://example.org/ok)\n",
+      "expected": {
+        "entry_count": 2,
+        "malformed": [
+          1
+        ],
+        "bad_urls": [
+          2
+        ],
+        "targets": {
+          "https://chinese.freecodecamp.org": [],
+          "https://github.com/microsoft/Generative-AI-for-beginners-dotnet/tree/main/translations/zh": [],
+          "https://zh.d2l.ai/index.html": []
+        }
+      },
+      "actual": {
+        "entry_count": 2,
+        "malformed": [
+          1
+        ],
+        "bad_urls": [
+          2
+        ],
+        "targets": {
+          "https://chinese.freecodecamp.org": [],
+          "https://github.com/microsoft/Generative-AI-for-beginners-dotnet/tree/main/translations/zh": [],
+          "https://zh.d2l.ai/index.html": []
+        }
+      },
+      "pass": true
+    },
+    {
+      "fixture": "anchor_links",
+      "input": "* [Index](#chinese)\n* [Ok](https://example.org/ok)\n",
+      "expected": {
+        "entry_count": 2,
+        "malformed": [],
+        "bad_urls": [],
+        "targets": {
+          "https://chinese.freecodecamp.org": [],
+          "https://github.com/microsoft/Generative-AI-for-beginners-dotnet/tree/main/translations/zh": [],
+          "https://zh.d2l.ai/index.html": []
+        }
+      },
+      "actual": {
+        "entry_count": 2,
+        "malformed": [],
+        "bad_urls": [],
+        "targets": {
+          "https://chinese.freecodecamp.org": [],
+          "https://github.com/microsoft/Generative-AI-for-beginners-dotnet/tree/main/translations/zh": [],
+          "https://zh.d2l.ai/index.html": []
+        }
+      },
+      "pass": true
+    },
+    {
+      "fixture": "unusual_url_chars",
+      "input": "* [Paren](https://en.wikipedia.org/wiki/Foo_(bar))\n* [CJK path](https://example.org/课程/索引.html#章-1)\n* [Encoded](https://example.org/%E4%B8%AD%E6%96%87)\n* [BadPct](https://example.org/%ZZ)\n* [Space](https://exa mple.org/x)\n",
+      "expected": {
+        "entry_count": 4,
+        "malformed": [
+          5
+        ],
+        "bad_urls": [
+          4
+        ],
+        "targets": {
+          "https://chinese.freecodecamp.org": [],
+          "https://github.com/microsoft/Generative-AI-for-beginners-dotnet/tree/main/translations/zh": [],
+          "https://zh.d2l.ai/index.html": []
+        }
+      },
+      "actual": {
+        "entry_count": 4,
+        "malformed": [
+          5
+        ],
+        "bad_urls": [
+          4
+        ],
+        "targets": {
+          "https://chinese.freecodecamp.org": [],
+          "https://github.com/microsoft/Generative-AI-for-beginners-dotnet/tree/main/translations/zh": [],
+          "https://zh.d2l.ai/index.html": []
+        }
+      },
+      "pass": true
+    }
+  ]
+}
