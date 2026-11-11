@@ -1,0 +1,6 @@
+fixture ok: 3 entries pass with original line numbers 2,3,4
+fixture missing title: Bento FAIL (missing title)
+fixture empty description: Atariarchives.org FAIL
+fixture fenced entry ignored
+FAIL: deliberate failure (demo of non-zero exit)
+exit code: 1

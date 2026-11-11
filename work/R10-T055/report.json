@@ -1,0 +1,50 @@
+{
+  "tool_version": "1.1",
+  "results": [
+    {
+      "entry": "Atariarchives.org",
+      "source_url": "https://www.atariarchives.org",
+      "line": 62,
+      "section": "0 - Meta-Lists",
+      "status": "OK",
+      "problems": [],
+      "observed": {
+        "title": "Atariarchives.org",
+        "url": "https://www.atariarchives.org",
+        "description": "Atariarchives.org makes books, information, and software for Atari and other classic computers available on the Web."
+      },
+      "has_description": true,
+      "proposed": null
+    },
+    {
+      "entry": "Bento",
+      "source_url": "https://www.bento.io",
+      "line": 63,
+      "section": "0 - Meta-Lists",
+      "status": "OK",
+      "problems": [],
+      "observed": {
+        "title": "Bento",
+        "url": "https://www.bento.io",
+        "description": null
+      },
+      "has_description": false,
+      "proposed": null
+    },
+    {
+      "entry": "Bitsavers.org",
+      "source_url": "http://bitsavers.trailing-edge.com",
+      "line": 64,
+      "section": "0 - Meta-Lists",
+      "status": "OK",
+      "problems": [],
+      "observed": {
+        "title": "Bitsavers.org",
+        "url": "http://bitsavers.trailing-edge.com",
+        "description": null
+      },
+      "has_description": false,
+      "proposed": null
+    }
+  ]
+}

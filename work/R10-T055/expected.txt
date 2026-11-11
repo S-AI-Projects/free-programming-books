@@ -1,0 +1,4 @@
+Fixtures: a complete entry with title, URL and description passes; an entry with no description also passes (description is optional in this catalogue); an entry with an empty title fails; an entry with an empty description after " - " fails; a fenced entry is ignored.
+Catalogue: Atariarchives.org (line 62), Bento (line 63) and Bitsavers.org (line 64) are each found once, with title and URL present, in books/free-programming-books-subjects.md.
+Failure case: --self-test --demo-fail prints FAIL and exits 1.
+No catalogue change is made unless official documentation proves one is needed.
