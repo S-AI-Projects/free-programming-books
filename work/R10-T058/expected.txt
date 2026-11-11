@@ -1,0 +1,4 @@
+Valid fixture (Latin and Cyrillic names, percent-encoded URL, metadata): no findings; names, URLs and metadata preserved exactly.
+Malformed fixture: heading skip at line 2; malformed entries rejected with source lines 4 (missing closing parenthesis) and 5 (missing space after the bullet); out-of-order pair at lines 3 and 6; fenced fake entry ignored.
+Every finding has a source line and action manual_review. No automatic edit.
+Catalogue: the 2 selected entries are each found once, with their original line numbers, and their Markdown links are preserved.

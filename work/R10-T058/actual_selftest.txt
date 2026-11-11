@@ -1,0 +1,8 @@
+valid fixture: 3 entries, 0 findings
+bad fixture heading_skip     line=2 action=manual_review
+bad fixture malformed_entry  line=4 action=manual_review
+bad fixture malformed_entry  line=5 action=manual_review
+bad fixture out_of_order     line=6 action=manual_review
+catalogue line 8: DOU Podcast | category=Новини та розробка
+catalogue line 9: Потестим в проді | category=Новини та розробка
+self-test OK: valid + malformed fixtures + 2 catalogue entries
