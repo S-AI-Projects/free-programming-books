@@ -1,0 +1,84 @@
+{
+  "task_id": "R10-T021",
+  "tool_versions": {
+    "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O"
+  },
+  "fixture_expected": {
+    "ignored_fenced_urls": [
+      "https://example.com/fake-in-fence",
+      "https://example.com/tilde-fence#sec"
+    ],
+    "parsed_entry": {
+      "line_number": 15,
+      "source_file": "fixture.md",
+      "category": "Algoritmos",
+      "display_name": "Real Fragment Guide",
+      "url": "https://example.org/docs/intro#section-2",
+      "metadata": {
+        "author": "Jane Doe",
+        "format": "screencast",
+        "raw_metadata": "- Jane Doe (screencast)"
+      }
+    }
+  },
+  "fixture_actual": [
+    {
+      "line_number": 15,
+      "source_file": "fixture.md",
+      "category": "Algoritmos",
+      "display_name": "Real Fragment Guide",
+      "url": "https://example.org/docs/intro#section-2",
+      "metadata": {
+        "author": "Jane Doe",
+        "format": "screencast",
+        "raw_metadata": "- Jane Doe (screencast)"
+      }
+    }
+  ],
+  "real_file_verification": {
+    "target_file": "casts/free-podcasts-screencasts-pt_BR.md",
+    "total_parsed_entries": 55,
+    "selected_entries": [
+      {
+        "line_number": 21,
+        "source_file": "casts/free-podcasts-screencasts-pt_BR.md",
+        "category": "Algoritmos",
+        "display_name": "Curso em Vídeo - Curso de Lógica de Programação",
+        "url": "https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+        "metadata": {
+          "author": "Gustavo Guanabara",
+          "format": "screencast",
+          "raw_metadata": "- Gustavo Guanabara (screencast)"
+        }
+      },
+      {
+        "line_number": 22,
+        "source_file": "casts/free-podcasts-screencasts-pt_BR.md",
+        "category": "Algoritmos",
+        "display_name": "Portugol Studio",
+        "url": "https://www.youtube.com/playlist?list=PLJ4lbwalqv3Eaiay2pCeU_QU6vb-Hz989",
+        "metadata": {
+          "author": null,
+          "format": "screencast",
+          "raw_metadata": "(screencast)"
+        }
+      },
+      {
+        "line_number": 27,
+        "source_file": "casts/free-podcasts-screencasts-pt_BR.md",
+        "category": "Databases",
+        "display_name": "Bóson Treinamentos - Curso de Modelagem de Dados",
+        "url": "https://www.youtube.com/playlist?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD",
+        "metadata": {
+          "author": null,
+          "format": "screencast",
+          "raw_metadata": "(screencast)"
+        }
+      }
+    ],
+    "errors": [],
+    "passed": true
+  },
+  "self_test_passed": true
+}
