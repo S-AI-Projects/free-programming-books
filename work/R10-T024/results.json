@@ -1,0 +1,451 @@
+{
+  "task_id": "R10-T024",
+  "tool_versions": {
+    "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "git": "git version 2.54.0 (Apple Git-157)"
+  },
+  "success_fixture": {
+    "input": "fixture_success.md",
+    "expected": {
+      "passed": true,
+      "selected_categories": [
+        {
+          "display_name": "Le podcast AWS en français",
+          "category": "Cloud computing",
+          "expected_category": "Cloud computing"
+        },
+        {
+          "display_name": "Les Cast Codeurs Podcast",
+          "category": "Langage Agnostique",
+          "expected_category": "Langage Agnostique"
+        },
+        {
+          "display_name": "Artisan Developpeur",
+          "category": "Langage Agnostique",
+          "expected_category": "Langage Agnostique"
+        }
+      ],
+      "misplaced_entries": [],
+      "repeated_headings": [],
+      "proposed_moves": []
+    },
+    "actual": {
+      "passed": true,
+      "selected_categories": [
+        {
+          "display_name": "Le podcast AWS en français",
+          "category": "Cloud computing",
+          "expected_category": "Cloud computing"
+        },
+        {
+          "display_name": "Les Cast Codeurs Podcast",
+          "category": "Langage Agnostique",
+          "expected_category": "Langage Agnostique"
+        },
+        {
+          "display_name": "Artisan Developpeur",
+          "category": "Langage Agnostique",
+          "expected_category": "Langage Agnostique"
+        }
+      ],
+      "misplaced_entries": [],
+      "repeated_headings": [],
+      "proposed_moves": []
+    },
+    "full_report": {
+      "source_file": "fixture_success.md",
+      "entry_count": 4,
+      "headings": [
+        {
+          "level": 3,
+          "title": "Cloud computing",
+          "normalized_title": "cloud computing",
+          "parent": null,
+          "line_number": 7
+        },
+        {
+          "level": 3,
+          "title": "Java",
+          "normalized_title": "java",
+          "parent": null,
+          "line_number": 10
+        },
+        {
+          "level": 3,
+          "title": "Langage Agnostique",
+          "normalized_title": "langage agnostique",
+          "parent": null,
+          "line_number": 13
+        }
+      ],
+      "selected_entries": [
+        {
+          "line_number": 8,
+          "source_file": "fixture_success.md",
+          "category": "Cloud computing",
+          "display_name": "Le podcast AWS en français",
+          "url": "https://aws.amazon.com/fr/blogs/france/podcasts",
+          "metadata": "(podcast)",
+          "expected_category": "Cloud computing",
+          "subject_basis": "The official AWS podcast page presents AWS episodes, including topics such as AWS Lambda, Fargate, cloud migration, and public cloud.",
+          "evidence_url": "https://aws.amazon.com/fr/blogs/france/podcasts"
+        },
+        {
+          "line_number": 14,
+          "source_file": "fixture_success.md",
+          "category": "Langage Agnostique",
+          "display_name": "Les Cast Codeurs Podcast",
+          "url": "https://lescastcodeurs.com",
+          "metadata": "(podcast)",
+          "expected_category": "Langage Agnostique",
+          "subject_basis": "The show's current homepage covers Java/JDK alongside Rust, TypeScript, PHP, data, infrastructure, and other software topics; it is broader than a Java-only podcast.",
+          "evidence_url": "https://lescastcodeurs.com"
+        },
+        {
+          "line_number": 15,
+          "source_file": "fixture_success.md",
+          "category": "Langage Agnostique",
+          "display_name": "Artisan Developpeur",
+          "url": "https://artisandeveloppeur.fr/podcast",
+          "metadata": "(podcast)",
+          "expected_category": "Langage Agnostique",
+          "subject_basis": "The podcast page describes reflection on software development work and community news, not a single programming language.",
+          "evidence_url": "https://artisandeveloppeur.fr/podcast"
+        }
+      ],
+      "misplaced_entries": [],
+      "repeated_headings": [],
+      "proposed_moves": [],
+      "errors": [],
+      "passed": true
+    }
+  },
+  "failure_fixture": {
+    "input": "fixture_failure.md",
+    "expected": {
+      "passed": false,
+      "selected_categories": [
+        {
+          "display_name": "Le podcast AWS en français",
+          "category": "Cloud computing",
+          "expected_category": "Cloud computing"
+        },
+        {
+          "display_name": "Les Cast Codeurs Podcast",
+          "category": "Java",
+          "expected_category": "Langage Agnostique"
+        },
+        {
+          "display_name": "Artisan Developpeur",
+          "category": "Langage Agnostique",
+          "expected_category": "Langage Agnostique"
+        }
+      ],
+      "misplaced_entries": [
+        {
+          "url": "https://lescastcodeurs.com",
+          "display_name": "Les Cast Codeurs Podcast",
+          "line_number": 5,
+          "current_category": "Java",
+          "expected_category": "Langage Agnostique",
+          "subject_basis": "The show's current homepage covers Java/JDK alongside Rust, TypeScript, PHP, data, infrastructure, and other software topics; it is broader than a Java-only podcast.",
+          "evidence_url": "https://lescastcodeurs.com",
+          "manual_review_required": true
+        }
+      ],
+      "repeated_headings": [
+        {
+          "level": 3,
+          "title": "Java",
+          "parent": null,
+          "line_numbers": [
+            4,
+            7
+          ]
+        }
+      ],
+      "proposed_moves": [
+        {
+          "url": "https://lescastcodeurs.com",
+          "display_name": "Les Cast Codeurs Podcast",
+          "source_line": 5,
+          "from_category": "Java",
+          "to_category": "Langage Agnostique",
+          "subject_basis": "The show's current homepage covers Java/JDK alongside Rust, TypeScript, PHP, data, infrastructure, and other software topics; it is broader than a Java-only podcast.",
+          "evidence_url": "https://lescastcodeurs.com",
+          "manual_review_required": true
+        }
+      ]
+    },
+    "actual": {
+      "passed": false,
+      "selected_categories": [
+        {
+          "display_name": "Le podcast AWS en français",
+          "category": "Cloud computing",
+          "expected_category": "Cloud computing"
+        },
+        {
+          "display_name": "Les Cast Codeurs Podcast",
+          "category": "Java",
+          "expected_category": "Langage Agnostique"
+        },
+        {
+          "display_name": "Artisan Developpeur",
+          "category": "Langage Agnostique",
+          "expected_category": "Langage Agnostique"
+        }
+      ],
+      "misplaced_entries": [
+        {
+          "url": "https://lescastcodeurs.com",
+          "display_name": "Les Cast Codeurs Podcast",
+          "line_number": 5,
+          "current_category": "Java",
+          "expected_category": "Langage Agnostique",
+          "subject_basis": "The show's current homepage covers Java/JDK alongside Rust, TypeScript, PHP, data, infrastructure, and other software topics; it is broader than a Java-only podcast.",
+          "evidence_url": "https://lescastcodeurs.com",
+          "manual_review_required": true
+        }
+      ],
+      "repeated_headings": [
+        {
+          "level": 3,
+          "title": "Java",
+          "parent": null,
+          "line_numbers": [
+            4,
+            7
+          ]
+        }
+      ],
+      "proposed_moves": [
+        {
+          "url": "https://lescastcodeurs.com",
+          "display_name": "Les Cast Codeurs Podcast",
+          "source_line": 5,
+          "from_category": "Java",
+          "to_category": "Langage Agnostique",
+          "subject_basis": "The show's current homepage covers Java/JDK alongside Rust, TypeScript, PHP, data, infrastructure, and other software topics; it is broader than a Java-only podcast.",
+          "evidence_url": "https://lescastcodeurs.com",
+          "manual_review_required": true
+        }
+      ]
+    },
+    "full_report": {
+      "source_file": "fixture_failure.md",
+      "entry_count": 4,
+      "headings": [
+        {
+          "level": 3,
+          "title": "Cloud computing",
+          "normalized_title": "cloud computing",
+          "parent": null,
+          "line_number": 1
+        },
+        {
+          "level": 3,
+          "title": "Java",
+          "normalized_title": "java",
+          "parent": null,
+          "line_number": 4
+        },
+        {
+          "level": 3,
+          "title": "Java",
+          "normalized_title": "java",
+          "parent": null,
+          "line_number": 7
+        },
+        {
+          "level": 3,
+          "title": "Langage Agnostique",
+          "normalized_title": "langage agnostique",
+          "parent": null,
+          "line_number": 10
+        }
+      ],
+      "selected_entries": [
+        {
+          "line_number": 2,
+          "source_file": "fixture_failure.md",
+          "category": "Cloud computing",
+          "display_name": "Le podcast AWS en français",
+          "url": "https://aws.amazon.com/fr/blogs/france/podcasts",
+          "metadata": "(podcast)",
+          "expected_category": "Cloud computing",
+          "subject_basis": "The official AWS podcast page presents AWS episodes, including topics such as AWS Lambda, Fargate, cloud migration, and public cloud.",
+          "evidence_url": "https://aws.amazon.com/fr/blogs/france/podcasts"
+        },
+        {
+          "line_number": 5,
+          "source_file": "fixture_failure.md",
+          "category": "Java",
+          "display_name": "Les Cast Codeurs Podcast",
+          "url": "https://lescastcodeurs.com",
+          "metadata": "(podcast)",
+          "expected_category": "Langage Agnostique",
+          "subject_basis": "The show's current homepage covers Java/JDK alongside Rust, TypeScript, PHP, data, infrastructure, and other software topics; it is broader than a Java-only podcast.",
+          "evidence_url": "https://lescastcodeurs.com"
+        },
+        {
+          "line_number": 11,
+          "source_file": "fixture_failure.md",
+          "category": "Langage Agnostique",
+          "display_name": "Artisan Developpeur",
+          "url": "https://artisandeveloppeur.fr/podcast",
+          "metadata": "(podcast)",
+          "expected_category": "Langage Agnostique",
+          "subject_basis": "The podcast page describes reflection on software development work and community news, not a single programming language.",
+          "evidence_url": "https://artisandeveloppeur.fr/podcast"
+        }
+      ],
+      "misplaced_entries": [
+        {
+          "url": "https://lescastcodeurs.com",
+          "display_name": "Les Cast Codeurs Podcast",
+          "line_number": 5,
+          "current_category": "Java",
+          "expected_category": "Langage Agnostique",
+          "subject_basis": "The show's current homepage covers Java/JDK alongside Rust, TypeScript, PHP, data, infrastructure, and other software topics; it is broader than a Java-only podcast.",
+          "evidence_url": "https://lescastcodeurs.com",
+          "manual_review_required": true
+        }
+      ],
+      "repeated_headings": [
+        {
+          "level": 3,
+          "title": "Java",
+          "parent": null,
+          "line_numbers": [
+            4,
+            7
+          ]
+        }
+      ],
+      "proposed_moves": [
+        {
+          "url": "https://lescastcodeurs.com",
+          "display_name": "Les Cast Codeurs Podcast",
+          "source_line": 5,
+          "from_category": "Java",
+          "to_category": "Langage Agnostique",
+          "subject_basis": "The show's current homepage covers Java/JDK alongside Rust, TypeScript, PHP, data, infrastructure, and other software topics; it is broader than a Java-only podcast.",
+          "evidence_url": "https://lescastcodeurs.com",
+          "manual_review_required": true
+        }
+      ],
+      "errors": [
+        "Category mismatch for https://lescastcodeurs.com: expected 'Langage Agnostique', got 'Java'",
+        "Repeated heading 'Java' at lines 4, 7"
+      ],
+      "passed": false
+    },
+    "cli_expected_exit_code": "non-zero",
+    "cli_actual_exit_code": 1,
+    "cli_stdout": "{\n  \"source_file\": \"work/R10-T024/fixture_failure.md\",\n  \"entry_count\": 4,\n  \"headings\": [\n    {\n      \"level\": 3,\n      \"title\": \"Cloud computing\",\n      \"normalized_title\": \"cloud computing\",\n      \"parent\": null,\n      \"line_number\": 1\n    },\n    {\n      \"level\": 3,\n      \"title\": \"Java\",\n      \"normalized_title\": \"java\",\n      \"parent\": null,\n      \"line_number\": 4\n    },\n    {\n      \"level\": 3,\n      \"title\": \"Java\",\n      \"normalized_title\": \"java\",\n      \"parent\": null,\n      \"line_number\": 7\n    },\n    {\n      \"level\": 3,\n      \"title\": \"Langage Agnostique\",\n      \"normalized_title\": \"langage agnostique\",\n      \"parent\": null,\n      \"line_number\": 10\n    }\n  ],\n  \"selected_entries\": [\n    {\n      \"line_number\": 2,\n      \"source_file\": \"work/R10-T024/fixture_failure.md\",\n      \"category\": \"Cloud computing\",\n      \"display_name\": \"Le podcast AWS en français\",\n      \"url\": \"https://aws.amazon.com/fr/blogs/france/podcasts\",\n      \"metadata\": \"(podcast)\",\n      \"expected_category\": \"Cloud computing\",\n      \"subject_basis\": \"The official AWS podcast page presents AWS episodes, including topics such as AWS Lambda, Fargate, cloud migration, and public cloud.\",\n      \"evidence_url\": \"https://aws.amazon.com/fr/blogs/france/podcasts\"\n    },\n    {\n      \"line_number\": 5,\n      \"source_file\": \"work/R10-T024/fixture_failure.md\",\n      \"category\": \"Java\",\n      \"display_name\": \"Les Cast Codeurs Podcast\",\n      \"url\": \"https://lescastcodeurs.com\",\n      \"metadata\": \"(podcast)\",\n      \"expected_category\": \"Langage Agnostique\",\n      \"subject_basis\": \"The show's current homepage covers Java/JDK alongside Rust, TypeScript, PHP, data, infrastructure, and other software topics; it is broader than a Java-only podcast.\",\n      \"evidence_url\": \"https://lescastcodeurs.com\"\n    },\n    {\n      \"line_number\": 11,\n      \"source_file\": \"work/R10-T024/fixture_failure.md\",\n      \"category\": \"Langage Agnostique\",\n      \"display_name\": \"Artisan Developpeur\",\n      \"url\": \"https://artisandeveloppeur.fr/podcast\",\n      \"metadata\": \"(podcast)\",\n      \"expected_category\": \"Langage Agnostique\",\n      \"subject_basis\": \"The podcast page describes reflection on software development work and community news, not a single programming language.\",\n      \"evidence_url\": \"https://artisandeveloppeur.fr/podcast\"\n    }\n  ],\n  \"misplaced_entries\": [\n    {\n      \"url\": \"https://lescastcodeurs.com\",\n      \"display_name\": \"Les Cast Codeurs Podcast\",\n      \"line_number\": 5,\n      \"current_category\": \"Java\",\n      \"expected_category\": \"Langage Agnostique\",\n      \"subject_basis\": \"The show's current homepage covers Java/JDK alongside Rust, TypeScript, PHP, data, infrastructure, and other software topics; it is broader than a Java-only podcast.\",\n      \"evidence_url\": \"https://lescastcodeurs.com\",\n      \"manual_review_required\": true\n    }\n  ],\n  \"repeated_headings\": [\n    {\n      \"level\": 3,\n      \"title\": \"Java\",\n      \"parent\": null,\n      \"line_numbers\": [\n        4,\n        7\n      ]\n    }\n  ],\n  \"proposed_moves\": [\n    {\n      \"url\": \"https://lescastcodeurs.com\",\n      \"display_name\": \"Les Cast Codeurs Podcast\",\n      \"source_line\": 5,\n      \"from_category\": \"Java\",\n      \"to_category\": \"Langage Agnostique\",\n      \"subject_basis\": \"The show's current homepage covers Java/JDK alongside Rust, TypeScript, PHP, data, infrastructure, and other software topics; it is broader than a Java-only podcast.\",\n      \"evidence_url\": \"https://lescastcodeurs.com\",\n      \"manual_review_required\": true\n    }\n  ],\n  \"errors\": [\n    \"Category mismatch for https://lescastcodeurs.com: expected 'Langage Agnostique', got 'Java'\",\n    \"Repeated heading 'Java' at lines 4, 7\"\n  ],\n  \"passed\": false\n}\n",
+    "cli_stderr": ""
+  },
+  "subject_evidence": {
+    "observed_date": "2026-11-17",
+    "selected_subjects": {
+      "https://aws.amazon.com/fr/blogs/france/podcasts": {
+        "display_name": "Le podcast AWS en français",
+        "expected_category": "Cloud computing",
+        "expected_line": 9,
+        "subject_basis": "The official AWS podcast page presents AWS episodes, including topics such as AWS Lambda, Fargate, cloud migration, and public cloud.",
+        "evidence_url": "https://aws.amazon.com/fr/blogs/france/podcasts"
+      },
+      "https://lescastcodeurs.com": {
+        "display_name": "Les Cast Codeurs Podcast",
+        "expected_category": "Langage Agnostique",
+        "expected_line": 20,
+        "subject_basis": "The show's current homepage covers Java/JDK alongside Rust, TypeScript, PHP, data, infrastructure, and other software topics; it is broader than a Java-only podcast.",
+        "evidence_url": "https://lescastcodeurs.com"
+      },
+      "https://artisandeveloppeur.fr/podcast": {
+        "display_name": "Artisan Developpeur",
+        "expected_category": "Langage Agnostique",
+        "expected_line": 14,
+        "subject_basis": "The podcast page describes reflection on software development work and community news, not a single programming language.",
+        "evidence_url": "https://artisandeveloppeur.fr/podcast"
+      }
+    }
+  },
+  "applied_category_correction": {
+    "url": "https://lescastcodeurs.com",
+    "display_name": "Les Cast Codeurs Podcast",
+    "from_category": "Java",
+    "to_category": "Langage Agnostique",
+    "original_line": 15,
+    "current_line": 20,
+    "evidence_url": "https://lescastcodeurs.com",
+    "subject_basis": "The show's current homepage covers Java/JDK alongside Rust, TypeScript, PHP, data, infrastructure, and other software topics; it is broader than a Java-only podcast.",
+    "observed_date": "2026-11-17"
+  },
+  "source_verification": {
+    "input": "casts/free-podcasts-screencasts-fr.md",
+    "actual": {
+      "source_file": "casts/free-podcasts-screencasts-fr.md",
+      "entry_count": 12,
+      "headings": [
+        {
+          "level": 3,
+          "title": "Cloud computing",
+          "normalized_title": "cloud computing",
+          "parent": null,
+          "line_number": 7
+        },
+        {
+          "level": 3,
+          "title": "Langage Agnostique",
+          "normalized_title": "langage agnostique",
+          "parent": null,
+          "line_number": 12
+        }
+      ],
+      "selected_entries": [
+        {
+          "line_number": 9,
+          "source_file": "casts/free-podcasts-screencasts-fr.md",
+          "category": "Cloud computing",
+          "display_name": "Le podcast AWS en français",
+          "url": "https://aws.amazon.com/fr/blogs/france/podcasts",
+          "metadata": "(podcast)",
+          "expected_category": "Cloud computing",
+          "subject_basis": "The official AWS podcast page presents AWS episodes, including topics such as AWS Lambda, Fargate, cloud migration, and public cloud.",
+          "evidence_url": "https://aws.amazon.com/fr/blogs/france/podcasts"
+        },
+        {
+          "line_number": 20,
+          "source_file": "casts/free-podcasts-screencasts-fr.md",
+          "category": "Langage Agnostique",
+          "display_name": "Les Cast Codeurs Podcast",
+          "url": "https://lescastcodeurs.com",
+          "metadata": "(podcast)",
+          "expected_category": "Langage Agnostique",
+          "subject_basis": "The show's current homepage covers Java/JDK alongside Rust, TypeScript, PHP, data, infrastructure, and other software topics; it is broader than a Java-only podcast.",
+          "evidence_url": "https://lescastcodeurs.com"
+        },
+        {
+          "line_number": 14,
+          "source_file": "casts/free-podcasts-screencasts-fr.md",
+          "category": "Langage Agnostique",
+          "display_name": "Artisan Developpeur",
+          "url": "https://artisandeveloppeur.fr/podcast",
+          "metadata": "(podcast)",
+          "expected_category": "Langage Agnostique",
+          "subject_basis": "The podcast page describes reflection on software development work and community news, not a single programming language.",
+          "evidence_url": "https://artisandeveloppeur.fr/podcast"
+        }
+      ],
+      "misplaced_entries": [],
+      "repeated_headings": [],
+      "proposed_moves": [],
+      "errors": [],
+      "passed": true
+    }
+  },
+  "self_test_passed": true
+}
