@@ -1,0 +1,125 @@
+{
+  "task_id": "R10-T026",
+  "network_used": false,
+  "tool_versions": {
+    "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "git": "git version 2.54.0 (Apple Git-157)"
+  },
+  "fixtures": {
+    "success": {
+      "input": "fixture_success.md",
+      "expected": {
+        "passed": true,
+        "selected_entry": {
+          "display_name": "Learn React Docker And Containerized In Myanmar Language",
+          "url": "https://www.youtube.com/watch?v=Qqr8oabREA8",
+          "category": "React",
+          "creator": "MyanmarFullStackDevelopers",
+          "format": "screencast",
+          "line_number": 10
+        },
+        "errors": []
+      },
+      "actual": {
+        "passed": true,
+        "selected_entry": {
+          "line_number": 10,
+          "category": "React",
+          "display_name": "Learn React Docker And Containerized In Myanmar Language",
+          "url": "https://www.youtube.com/watch?v=Qqr8oabREA8",
+          "creator": "MyanmarFullStackDevelopers",
+          "format": "screencast"
+        },
+        "errors": []
+      },
+      "fenced_and_index_links_ignored": true
+    },
+    "malformed": {
+      "input": "fixture_malformed.md",
+      "expected": {
+        "passed": false,
+        "errors": [
+          "Malformed list row at line 3: invalid URL syntax",
+          "Missing selected entry URL: https://www.youtube.com/watch?v=Qqr8oabREA8"
+        ],
+        "nonzero_cli_exit": true
+      },
+      "actual": {
+        "passed": false,
+        "errors": [
+          "Malformed list row at line 3: invalid URL syntax",
+          "Missing selected entry URL: https://www.youtube.com/watch?v=Qqr8oabREA8"
+        ],
+        "cli_exit_code": 1,
+        "stdout": "{\n  \"source_file\": \"work/R10-T026/fixture_malformed.md\",\n  \"category\": \"React\",\n  \"entries\": [],\n  \"selected_entry\": null,\n  \"errors\": [\n    \"Malformed list row at line 3: invalid URL syntax\",\n    \"Missing selected entry URL: https://www.youtube.com/watch?v=Qqr8oabREA8\"\n  ],\n  \"passed\": false\n}\n",
+        "stderr": ""
+      }
+    },
+    "unusual_url": {
+      "input": "fixture_unusual_url.md",
+      "expected": {
+        "passed": true,
+        "entry": {
+          "line_number": 2,
+          "category": "React",
+          "display_name": "Unusual URL fixture",
+          "url": "https://example.test/a_(b)?first=a%2Fb&second=x+y#section-2",
+          "creator": "Fixture Author",
+          "format": "screencast"
+        },
+        "url_error": null,
+        "errors": []
+      },
+      "actual": {
+        "passed": true,
+        "entry": {
+          "line_number": 2,
+          "category": "React",
+          "display_name": "Unusual URL fixture",
+          "url": "https://example.test/a_(b)?first=a%2Fb&second=x+y#section-2",
+          "creator": "Fixture Author",
+          "format": "screencast"
+        },
+        "url_error": null,
+        "errors": []
+      }
+    }
+  },
+  "source_verification": {
+    "input": "casts/free-podcasts-screencasts-my.md",
+    "expected": {
+      "display_name": "Learn React Docker And Containerized In Myanmar Language",
+      "url": "https://www.youtube.com/watch?v=Qqr8oabREA8",
+      "category": "React",
+      "creator": "MyanmarFullStackDevelopers",
+      "format": "screencast",
+      "line_number": 8
+    },
+    "actual": {
+      "source_file": "casts/free-podcasts-screencasts-my.md",
+      "category": "React",
+      "entries": [
+        {
+          "line_number": 8,
+          "category": "React",
+          "display_name": "Learn React Docker And Containerized In Myanmar Language",
+          "url": "https://www.youtube.com/watch?v=Qqr8oabREA8",
+          "creator": "MyanmarFullStackDevelopers",
+          "format": "screencast"
+        }
+      ],
+      "selected_entry": {
+        "line_number": 8,
+        "category": "React",
+        "display_name": "Learn React Docker And Containerized In Myanmar Language",
+        "url": "https://www.youtube.com/watch?v=Qqr8oabREA8",
+        "creator": "MyanmarFullStackDevelopers",
+        "format": "screencast"
+      },
+      "errors": [],
+      "passed": true
+    }
+  },
+  "self_test_passed": true
+}
