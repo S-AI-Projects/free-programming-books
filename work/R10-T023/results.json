@@ -1,0 +1,337 @@
+{
+  "task_id": "R10-T023",
+  "tool_versions": {
+    "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "git": "git version 2.54.0 (Apple Git-157)"
+  },
+  "fixture": {
+    "input": "fixture_input.md",
+    "expected_summary": {
+      "exact_duplicate_groups": [
+        {
+          "url": "https://example.org/exact.pdf",
+          "display_names": [
+            "Exact One",
+            "Exact Duplicate"
+          ]
+        }
+      ],
+      "normalized_match_groups": [
+        {
+          "normalized_url": "https://example.org/book.pdf",
+          "source_urls": [
+            "https://EXAMPLE.org:443/book.pdf",
+            "https://example.org/book.pdf"
+          ]
+        },
+        {
+          "normalized_url": "https://example.org/",
+          "source_urls": [
+            "https://example.org",
+            "https://example.org/"
+          ]
+        }
+      ],
+      "proposed_deletions": [],
+      "entry_count": 13
+    },
+    "actual_summary": {
+      "exact_duplicate_groups": [
+        {
+          "url": "https://example.org/exact.pdf",
+          "display_names": [
+            "Exact One",
+            "Exact Duplicate"
+          ]
+        }
+      ],
+      "normalized_match_groups": [
+        {
+          "normalized_url": "https://example.org/book.pdf",
+          "source_urls": [
+            "https://EXAMPLE.org:443/book.pdf",
+            "https://example.org/book.pdf"
+          ]
+        },
+        {
+          "normalized_url": "https://example.org/",
+          "source_urls": [
+            "https://example.org",
+            "https://example.org/"
+          ]
+        }
+      ],
+      "proposed_deletions": [],
+      "entry_count": 13
+    },
+    "actual_report": {
+      "source_file": "fixture_input.md",
+      "entry_count": 13,
+      "selected_entries": [],
+      "exact_duplicate_groups": [
+        {
+          "url": "https://example.org/exact.pdf",
+          "entries": [
+            {
+              "line_number": 11,
+              "source_file": "fixture_input.md",
+              "category": "Bash",
+              "display_name": "Exact One",
+              "url": "https://example.org/exact.pdf",
+              "metadata": "(PDF)"
+            },
+            {
+              "line_number": 12,
+              "source_file": "fixture_input.md",
+              "category": "Bash",
+              "display_name": "Exact Duplicate",
+              "url": "https://example.org/exact.pdf",
+              "metadata": "(PDF)"
+            }
+          ],
+          "review_pairs": [
+            {
+              "left": {
+                "line_number": 11,
+                "display_name": "Exact One",
+                "url": "https://example.org/exact.pdf"
+              },
+              "right": {
+                "line_number": 12,
+                "display_name": "Exact Duplicate",
+                "url": "https://example.org/exact.pdf"
+              },
+              "review_status": "pending",
+              "deletion_proposed": false
+            }
+          ],
+          "deletion_proposed": false
+        }
+      ],
+      "normalized_match_groups": [
+        {
+          "normalized_url": "https://example.org/book.pdf",
+          "entries": [
+            {
+              "line_number": 13,
+              "source_file": "fixture_input.md",
+              "category": "Bash",
+              "display_name": "Normalized case",
+              "url": "https://EXAMPLE.org:443/book.pdf",
+              "metadata": "(PDF)"
+            },
+            {
+              "line_number": 14,
+              "source_file": "fixture_input.md",
+              "category": "Bash",
+              "display_name": "Normalized default",
+              "url": "https://example.org/book.pdf",
+              "metadata": "(PDF)"
+            }
+          ],
+          "review_pairs": [
+            {
+              "left": {
+                "line_number": 13,
+                "display_name": "Normalized case",
+                "url": "https://EXAMPLE.org:443/book.pdf"
+              },
+              "right": {
+                "line_number": 14,
+                "display_name": "Normalized default",
+                "url": "https://example.org/book.pdf"
+              },
+              "review_status": "pending",
+              "deletion_proposed": false
+            }
+          ],
+          "deletion_proposed": false
+        },
+        {
+          "normalized_url": "https://example.org/",
+          "entries": [
+            {
+              "line_number": 15,
+              "source_file": "fixture_input.md",
+              "category": "Bash",
+              "display_name": "Empty root",
+              "url": "https://example.org",
+              "metadata": "(HTML)"
+            },
+            {
+              "line_number": 16,
+              "source_file": "fixture_input.md",
+              "category": "Bash",
+              "display_name": "Slash root",
+              "url": "https://example.org/",
+              "metadata": "(HTML)"
+            }
+          ],
+          "review_pairs": [
+            {
+              "left": {
+                "line_number": 15,
+                "display_name": "Empty root",
+                "url": "https://example.org"
+              },
+              "right": {
+                "line_number": 16,
+                "display_name": "Slash root",
+                "url": "https://example.org/"
+              },
+              "review_status": "pending",
+              "deletion_proposed": false
+            }
+          ],
+          "deletion_proposed": false
+        }
+      ],
+      "proposed_deletions": [],
+      "errors": [
+        "Missing selected URL: http://i.iinfo.cz/files/root/k/bash_ocima_bohdana_milara.pdf",
+        "Missing selected URL: https://phoenix.inf.upol.cz/esf/ucebni/sysprog.pdf",
+        "Missing selected URL: https://akela.mendelu.cz/~xvencal2/CPP/opora.pdf"
+      ],
+      "passed": false
+    }
+  },
+  "source_analysis": {
+    "input": "books/free-programming-books-cs.md",
+    "selected_expected": {
+      "http://i.iinfo.cz/files/root/k/bash_ocima_bohdana_milara.pdf": {
+        "display_name": "Bash očima Bohdana Milara",
+        "category": "Bash",
+        "line_number": 32
+      },
+      "https://phoenix.inf.upol.cz/esf/ucebni/sysprog.pdf": {
+        "display_name": "Systémové programování v jazyce C#",
+        "category": "C#",
+        "line_number": 37
+      },
+      "https://akela.mendelu.cz/~xvencal2/CPP/opora.pdf": {
+        "display_name": "Moderní programování objektových aplikací v C++",
+        "category": "C++",
+        "line_number": 42
+      }
+    },
+    "actual": {
+      "source_file": "books/free-programming-books-cs.md",
+      "entry_count": 40,
+      "selected_entries": [
+        {
+          "line_number": 32,
+          "source_file": "books/free-programming-books-cs.md",
+          "category": "Bash",
+          "display_name": "Bash očima Bohdana Milara",
+          "url": "http://i.iinfo.cz/files/root/k/bash_ocima_bohdana_milara.pdf",
+          "metadata": "(PDF)"
+        },
+        {
+          "line_number": 37,
+          "source_file": "books/free-programming-books-cs.md",
+          "category": "C#",
+          "display_name": "Systémové programování v jazyce C#",
+          "url": "https://phoenix.inf.upol.cz/esf/ucebni/sysprog.pdf",
+          "metadata": "(PDF)"
+        },
+        {
+          "line_number": 42,
+          "source_file": "books/free-programming-books-cs.md",
+          "category": "C++",
+          "display_name": "Moderní programování objektových aplikací v C++",
+          "url": "https://akela.mendelu.cz/~xvencal2/CPP/opora.pdf",
+          "metadata": "(PDF)"
+        }
+      ],
+      "exact_duplicate_groups": [
+        {
+          "url": "https://knihy.nic.cz",
+          "entries": [
+            {
+              "line_number": 72,
+              "source_file": "books/free-programming-books-cs.md",
+              "category": "Language Agnostic > Bezpečnost",
+              "display_name": "Báječný svět elektronického podpisu",
+              "url": "https://knihy.nic.cz",
+              "metadata": "- Jiří Peterka (PDF, EPUB, MOBI)"
+            },
+            {
+              "line_number": 73,
+              "source_file": "books/free-programming-books-cs.md",
+              "category": "Language Agnostic > Bezpečnost",
+              "display_name": "Buď pánem svého prostoru",
+              "url": "https://knihy.nic.cz",
+              "metadata": "- Linda McCarthy a Denise Weldon-Siviy (PDF)"
+            },
+            {
+              "line_number": 85,
+              "source_file": "books/free-programming-books-cs.md",
+              "category": "Language Agnostic > Právo",
+              "display_name": "Internet jako objekt práva",
+              "url": "https://knihy.nic.cz",
+              "metadata": "- Ján Matejka (PDF)"
+            }
+          ],
+          "review_pairs": [
+            {
+              "left": {
+                "line_number": 72,
+                "display_name": "Báječný svět elektronického podpisu",
+                "url": "https://knihy.nic.cz"
+              },
+              "right": {
+                "line_number": 73,
+                "display_name": "Buď pánem svého prostoru",
+                "url": "https://knihy.nic.cz"
+              },
+              "review_status": "pending",
+              "deletion_proposed": false
+            },
+            {
+              "left": {
+                "line_number": 72,
+                "display_name": "Báječný svět elektronického podpisu",
+                "url": "https://knihy.nic.cz"
+              },
+              "right": {
+                "line_number": 85,
+                "display_name": "Internet jako objekt práva",
+                "url": "https://knihy.nic.cz"
+              },
+              "review_status": "pending",
+              "deletion_proposed": false
+            },
+            {
+              "left": {
+                "line_number": 73,
+                "display_name": "Buď pánem svého prostoru",
+                "url": "https://knihy.nic.cz"
+              },
+              "right": {
+                "line_number": 85,
+                "display_name": "Internet jako objekt práva",
+                "url": "https://knihy.nic.cz"
+              },
+              "review_status": "pending",
+              "deletion_proposed": false
+            }
+          ],
+          "deletion_proposed": false
+        }
+      ],
+      "normalized_match_groups": [],
+      "proposed_deletions": [],
+      "errors": [],
+      "passed": true
+    }
+  },
+  "failure_cli": {
+    "input": "fixture_catalogue_failure.md",
+    "expected_exit_code": "non-zero",
+    "actual_exit_code": 1,
+    "stdout": "{\n  \"source_file\": \"work/R10-T023/fixture_catalogue_failure.md\",\n  \"entry_count\": 1,\n  \"selected_entries\": [\n    {\n      \"line_number\": 3,\n      \"source_file\": \"work/R10-T023/fixture_catalogue_failure.md\",\n      \"category\": \"Bash\",\n      \"display_name\": \"Wrong title\",\n      \"url\": \"http://i.iinfo.cz/files/root/k/bash_ocima_bohdana_milara.pdf\",\n      \"metadata\": \"(PDF)\"\n    }\n  ],\n  \"exact_duplicate_groups\": [],\n  \"normalized_match_groups\": [],\n  \"proposed_deletions\": [],\n  \"errors\": [\n    \"display_name mismatch for http://i.iinfo.cz/files/root/k/bash_ocima_bohdana_milara.pdf: expected 'Bash očima Bohdana Milara', got 'Wrong title'\",\n    \"line_number mismatch for http://i.iinfo.cz/files/root/k/bash_ocima_bohdana_milara.pdf: expected 32, got 3\",\n    \"Missing selected URL: https://phoenix.inf.upol.cz/esf/ucebni/sysprog.pdf\",\n    \"Missing selected URL: https://akela.mendelu.cz/~xvencal2/CPP/opora.pdf\"\n  ],\n  \"passed\": false\n}\n",
+    "stderr": ""
+  },
+  "self_test_passed": true
+}
