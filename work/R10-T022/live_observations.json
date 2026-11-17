@@ -1,0 +1,167 @@
+{
+  "task_id": "R10-T022",
+  "observation_date": "2026-11-17",
+  "request_policy": {
+    "entry_count": 3,
+    "concurrency": 1,
+    "timeout_seconds": 8,
+    "max_redirects_per_entry": 5
+  },
+  "source_verification": {
+    "target_file": "books/free-programming-books-vi.md",
+    "total_parsed_entries": 3,
+    "selected_entries": [
+      {
+        "line_number": 10,
+        "source_file": "books/free-programming-books-vi.md",
+        "category": "Go",
+        "display_name": "The Little Go Book",
+        "url": "https://github.com/nainglinaung/the-little-go-book",
+        "metadata": {
+          "author": "Karl Seguin, `trl.:` Naing Lin Aung",
+          "format": null,
+          "related_links": [
+            {
+              "label": "HTML",
+              "url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md"
+            }
+          ],
+          "raw_metadata": "- Karl Seguin, `trl.:` Naing Lin Aung ([HTML](https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md))"
+        }
+      },
+      {
+        "line_number": 10,
+        "source_file": "books/free-programming-books-vi.md",
+        "category": "Go",
+        "display_name": "HTML",
+        "url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md",
+        "metadata": {
+          "author": "Karl Seguin, `trl.:` Naing Lin Aung",
+          "format": "HTML",
+          "related_links": [],
+          "raw_metadata": "- Karl Seguin, `trl.:` Naing Lin Aung ([HTML](https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md))",
+          "parent_entry": "The Little Go Book"
+        }
+      },
+      {
+        "line_number": 15,
+        "source_file": "books/free-programming-books-vi.md",
+        "category": "Học máy",
+        "display_name": "Đắm chìm vào Học sâu",
+        "url": "https://d2l.aivivn.com",
+        "metadata": {
+          "author": "`trl.:` Nhóm dịch thuật Đắm chìm vào Học sâu",
+          "format": "HTML",
+          "related_links": [],
+          "raw_metadata": "- `trl.:` Nhóm dịch thuật Đắm chìm vào Học sâu (HTML)"
+        }
+      }
+    ],
+    "errors": [],
+    "passed": true
+  },
+  "probes": [
+    {
+      "source_entry": {
+        "line_number": 10,
+        "source_file": "books/free-programming-books-vi.md",
+        "category": "Go",
+        "display_name": "The Little Go Book",
+        "url": "https://github.com/nainglinaung/the-little-go-book",
+        "metadata": {
+          "author": "Karl Seguin, `trl.:` Naing Lin Aung",
+          "format": null,
+          "related_links": [
+            {
+              "label": "HTML",
+              "url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md"
+            }
+          ],
+          "raw_metadata": "- Karl Seguin, `trl.:` Naing Lin Aung ([HTML](https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md))"
+        }
+      },
+      "observation_date": "2026-11-17",
+      "observed_at_utc": "2026-11-17T13:38:50.865895+00:00",
+      "timeout_seconds": 8,
+      "max_redirects": 5,
+      "result": {
+        "classification": "tls_error",
+        "final_url": "https://github.com/nainglinaung/the-little-go-book",
+        "status_code": null,
+        "redirects": [],
+        "request_count": 1,
+        "detail": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)"
+      },
+      "recommendation": {
+        "action": "retain_source_for_review",
+        "url": "https://github.com/nainglinaung/the-little-go-book",
+        "reason": "A single automated result is not sufficient grounds to remove this resource (tls_error)."
+      }
+    },
+    {
+      "source_entry": {
+        "line_number": 10,
+        "source_file": "books/free-programming-books-vi.md",
+        "category": "Go",
+        "display_name": "HTML",
+        "url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md",
+        "metadata": {
+          "author": "Karl Seguin, `trl.:` Naing Lin Aung",
+          "format": "HTML",
+          "related_links": [],
+          "raw_metadata": "- Karl Seguin, `trl.:` Naing Lin Aung ([HTML](https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md))",
+          "parent_entry": "The Little Go Book"
+        }
+      },
+      "observation_date": "2026-11-17",
+      "observed_at_utc": "2026-11-17T13:38:50.865895+00:00",
+      "timeout_seconds": 8,
+      "max_redirects": 5,
+      "result": {
+        "classification": "tls_error",
+        "final_url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md",
+        "status_code": null,
+        "redirects": [],
+        "request_count": 1,
+        "detail": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)"
+      },
+      "recommendation": {
+        "action": "retain_source_for_review",
+        "url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md",
+        "reason": "A single automated result is not sufficient grounds to remove this resource (tls_error)."
+      }
+    },
+    {
+      "source_entry": {
+        "line_number": 15,
+        "source_file": "books/free-programming-books-vi.md",
+        "category": "Học máy",
+        "display_name": "Đắm chìm vào Học sâu",
+        "url": "https://d2l.aivivn.com",
+        "metadata": {
+          "author": "`trl.:` Nhóm dịch thuật Đắm chìm vào Học sâu",
+          "format": "HTML",
+          "related_links": [],
+          "raw_metadata": "- `trl.:` Nhóm dịch thuật Đắm chìm vào Học sâu (HTML)"
+        }
+      },
+      "observation_date": "2026-11-17",
+      "observed_at_utc": "2026-11-17T13:38:50.865895+00:00",
+      "timeout_seconds": 8,
+      "max_redirects": 5,
+      "result": {
+        "classification": "tls_error",
+        "final_url": "https://d2l.aivivn.com",
+        "status_code": null,
+        "redirects": [],
+        "request_count": 1,
+        "detail": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)"
+      },
+      "recommendation": {
+        "action": "retain_source_for_review",
+        "url": "https://d2l.aivivn.com",
+        "reason": "A single automated result is not sufficient grounds to remove this resource (tls_error)."
+      }
+    }
+  ]
+}

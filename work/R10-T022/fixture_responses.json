@@ -1,0 +1,150 @@
+{
+  "direct_200": {
+    "start_url": "https://offline.example/resource",
+    "responses": {
+      "https://offline.example/resource": {
+        "status": 200
+      }
+    },
+    "expected": {
+      "classification": "ok",
+      "final_url": "https://offline.example/resource",
+      "status_code": 200,
+      "request_count": 1
+    }
+  },
+  "redirect_301_to_200": {
+    "start_url": "https://offline.example/old",
+    "responses": {
+      "https://offline.example/old": {
+        "status": 301,
+        "headers": {
+          "Location": "/current"
+        }
+      },
+      "https://offline.example/current": {
+        "status": 200
+      }
+    },
+    "expected": {
+      "classification": "redirected",
+      "final_url": "https://offline.example/current",
+      "status_code": 200,
+      "request_count": 2
+    }
+  },
+  "redirect_loop": {
+    "start_url": "https://offline.example/a",
+    "responses": {
+      "https://offline.example/a": {
+        "status": 301,
+        "headers": {
+          "Location": "/b"
+        }
+      },
+      "https://offline.example/b": {
+        "status": 302,
+        "headers": {
+          "Location": "/a"
+        }
+      }
+    },
+    "expected": {
+      "classification": "redirect_loop",
+      "final_url": "https://offline.example/a",
+      "status_code": 302,
+      "request_count": 2
+    }
+  },
+  "redirect_budget": {
+    "start_url": "https://offline.example/budget/0",
+    "responses": {
+      "https://offline.example/budget/0": {
+        "status": 301,
+        "headers": {
+          "Location": "/budget/1"
+        }
+      },
+      "https://offline.example/budget/1": {
+        "status": 301,
+        "headers": {
+          "Location": "/budget/2"
+        }
+      },
+      "https://offline.example/budget/2": {
+        "status": 301,
+        "headers": {
+          "Location": "/budget/3"
+        }
+      },
+      "https://offline.example/budget/3": {
+        "status": 301,
+        "headers": {
+          "Location": "/budget/4"
+        }
+      }
+    },
+    "expected": {
+      "classification": "too_many_redirects",
+      "final_url": "https://offline.example/budget/3",
+      "status_code": 301,
+      "request_count": 4
+    }
+  },
+  "timeout": {
+    "start_url": "https://offline.example/slow",
+    "responses": {
+      "https://offline.example/slow": {
+        "exception": "timeout"
+      }
+    },
+    "expected": {
+      "classification": "timeout",
+      "final_url": "https://offline.example/slow",
+      "status_code": null,
+      "request_count": 1
+    }
+  },
+  "login_wall": {
+    "start_url": "https://offline.example/private",
+    "responses": {
+      "https://offline.example/private": {
+        "status": 401
+      }
+    },
+    "expected": {
+      "classification": "login_wall",
+      "final_url": "https://offline.example/private",
+      "status_code": 401,
+      "request_count": 1
+    }
+  },
+  "transient_503": {
+    "start_url": "https://offline.example/temporarily-unavailable",
+    "responses": {
+      "https://offline.example/temporarily-unavailable": {
+        "status": 503
+      }
+    },
+    "expected": {
+      "classification": "transient",
+      "final_url": "https://offline.example/temporarily-unavailable",
+      "status_code": 503,
+      "request_count": 1
+    }
+  },
+  "tls_certificate_error": {
+    "start_url": "https://offline.example/invalid-certificate",
+    "responses": {
+      "https://offline.example/invalid-certificate": {
+        "exception": "tls"
+      }
+    },
+    "expected": {
+      "classification": "tls_error",
+      "final_url": "https://offline.example/invalid-certificate",
+      "status_code": null,
+      "request_count": 1
+    }
+  }
+}

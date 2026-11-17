@@ -1,0 +1,42 @@
+{
+  "task_id": "R10-T022",
+  "observation_date": "2026-11-17",
+  "tool": "curl 8.7.1 (SecureTransport)",
+  "method": "Sequential GET requests with redirects enabled; 8-second maximum time and 5-redirect cap.",
+  "observations": [
+    {
+      "source_line": 10,
+      "display_name": "The Little Go Book",
+      "source_url": "https://github.com/nainglinaung/the-little-go-book",
+      "http_status": 200,
+      "final_url": "https://github.com/nainglinaung/the-little-go-book",
+      "recommended_url": "https://github.com/nainglinaung/the-little-go-book",
+      "recommendation": "Keep the listed URL; the final effective URL matched it."
+    },
+    {
+      "source_line": 10,
+      "display_name": "HTML",
+      "source_url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md",
+      "http_status": 200,
+      "final_url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md",
+      "recommended_url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md",
+      "recommendation": "Keep the listed URL; the final effective URL matched it."
+    },
+    {
+      "source_line": 15,
+      "display_name": "Đắm chìm vào Học sâu",
+      "source_url": "https://d2l.aivivn.com",
+      "http_status": 200,
+      "final_url": "https://d2l.aivivn.com/",
+      "recommended_url": "https://d2l.aivivn.com",
+      "recommendation": "Keep the shorter root URL as listed; curl's effective URL includes the root slash.",
+      "follow_up_header_observation": {
+        "observed_at": "2026-11-17T19:09:32+05:30",
+        "response_status": "HTTP/2 200",
+        "location_header_observed": false
+      }
+    }
+  ],
+  "python_probe_note": "The Python urllib live probe could not verify TLS because this environment lacks a trusted issuer in its Python certificate store. Those results are recorded as tls_error, not as dead links. The curl checks above succeeded with certificate verification enabled.",
+  "catalogue_changed": false
+}

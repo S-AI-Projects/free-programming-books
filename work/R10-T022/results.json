@@ -1,0 +1,430 @@
+{
+  "task_id": "R10-T022",
+  "tool_versions": {
+    "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "git": "git version 2.54.0 (Apple Git-157)"
+  },
+  "offline_redirect_fixtures": {
+    "direct_200": {
+      "input": {
+        "start_url": "https://offline.example/resource",
+        "responses": {
+          "https://offline.example/resource": {
+            "status": 200
+          }
+        },
+        "expected": {
+          "classification": "ok",
+          "final_url": "https://offline.example/resource",
+          "status_code": 200,
+          "request_count": 1
+        }
+      },
+      "expected": {
+        "classification": "ok",
+        "final_url": "https://offline.example/resource",
+        "status_code": 200,
+        "request_count": 1
+      },
+      "actual": {
+        "classification": "ok",
+        "final_url": "https://offline.example/resource",
+        "status_code": 200,
+        "redirects": [],
+        "request_count": 1,
+        "detail": null
+      }
+    },
+    "redirect_301_to_200": {
+      "input": {
+        "start_url": "https://offline.example/old",
+        "responses": {
+          "https://offline.example/old": {
+            "status": 301,
+            "headers": {
+              "Location": "/current"
+            }
+          },
+          "https://offline.example/current": {
+            "status": 200
+          }
+        },
+        "expected": {
+          "classification": "redirected",
+          "final_url": "https://offline.example/current",
+          "status_code": 200,
+          "request_count": 2
+        }
+      },
+      "expected": {
+        "classification": "redirected",
+        "final_url": "https://offline.example/current",
+        "status_code": 200,
+        "request_count": 2
+      },
+      "actual": {
+        "classification": "redirected",
+        "final_url": "https://offline.example/current",
+        "status_code": 200,
+        "redirects": [
+          {
+            "status_code": 301,
+            "from": "https://offline.example/old",
+            "to": "https://offline.example/current"
+          }
+        ],
+        "request_count": 2,
+        "detail": null
+      }
+    },
+    "redirect_loop": {
+      "input": {
+        "start_url": "https://offline.example/a",
+        "responses": {
+          "https://offline.example/a": {
+            "status": 301,
+            "headers": {
+              "Location": "/b"
+            }
+          },
+          "https://offline.example/b": {
+            "status": 302,
+            "headers": {
+              "Location": "/a"
+            }
+          }
+        },
+        "expected": {
+          "classification": "redirect_loop",
+          "final_url": "https://offline.example/a",
+          "status_code": 302,
+          "request_count": 2
+        }
+      },
+      "expected": {
+        "classification": "redirect_loop",
+        "final_url": "https://offline.example/a",
+        "status_code": 302,
+        "request_count": 2
+      },
+      "actual": {
+        "classification": "redirect_loop",
+        "final_url": "https://offline.example/a",
+        "status_code": 302,
+        "redirects": [
+          {
+            "status_code": 301,
+            "from": "https://offline.example/a",
+            "to": "https://offline.example/b"
+          },
+          {
+            "status_code": 302,
+            "from": "https://offline.example/b",
+            "to": "https://offline.example/a"
+          }
+        ],
+        "request_count": 2,
+        "detail": null
+      }
+    },
+    "redirect_budget": {
+      "input": {
+        "start_url": "https://offline.example/budget/0",
+        "responses": {
+          "https://offline.example/budget/0": {
+            "status": 301,
+            "headers": {
+              "Location": "/budget/1"
+            }
+          },
+          "https://offline.example/budget/1": {
+            "status": 301,
+            "headers": {
+              "Location": "/budget/2"
+            }
+          },
+          "https://offline.example/budget/2": {
+            "status": 301,
+            "headers": {
+              "Location": "/budget/3"
+            }
+          },
+          "https://offline.example/budget/3": {
+            "status": 301,
+            "headers": {
+              "Location": "/budget/4"
+            }
+          }
+        },
+        "expected": {
+          "classification": "too_many_redirects",
+          "final_url": "https://offline.example/budget/3",
+          "status_code": 301,
+          "request_count": 4
+        }
+      },
+      "expected": {
+        "classification": "too_many_redirects",
+        "final_url": "https://offline.example/budget/3",
+        "status_code": 301,
+        "request_count": 4
+      },
+      "actual": {
+        "classification": "too_many_redirects",
+        "final_url": "https://offline.example/budget/3",
+        "status_code": 301,
+        "redirects": [
+          {
+            "status_code": 301,
+            "from": "https://offline.example/budget/0",
+            "to": "https://offline.example/budget/1"
+          },
+          {
+            "status_code": 301,
+            "from": "https://offline.example/budget/1",
+            "to": "https://offline.example/budget/2"
+          },
+          {
+            "status_code": 301,
+            "from": "https://offline.example/budget/2",
+            "to": "https://offline.example/budget/3"
+          }
+        ],
+        "request_count": 4,
+        "detail": "redirect limit reached before following https://offline.example/budget/4"
+      }
+    },
+    "timeout": {
+      "input": {
+        "start_url": "https://offline.example/slow",
+        "responses": {
+          "https://offline.example/slow": {
+            "exception": "timeout"
+          }
+        },
+        "expected": {
+          "classification": "timeout",
+          "final_url": "https://offline.example/slow",
+          "status_code": null,
+          "request_count": 1
+        }
+      },
+      "expected": {
+        "classification": "timeout",
+        "final_url": "https://offline.example/slow",
+        "status_code": null,
+        "request_count": 1
+      },
+      "actual": {
+        "classification": "timeout",
+        "final_url": "https://offline.example/slow",
+        "status_code": null,
+        "redirects": [],
+        "request_count": 1,
+        "detail": "request timed out"
+      }
+    },
+    "login_wall": {
+      "input": {
+        "start_url": "https://offline.example/private",
+        "responses": {
+          "https://offline.example/private": {
+            "status": 401
+          }
+        },
+        "expected": {
+          "classification": "login_wall",
+          "final_url": "https://offline.example/private",
+          "status_code": 401,
+          "request_count": 1
+        }
+      },
+      "expected": {
+        "classification": "login_wall",
+        "final_url": "https://offline.example/private",
+        "status_code": 401,
+        "request_count": 1
+      },
+      "actual": {
+        "classification": "login_wall",
+        "final_url": "https://offline.example/private",
+        "status_code": 401,
+        "redirects": [],
+        "request_count": 1,
+        "detail": null
+      }
+    },
+    "transient_503": {
+      "input": {
+        "start_url": "https://offline.example/temporarily-unavailable",
+        "responses": {
+          "https://offline.example/temporarily-unavailable": {
+            "status": 503
+          }
+        },
+        "expected": {
+          "classification": "transient",
+          "final_url": "https://offline.example/temporarily-unavailable",
+          "status_code": 503,
+          "request_count": 1
+        }
+      },
+      "expected": {
+        "classification": "transient",
+        "final_url": "https://offline.example/temporarily-unavailable",
+        "status_code": 503,
+        "request_count": 1
+      },
+      "actual": {
+        "classification": "transient",
+        "final_url": "https://offline.example/temporarily-unavailable",
+        "status_code": 503,
+        "redirects": [],
+        "request_count": 1,
+        "detail": null
+      }
+    },
+    "tls_certificate_error": {
+      "input": {
+        "start_url": "https://offline.example/invalid-certificate",
+        "responses": {
+          "https://offline.example/invalid-certificate": {
+            "exception": "tls"
+          }
+        },
+        "expected": {
+          "classification": "tls_error",
+          "final_url": "https://offline.example/invalid-certificate",
+          "status_code": null,
+          "request_count": 1
+        }
+      },
+      "expected": {
+        "classification": "tls_error",
+        "final_url": "https://offline.example/invalid-certificate",
+        "status_code": null,
+        "request_count": 1
+      },
+      "actual": {
+        "classification": "tls_error",
+        "final_url": "https://offline.example/invalid-certificate",
+        "status_code": null,
+        "redirects": [],
+        "request_count": 1,
+        "detail": "('fixture certificate error',)"
+      }
+    }
+  },
+  "source_verification": {
+    "input": "books/free-programming-books-vi.md",
+    "expected_selected_entries": [
+      {
+        "line_number": 10,
+        "source_file": "books/free-programming-books-vi.md",
+        "category": "Go",
+        "display_name": "The Little Go Book",
+        "url": "https://github.com/nainglinaung/the-little-go-book",
+        "metadata": {
+          "author": "Karl Seguin, `trl.:` Naing Lin Aung",
+          "format": null,
+          "related_links": [
+            {
+              "label": "HTML",
+              "url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md"
+            }
+          ],
+          "raw_metadata": "- Karl Seguin, `trl.:` Naing Lin Aung ([HTML](https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md))"
+        }
+      },
+      {
+        "line_number": 10,
+        "source_file": "books/free-programming-books-vi.md",
+        "category": "Go",
+        "display_name": "HTML",
+        "url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md",
+        "metadata": {
+          "author": "Karl Seguin, `trl.:` Naing Lin Aung",
+          "format": "HTML",
+          "related_links": [],
+          "raw_metadata": "- Karl Seguin, `trl.:` Naing Lin Aung ([HTML](https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md))",
+          "parent_entry": "The Little Go Book"
+        }
+      },
+      {
+        "line_number": 15,
+        "source_file": "books/free-programming-books-vi.md",
+        "category": "Học máy",
+        "display_name": "Đắm chìm vào Học sâu",
+        "url": "https://d2l.aivivn.com",
+        "metadata": {
+          "author": "`trl.:` Nhóm dịch thuật Đắm chìm vào Học sâu",
+          "format": "HTML",
+          "related_links": [],
+          "raw_metadata": "- `trl.:` Nhóm dịch thuật Đắm chìm vào Học sâu (HTML)"
+        }
+      }
+    ],
+    "actual": {
+      "target_file": "books/free-programming-books-vi.md",
+      "total_parsed_entries": 3,
+      "selected_entries": [
+        {
+          "line_number": 10,
+          "source_file": "books/free-programming-books-vi.md",
+          "category": "Go",
+          "display_name": "The Little Go Book",
+          "url": "https://github.com/nainglinaung/the-little-go-book",
+          "metadata": {
+            "author": "Karl Seguin, `trl.:` Naing Lin Aung",
+            "format": null,
+            "related_links": [
+              {
+                "label": "HTML",
+                "url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md"
+              }
+            ],
+            "raw_metadata": "- Karl Seguin, `trl.:` Naing Lin Aung ([HTML](https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md))"
+          }
+        },
+        {
+          "line_number": 10,
+          "source_file": "books/free-programming-books-vi.md",
+          "category": "Go",
+          "display_name": "HTML",
+          "url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md",
+          "metadata": {
+            "author": "Karl Seguin, `trl.:` Naing Lin Aung",
+            "format": "HTML",
+            "related_links": [],
+            "raw_metadata": "- Karl Seguin, `trl.:` Naing Lin Aung ([HTML](https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md))",
+            "parent_entry": "The Little Go Book"
+          }
+        },
+        {
+          "line_number": 15,
+          "source_file": "books/free-programming-books-vi.md",
+          "category": "Học máy",
+          "display_name": "Đắm chìm vào Học sâu",
+          "url": "https://d2l.aivivn.com",
+          "metadata": {
+            "author": "`trl.:` Nhóm dịch thuật Đắm chìm vào Học sâu",
+            "format": "HTML",
+            "related_links": [],
+            "raw_metadata": "- `trl.:` Nhóm dịch thuật Đắm chìm vào Học sâu (HTML)"
+          }
+        }
+      ],
+      "errors": [],
+      "passed": true
+    }
+  },
+  "failure_cli": {
+    "input": "fixture_catalogue_failure.md",
+    "expected_exit_code": "non-zero",
+    "actual_exit_code": 1,
+    "stdout": "{\n  \"target_file\": \"work/R10-T022/fixture_catalogue_failure.md\",\n  \"total_parsed_entries\": 1,\n  \"selected_entries\": [\n    {\n      \"line_number\": 3,\n      \"source_file\": \"work/R10-T022/fixture_catalogue_failure.md\",\n      \"category\": \"Go\",\n      \"display_name\": \"The Little Go Book\",\n      \"url\": \"https://github.com/nainglinaung/the-little-go-book\",\n      \"metadata\": {\n        \"author\": null,\n        \"format\": \"HTML\",\n        \"related_links\": [],\n        \"raw_metadata\": \"(HTML)\"\n      }\n    }\n  ],\n  \"errors\": [\n    \"Line mismatch for https://github.com/nainglinaung/the-little-go-book: expected 10, got 3\",\n    \"Author mismatch for https://github.com/nainglinaung/the-little-go-book\",\n    \"Format mismatch for https://github.com/nainglinaung/the-little-go-book\",\n    \"Missing selected URL: https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md\",\n    \"Missing selected URL: https://d2l.aivivn.com\"\n  ],\n  \"passed\": false\n}\n",
+    "stderr": ""
+  },
+  "self_test_passed": true
+}
