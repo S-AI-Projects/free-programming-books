@@ -1,0 +1,8 @@
+test_failure_fixture_reports_missing_selected_entry (__main__.CourseCheckTests.test_failure_fixture_reports_missing_selected_entry) ... ok
+test_fragment_url_is_preserved (__main__.CourseCheckTests.test_fragment_url_is_preserved) ... ok
+test_success_fixture_ignores_fenced_fake_and_keeps_source_lines (__main__.CourseCheckTests.test_success_fixture_ignores_fenced_fake_and_keeps_source_lines) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
