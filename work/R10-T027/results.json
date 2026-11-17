@@ -1,0 +1,284 @@
+{
+  "task_id": "R10-T027",
+  "network_used": false,
+  "tool_versions": {
+    "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "git": "git version 2.54.0 (Apple Git-157)"
+  },
+  "fixtures": [
+    {
+      "name": "head-200-success",
+      "expected": {
+        "label": "success",
+        "status_code": 200,
+        "methods": [
+          "HEAD"
+        ],
+        "head_fallback_used": false,
+        "removal_recommended": false
+      },
+      "actual": {
+        "label": "success",
+        "status_code": 200,
+        "methods": [
+          "HEAD"
+        ],
+        "head_fallback_used": false,
+        "removal_recommended": false
+      },
+      "requests": [
+        {
+          "method": "HEAD",
+          "url": "https://anchor.fm/codemy",
+          "timeout": 5.0
+        }
+      ]
+    },
+    {
+      "name": "http-403-forbidden",
+      "expected": {
+        "label": "forbidden",
+        "status_code": 403,
+        "methods": [
+          "HEAD"
+        ],
+        "removal_recommended": false
+      },
+      "actual": {
+        "label": "forbidden",
+        "status_code": 403,
+        "methods": [
+          "HEAD"
+        ],
+        "removal_recommended": false
+      },
+      "requests": [
+        {
+          "method": "HEAD",
+          "url": "https://roocket.ir/podcast/",
+          "timeout": 5.0
+        }
+      ]
+    },
+    {
+      "name": "http-404-unconfirmed",
+      "expected": {
+        "label": "missing_resource",
+        "status_code": 404,
+        "methods": [
+          "HEAD"
+        ],
+        "removal_recommended": false
+      },
+      "actual": {
+        "label": "missing_resource",
+        "status_code": 404,
+        "methods": [
+          "HEAD"
+        ],
+        "removal_recommended": false
+      },
+      "requests": [
+        {
+          "method": "HEAD",
+          "url": "https://anchor.fm/parsclick/",
+          "timeout": 5.0
+        }
+      ]
+    },
+    {
+      "name": "http-404-manually-confirmed",
+      "expected": {
+        "label": "missing_resource",
+        "status_code": 404,
+        "methods": [
+          "HEAD"
+        ],
+        "removal_recommended": true
+      },
+      "actual": {
+        "label": "missing_resource",
+        "status_code": 404,
+        "methods": [
+          "HEAD"
+        ],
+        "removal_recommended": true
+      },
+      "requests": [
+        {
+          "method": "HEAD",
+          "url": "https://anchor.fm/parsclick/",
+          "timeout": 5.0
+        }
+      ]
+    },
+    {
+      "name": "http-429-rate-limited",
+      "expected": {
+        "label": "rate_limited",
+        "status_code": 429,
+        "methods": [
+          "HEAD"
+        ],
+        "removal_recommended": false
+      },
+      "actual": {
+        "label": "rate_limited",
+        "status_code": 429,
+        "methods": [
+          "HEAD"
+        ],
+        "removal_recommended": false
+      },
+      "requests": [
+        {
+          "method": "HEAD",
+          "url": "https://anchor.fm/codemy",
+          "timeout": 5.0
+        }
+      ]
+    },
+    {
+      "name": "head-405-get-200",
+      "expected": {
+        "label": "success_after_get_fallback",
+        "status_code": 200,
+        "methods": [
+          "HEAD",
+          "GET"
+        ],
+        "head_fallback_used": true,
+        "removal_recommended": false
+      },
+      "actual": {
+        "label": "success_after_get_fallback",
+        "status_code": 200,
+        "methods": [
+          "HEAD",
+          "GET"
+        ],
+        "head_fallback_used": true,
+        "removal_recommended": false
+      },
+      "requests": [
+        {
+          "method": "HEAD",
+          "url": "https://roocket.ir/podcast/",
+          "timeout": 5.0
+        },
+        {
+          "method": "GET",
+          "url": "https://roocket.ir/podcast/",
+          "timeout": 5.0
+        }
+      ]
+    },
+    {
+      "name": "request-timeout",
+      "expected": {
+        "label": "timeout",
+        "status_code": null,
+        "methods": [
+          "HEAD"
+        ],
+        "removal_recommended": false
+      },
+      "actual": {
+        "label": "timeout",
+        "status_code": null,
+        "methods": [
+          "HEAD"
+        ],
+        "removal_recommended": false
+      },
+      "requests": [
+        {
+          "method": "HEAD",
+          "url": "https://anchor.fm/codemy",
+          "timeout": 5.0
+        }
+      ]
+    },
+    {
+      "name": "dns-failure",
+      "expected": {
+        "label": "dns_failure",
+        "status_code": null,
+        "methods": [
+          "HEAD"
+        ],
+        "removal_recommended": false
+      },
+      "actual": {
+        "label": "dns_failure",
+        "status_code": null,
+        "methods": [
+          "HEAD"
+        ],
+        "removal_recommended": false
+      },
+      "requests": [
+        {
+          "method": "HEAD",
+          "url": "https://roocket.ir/podcast/",
+          "timeout": 5.0
+        }
+      ]
+    }
+  ],
+  "source_verification": {
+    "input": "casts/free-podcasts-screencasts-fa_IR.md",
+    "expected_urls_and_lines": [
+      {
+        "url": "https://anchor.fm/codemy",
+        "line_number": 11
+      },
+      {
+        "url": "https://roocket.ir/podcast/",
+        "line_number": 12
+      },
+      {
+        "url": "https://anchor.fm/parsclick/",
+        "line_number": 17
+      }
+    ],
+    "actual": {
+      "source_file": "casts/free-podcasts-screencasts-fa_IR.md",
+      "entry_count": 9,
+      "selected_entries": [
+        {
+          "line_number": 11,
+          "source_file": "casts/free-podcasts-screencasts-fa_IR.md",
+          "display_name": "پادکست کافه برنامه نویس",
+          "url": "https://anchor.fm/codemy",
+          "category": "Programming News",
+          "creator": "CafeCodemy‏",
+          "format": "podcast"
+        },
+        {
+          "line_number": 12,
+          "source_file": "casts/free-podcasts-screencasts-fa_IR.md",
+          "display_name": "راکت کست",
+          "url": "https://roocket.ir/podcast/",
+          "category": "Programming News",
+          "creator": null,
+          "format": "podcast"
+        },
+        {
+          "line_number": 17,
+          "source_file": "casts/free-podcasts-screencasts-fa_IR.md",
+          "display_name": "پارس کلیک",
+          "url": "https://anchor.fm/parsclick/",
+          "category": "Technology",
+          "creator": "Amir Azimi‏",
+          "format": "podcast"
+        }
+      ],
+      "errors": [],
+      "passed": true
+    }
+  },
+  "removal_policy": "Automated missing_resource labels are not removal recommendations without explicit manual confirmation.",
+  "self_test_passed": true
+}

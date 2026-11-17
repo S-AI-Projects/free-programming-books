@@ -1,0 +1,76 @@
+{
+  "source_file": "casts/free-podcasts-screencasts-fa_IR.md",
+  "entry_count": 9,
+  "selected_entries": [
+    {
+      "line_number": 11,
+      "source_file": "casts/free-podcasts-screencasts-fa_IR.md",
+      "display_name": "پادکست کافه برنامه نویس",
+      "url": "https://anchor.fm/codemy",
+      "category": "Programming News",
+      "creator": "CafeCodemy‏",
+      "format": "podcast"
+    },
+    {
+      "line_number": 12,
+      "source_file": "casts/free-podcasts-screencasts-fa_IR.md",
+      "display_name": "راکت کست",
+      "url": "https://roocket.ir/podcast/",
+      "category": "Programming News",
+      "creator": null,
+      "format": "podcast"
+    },
+    {
+      "line_number": 17,
+      "source_file": "casts/free-podcasts-screencasts-fa_IR.md",
+      "display_name": "پارس کلیک",
+      "url": "https://anchor.fm/parsclick/",
+      "category": "Technology",
+      "creator": "Amir Azimi‏",
+      "format": "podcast"
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "availability_checks": [
+    {
+      "url": "https://anchor.fm/codemy",
+      "label": "tls_error",
+      "status_code": null,
+      "final_url": "https://anchor.fm/codemy",
+      "methods": [
+        "HEAD"
+      ],
+      "head_fallback_used": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+      "manual_confirmation": null,
+      "removal_recommended": false
+    },
+    {
+      "url": "https://roocket.ir/podcast/",
+      "label": "tls_error",
+      "status_code": null,
+      "final_url": "https://roocket.ir/podcast/",
+      "methods": [
+        "HEAD"
+      ],
+      "head_fallback_used": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1082)>",
+      "manual_confirmation": null,
+      "removal_recommended": false
+    },
+    {
+      "url": "https://anchor.fm/parsclick/",
+      "label": "tls_error",
+      "status_code": null,
+      "final_url": "https://anchor.fm/parsclick/",
+      "methods": [
+        "HEAD"
+      ],
+      "head_fallback_used": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+      "manual_confirmation": null,
+      "removal_recommended": false
+    }
+  ]
+}
