@@ -13,8 +13,10 @@ The checker is limited to these three playlist URLs:
 | Portugol Studio | [Playlist](https://www.youtube.com/playlist?list=PLJ4lbwalqv3Eaiay2pCeU_QU6vb-Hz989) | Algoritmos | 22 | screencast |
 | Bóson Treinamentos - Curso de Modelagem de Dados | [Playlist](https://www.youtube.com/playlist?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD) | Databases | 27 | screencast |
 
-Run `python3 tools/course_checks/r10-t021.py --self-test` for offline success
-and failure fixtures. The tests verify fenced-code exclusion, fragment
-preservation, source line mapping, metadata extraction, and nonzero failure
-behavior when a selected entry is missing. No HTTP requests are made, and this
-checker does not remove or reject a resource based on link availability.
+Run `python3 tools/course_checks/r10-t021.py --self-test` for offline success,
+fenced-code, missing-entry, and mocked request-failure fixtures. The tests verify
+heading hierarchy, fragment preservation, source line mapping, metadata
+extraction, and nonzero failure behavior when assertions fail. Live requests are
+optional (`--live`), limited to these three URLs, use a 5-second timeout and no
+more than two workers, and never remove entries after a request failure.
+Generated run evidence is written to `work/R10-T021/`.

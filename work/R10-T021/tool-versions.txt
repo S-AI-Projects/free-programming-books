@@ -1,5 +1,0 @@
-Python 3.14.7
-ProductName:		macOS
-ProductVersion:		27.2.1
-BuildVersion:		26B131
-Darwin Jagyenswars-MacBook-Pro.local 27.2.0 Darwin Kernel Version 27.2.0: Wed Oct 14 23:48:06 PDT 2026; root:xnu-13432.41.4~25/RELEASE_ARM64_T8142 arm64
