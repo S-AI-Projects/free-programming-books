@@ -13,3 +13,6 @@
 ~~~
 
 * [Real Fragment Guide](https://example.org/docs/intro#section-2) - Jane Doe (screencast)
+
+### Java
+* [Outside Target Section](https://example.com/outside-target-section) (screencast)

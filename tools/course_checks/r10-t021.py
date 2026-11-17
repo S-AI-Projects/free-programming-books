@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
+"""Extract and verify the selected Portuguese screencast entries."""
+
 import argparse
 import json
 import platform
+import re
+import subprocess
 import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_TARGET_FILE = REPO_ROOT / "casts" / "free-podcasts-screencasts-pt_BR.md"
 DEFAULT_WORK_DIR = REPO_ROOT / "work" / "R10-T021"
+TARGET_CATEGORIES = ("Algoritmos", "Databases")
 
 SELECTED_ENTRIES = {
     "https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV": {
@@ -33,196 +38,362 @@ SELECTED_ENTRIES = {
     },
 }
 
+FENCE_RE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
+HEADING_RE = re.compile(r"^(#{2,6})[ \t]+(.+?)\s*#*\s*$")
+ENTRY_RE = re.compile(r"^\s*[*+-]\s+\[([^\]]+)\]\(([^)]+)\)(.*)$")
+
 
 def parse_trailing_metadata(raw_tail):
-    if not raw_tail or not raw_tail.strip():
-        return {"author": None, "format": None, "raw_metadata": None}
     text = raw_tail.strip()
-    fmt = None
-    text_wo_fmt = text
+    if not text:
+        return {"author": None, "format": None, "raw_metadata": None}
+
+    resource_format = None
+    author_text = text
     if text.endswith(")") and "(" in text:
         open_idx = text.rfind("(")
-        fmt = text[open_idx + 1 : -1].strip()
-        text_wo_fmt = text[:open_idx].strip()
+        resource_format = text[open_idx + 1 : -1].strip()
+        author_text = text[:open_idx].strip()
+
     author = None
-    for prefix in ("- ", "– ", "— "):
-        if text_wo_fmt.startswith(prefix):
-            author = text_wo_fmt[len(prefix) :].strip() or None
-            break
-    else:
-        if text_wo_fmt:
-            author = text_wo_fmt
-    return {"author": author, "format": fmt, "raw_metadata": raw_tail.strip()}
+    if author_text:
+        for prefix in ("- ", "– ", "— "):
+            if author_text.startswith(prefix):
+                author = author_text[len(prefix) :].strip() or None
+                break
+        else:
+            author = author_text
+
+    return {
+        "author": author,
+        "format": resource_format,
+        "raw_metadata": text,
+    }
 
 
 def parse_entries(markdown_text, source_path="<memory>"):
     entries = []
-    in_fence = False
-    fence_marker = ""
+    fence_character = None
+    fence_length = 0
     category_stack = []
     in_index_section = False
 
-    for line_no, raw_line in enumerate(markdown_text.splitlines(), start=1):
+    for line_number, raw_line in enumerate(markdown_text.splitlines(), start=1):
         stripped = raw_line.strip()
-        if stripped.startswith("```") or stripped.startswith("~~~"):
-            marker = stripped[:3]
-            if not in_fence:
-                in_fence = True
-                fence_marker = marker
-            elif marker == fence_marker:
-                in_fence = False
-                fence_marker = ""
+        fence_match = FENCE_RE.match(raw_line)
+        if fence_match:
+            marker = fence_match.group(1)
+            info = fence_match.group(2)
+            if fence_character is None:
+                fence_character = marker[0]
+                fence_length = len(marker)
+            elif (
+                marker[0] == fence_character
+                and len(marker) >= fence_length
+                and not info.strip()
+            ):
+                fence_character = None
+                fence_length = 0
             continue
-        if in_fence:
+        if fence_character is not None:
             continue
 
-        if stripped.startswith("#"):
-            hashes = len(stripped) - len(stripped.lstrip("#"))
-            if 2 <= hashes <= 6 and len(stripped) > hashes and stripped[hashes] == " ":
-                title = stripped[hashes + 1 :].strip()
-                if hashes == 3 and title.lower() == "index":
-                    in_index_section = True
-                    category_stack = []
-                    continue
-                if hashes <= 3:
-                    in_index_section = False
-                while category_stack and category_stack[-1][0] >= hashes:
-                    category_stack.pop()
-                category_stack.append((hashes, title))
+        heading_match = HEADING_RE.match(stripped)
+        if heading_match:
+            level = len(heading_match.group(1))
+            title = heading_match.group(2).strip()
+            if level == 3 and title.lower() == "index":
+                in_index_section = True
+                category_stack = []
                 continue
+            if level <= 3:
+                in_index_section = False
+            while category_stack and category_stack[-1][0] >= level:
+                category_stack.pop()
+            category_stack.append((level, title))
+            continue
 
         if in_index_section:
             continue
 
-        if stripped.startswith(("* [", "- [", "+ [")) and "](" in stripped:
-            mid = stripped.index("](")
-            end_paren = stripped.find(")", mid + 2)
-            if end_paren != -1:
-                display_name = stripped[3:mid].strip()
-                url = stripped[mid + 2 : end_paren].strip()
-                raw_tail = stripped[end_paren + 1 :]
-                metadata = parse_trailing_metadata(raw_tail)
-                category = " > ".join(t for _, t in category_stack) if category_stack else "Uncategorized"
-                entries.append({
-                    "line_number": line_no,
-                    "source_file": source_path,
-                    "category": category,
-                    "display_name": display_name,
-                    "url": url,
-                    "metadata": metadata,
-                })
+        category = " > ".join(title for _, title in category_stack)
+        if not any(category == allowed for allowed in TARGET_CATEGORIES):
+            continue
+
+        entry_match = ENTRY_RE.match(raw_line)
+        if not entry_match:
+            continue
+        display_name, url, raw_tail = entry_match.groups()
+        entries.append(
+            {
+                "line_number": line_number,
+                "source_file": source_path,
+                "category": category,
+                "display_name": display_name.strip(),
+                "url": url.strip(),
+                "metadata": parse_trailing_metadata(raw_tail),
+            }
+        )
     return entries
+
+
+def verify_entries(entries, source_file):
+    by_url = {}
+    for entry in entries:
+        by_url.setdefault(entry["url"], []).append(entry)
+
+    selected = []
+    errors = []
+    for url, expected in SELECTED_ENTRIES.items():
+        found_entries = by_url.get(url, [])
+        if not found_entries:
+            errors.append(f"Missing expected entry URL: {url}")
+            continue
+        if len(found_entries) > 1:
+            errors.append(f"Duplicate expected entry URL: {url}")
+        found = found_entries[0]
+        selected.append(found)
+        if found["line_number"] != expected["expected_line"]:
+            errors.append(
+                f"Line mismatch for {url}: expected {expected['expected_line']}, "
+                f"got {found['line_number']}"
+            )
+        if found["display_name"] != expected["expected_display_name"]:
+            errors.append(f"Name mismatch for {url}")
+        if found["category"] != expected["expected_category"]:
+            errors.append(f"Category mismatch for {url}")
+        if found["metadata"]["format"] != expected["expected_format"]:
+            errors.append(f"Format mismatch for {url}")
+        if found["metadata"]["author"] != expected["expected_author"]:
+            errors.append(f"Author mismatch for {url}")
+
+    return {
+        "target_file": source_file,
+        "total_parsed_entries": len(entries),
+        "selected_entries": selected,
+        "errors": errors,
+        "passed": not errors,
+    }
 
 
 def verify_selected_entries(target_file):
     content = target_file.read_text(encoding="utf-8")
-    rel_path = str(target_file.relative_to(REPO_ROOT)) if target_file.is_relative_to(REPO_ROOT) else str(target_file)
-    all_entries = parse_entries(content, source_path=rel_path)
-    by_url = {item["url"]: item for item in all_entries}
-    matched = []
-    errors = []
-
-    for url, spec in SELECTED_ENTRIES.items():
-        found = by_url.get(url)
-        if found is None:
-            errors.append(f"Missing expected entry URL: {url}")
-            continue
-        matched.append(found)
-        if found["line_number"] != spec["expected_line"]:
-            errors.append(f"Line mismatch for {url}: expected {spec['expected_line']}, got {found['line_number']}")
-        if found["display_name"] != spec["expected_display_name"]:
-            errors.append(f"Name mismatch for {url}")
-        if found["category"] != spec["expected_category"]:
-            errors.append(f"Category mismatch for {url}")
-        if found["metadata"]["format"] != spec["expected_format"]:
-            errors.append(f"Format mismatch for {url}")
-        if found["metadata"]["author"] != spec["expected_author"]:
-            errors.append(f"Author mismatch for {url}")
-
-    return {
-        "target_file": rel_path,
-        "total_parsed_entries": len(all_entries),
-        "selected_entries": matched,
-        "errors": errors,
-        "passed": len(errors) == 0,
-    }
+    try:
+        source_file = str(target_file.relative_to(REPO_ROOT))
+    except ValueError:
+        source_file = str(target_file)
+    entries = parse_entries(content, source_path=source_file)
+    return verify_entries(entries, source_file)
 
 
-def run_self_test(target_file, work_dir=None):
-    fixture_markdown = (
-        "### Index\n\n"
-        "* [Algoritmos](#algoritmos)\n\n"
-        "### Algoritmos\n\n"
-        "```markdown\n"
-        "* [Fake Fenced Link](https://example.com/fake-in-fence) (screencast)\n"
-        "```\n\n"
-        "~~~text\n"
-        "* [Another Fake Link](https://example.com/tilde-fence#sec) (podcast)\n"
-        "~~~\n\n"
-        "* [Real Fragment Guide](https://example.org/docs/intro#section-2) - Jane Doe (screencast)\n"
+def read_fixture(path):
+    return path.read_text(encoding="utf-8")
+
+
+def run_self_test(target_file, work_dir):
+    success_input = work_dir / "fixture_success.md"
+    failure_input = work_dir / "fixture_failure.md"
+    success_text = read_fixture(success_input)
+    failure_text = read_fixture(failure_input)
+
+    success_actual = parse_entries(success_text, source_path=success_input.name)
+    success_expected = [
+        {
+            "line_number": 15,
+            "source_file": success_input.name,
+            "category": "Algoritmos",
+            "display_name": "Real Fragment Guide",
+            "url": "https://example.org/docs/intro#section-2",
+            "metadata": {
+                "author": "Jane Doe",
+                "format": "screencast",
+                "raw_metadata": "- Jane Doe (screencast)",
+            },
+        }
+    ]
+    assert success_actual == success_expected, (
+        f"Successful fixture mismatch: expected {success_expected}, got {success_actual}"
     )
-    fixture_results = parse_entries(fixture_markdown, source_path="fixture.md")
-    urls = [item["url"] for item in fixture_results]
-    assert "https://example.com/fake-in-fence" not in urls, "Backtick fenced fake link was not ignored"
-    assert "https://example.com/tilde-fence#sec" not in urls, "Tilde fenced fake link was not ignored"
-    assert len(fixture_results) == 1, f"Expected 1 entry, got {len(fixture_results)}"
 
-    entry = fixture_results[0]
-    assert entry["url"] == "https://example.org/docs/intro#section-2", "Fragment lost"
-    assert entry["line_number"] == 15, f"Expected line 15, got {entry['line_number']}"
+    ignored_urls = [
+        "https://example.com/fake-in-fence",
+        "https://example.com/tilde-fence#sec",
+        "https://example.com/outside-target-section",
+    ]
+    assert all(
+        all(entry["url"] != url for entry in success_actual) for url in ignored_urls
+    ), f"A fake or out-of-scope URL was parsed: {ignored_urls}"
+
+    failure_actual = verify_entries(
+        parse_entries(failure_text, source_path=failure_input.name),
+        failure_input.name,
+    )
+    failure_expected = {
+        "passed": False,
+        "selected_count": 1,
+        "error_count": 6,
+        "error_fragments": [
+            "Line mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+            "Name mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+            "Category mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+            "Author mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+            "Missing expected entry URL: https://www.youtube.com/playlist?list=PLJ4lbwalqv3Eaiay2pCeU_QU6vb-Hz989",
+            "Missing expected entry URL: https://www.youtube.com/playlist?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD",
+        ],
+    }
+    failure_actual_summary = {
+        "passed": failure_actual["passed"],
+        "selected_count": len(failure_actual["selected_entries"]),
+        "error_count": len(failure_actual["errors"]),
+        "error_fragments": [
+            fragment
+            for fragment in failure_expected["error_fragments"]
+            if any(
+                error.startswith(fragment)
+                for error in failure_actual["errors"]
+            )
+        ],
+    }
+    assert failure_actual_summary == failure_expected, (
+        f"Failing fixture mismatch: expected {failure_expected}, "
+        f"got {failure_actual_summary}"
+    )
+
+    failure_cli = subprocess.run(
+        [
+            sys.executable,
+            str(Path(__file__).resolve()),
+            "--file",
+            str(failure_input),
+        ],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert failure_cli.returncode != 0, (
+        "The checker CLI returned success for a fixture with invalid entries"
+    )
 
     real_report = verify_selected_entries(target_file)
-    assert real_report["passed"], f"Real file verification failed: {real_report['errors']}"
-
-    failing_caught = False
-    try:
-        assert entry["line_number"] == 999
-    except AssertionError:
-        failing_caught = True
-    assert failing_caught, "Failing assertion did not raise AssertionError"
-
-    if work_dir is not None:
-        work_dir.mkdir(parents=True, exist_ok=True)
-        (work_dir / "fixture_input.md").write_text(fixture_markdown, encoding="utf-8")
-        evidence = {
-            "task_id": "R10-T021",
-            "tool_versions": {"python": sys.version, "platform": platform.platform()},
-            "fixture_expected": {
-                "ignored_fenced_urls": [
-                    "https://example.com/fake-in-fence",
-                    "https://example.com/tilde-fence#sec",
-                ],
-                "parsed_entry": entry,
+    expected_real_entries = [
+        {
+            "line_number": 21,
+            "source_file": "casts/free-podcasts-screencasts-pt_BR.md",
+            "category": "Algoritmos",
+            "display_name": "Curso em Vídeo - Curso de Lógica de Programação",
+            "url": "https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+            "metadata": {
+                "author": "Gustavo Guanabara",
+                "format": "screencast",
+                "raw_metadata": "- Gustavo Guanabara (screencast)",
             },
-            "fixture_actual": fixture_results,
-            "real_file_verification": real_report,
-            "self_test_passed": True,
-        }
-        (work_dir / "results.json").write_text(
-            json.dumps(evidence, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-        )
+        },
+        {
+            "line_number": 22,
+            "source_file": "casts/free-podcasts-screencasts-pt_BR.md",
+            "category": "Algoritmos",
+            "display_name": "Portugol Studio",
+            "url": "https://www.youtube.com/playlist?list=PLJ4lbwalqv3Eaiay2pCeU_QU6vb-Hz989",
+            "metadata": {
+                "author": None,
+                "format": "screencast",
+                "raw_metadata": "(screencast)",
+            },
+        },
+        {
+            "line_number": 27,
+            "source_file": "casts/free-podcasts-screencasts-pt_BR.md",
+            "category": "Databases",
+            "display_name": "Bóson Treinamentos - Curso de Modelagem de Dados",
+            "url": "https://www.youtube.com/playlist?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD",
+            "metadata": {
+                "author": None,
+                "format": "screencast",
+                "raw_metadata": "(screencast)",
+            },
+        },
+    ]
+    assert real_report["passed"], (
+        f"Real file verification failed: {real_report['errors']}"
+    )
+    assert real_report["selected_entries"] == expected_real_entries, (
+        "Real file entries did not match the expected names, URLs, categories, "
+        "metadata, and source lines"
+    )
 
-    print("SELF-TEST PASSED: All assertions succeeded.")
-    print(json.dumps(real_report["selected_entries"], indent=2, ensure_ascii=False))
+    git_version = subprocess.run(
+        ["git", "--version"], capture_output=True, text=True, check=True
+    ).stdout.strip()
+    evidence = {
+        "task_id": "R10-T021",
+        "tool_versions": {
+            "python": sys.version,
+            "platform": platform.platform(),
+            "git": git_version,
+        },
+        "fixtures": {
+            "success": {
+                "input": success_input.name,
+                "expected": success_expected,
+                "actual": success_actual,
+                "ignored_urls": ignored_urls,
+            },
+            "failure": {
+                "input": failure_input.name,
+                "expected": failure_expected,
+                "actual": failure_actual,
+                "cli_expected_exit_code": "non-zero",
+                "cli_actual_exit_code": failure_cli.returncode,
+                "cli_stdout": failure_cli.stdout,
+                "cli_stderr": failure_cli.stderr,
+            },
+        },
+        "source_verification": {
+            "input": real_report["target_file"],
+            "expected_selected_entries": expected_real_entries,
+            "actual": real_report,
+        },
+        "self_test_passed": True,
+    }
+    work_dir.mkdir(parents=True, exist_ok=True)
+    (work_dir / "results.json").write_text(
+        json.dumps(evidence, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+
+    print("SELF-TEST PASSED: all success and failure assertions succeeded.")
+    print(json.dumps(real_report, indent=2, ensure_ascii=False))
     return 0
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Parse and verify casts/free-podcasts-screencasts-pt_BR.md (R10-T021).")
+def main(argv=None):
+    parser = argparse.ArgumentParser(
+        description=(
+            "Extract and verify the selected entries in the Algoritmos and "
+            "Databases sections of casts/free-podcasts-screencasts-pt_BR.md."
+        )
+    )
     parser.add_argument("--file", type=Path, default=DEFAULT_TARGET_FILE)
     parser.add_argument("--self-test", action="store_true")
-    parser.add_argument("--write-evidence", action="store_true")
     parser.add_argument("--work-dir", type=Path, default=DEFAULT_WORK_DIR)
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
+
     try:
         if args.self_test:
-            return run_self_test(args.file, args.work_dir if args.write_evidence else None)
+            return run_self_test(args.file, args.work_dir)
         report = verify_selected_entries(args.file)
-        print(json.dumps(report, indent=2, ensure_ascii=False))
-        return 0 if report["passed"] else 1
-    except Exception as exc:
+    except (
+        OSError,
+        UnicodeError,
+        AssertionError,
+        ValueError,
+        subprocess.SubprocessError,
+    ) as exc:
         print(f"FAILED: {exc}", file=sys.stderr)
         return 1
+
+    print(json.dumps(report, indent=2, ensure_ascii=False))
+    return 0 if report["passed"] else 1
 
 
 if __name__ == "__main__":

@@ -2,44 +2,97 @@
   "task_id": "R10-T021",
   "tool_versions": {
     "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
-    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O"
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "git": "git version 2.54.0 (Apple Git-157)"
   },
-  "fixture_expected": {
-    "ignored_fenced_urls": [
-      "https://example.com/fake-in-fence",
-      "https://example.com/tilde-fence#sec"
-    ],
-    "parsed_entry": {
-      "line_number": 15,
-      "source_file": "fixture.md",
-      "category": "Algoritmos",
-      "display_name": "Real Fragment Guide",
-      "url": "https://example.org/docs/intro#section-2",
-      "metadata": {
-        "author": "Jane Doe",
-        "format": "screencast",
-        "raw_metadata": "- Jane Doe (screencast)"
-      }
+  "fixtures": {
+    "success": {
+      "input": "fixture_success.md",
+      "expected": [
+        {
+          "line_number": 15,
+          "source_file": "fixture_success.md",
+          "category": "Algoritmos",
+          "display_name": "Real Fragment Guide",
+          "url": "https://example.org/docs/intro#section-2",
+          "metadata": {
+            "author": "Jane Doe",
+            "format": "screencast",
+            "raw_metadata": "- Jane Doe (screencast)"
+          }
+        }
+      ],
+      "actual": [
+        {
+          "line_number": 15,
+          "source_file": "fixture_success.md",
+          "category": "Algoritmos",
+          "display_name": "Real Fragment Guide",
+          "url": "https://example.org/docs/intro#section-2",
+          "metadata": {
+            "author": "Jane Doe",
+            "format": "screencast",
+            "raw_metadata": "- Jane Doe (screencast)"
+          }
+        }
+      ],
+      "ignored_urls": [
+        "https://example.com/fake-in-fence",
+        "https://example.com/tilde-fence#sec",
+        "https://example.com/outside-target-section"
+      ]
+    },
+    "failure": {
+      "input": "fixture_failure.md",
+      "expected": {
+        "passed": false,
+        "selected_count": 1,
+        "error_count": 6,
+        "error_fragments": [
+          "Line mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+          "Name mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+          "Category mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+          "Author mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+          "Missing expected entry URL: https://www.youtube.com/playlist?list=PLJ4lbwalqv3Eaiay2pCeU_QU6vb-Hz989",
+          "Missing expected entry URL: https://www.youtube.com/playlist?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD"
+        ]
+      },
+      "actual": {
+        "target_file": "fixture_failure.md",
+        "total_parsed_entries": 1,
+        "selected_entries": [
+          {
+            "line_number": 2,
+            "source_file": "fixture_failure.md",
+            "category": "Databases",
+            "display_name": "Wrong Display Name",
+            "url": "https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+            "metadata": {
+              "author": null,
+              "format": "screencast",
+              "raw_metadata": "(screencast)"
+            }
+          }
+        ],
+        "errors": [
+          "Line mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV: expected 21, got 2",
+          "Name mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+          "Category mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+          "Author mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+          "Missing expected entry URL: https://www.youtube.com/playlist?list=PLJ4lbwalqv3Eaiay2pCeU_QU6vb-Hz989",
+          "Missing expected entry URL: https://www.youtube.com/playlist?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD"
+        ],
+        "passed": false
+      },
+      "cli_expected_exit_code": "non-zero",
+      "cli_actual_exit_code": 1,
+      "cli_stdout": "{\n  \"target_file\": \"work/R10-T021/fixture_failure.md\",\n  \"total_parsed_entries\": 1,\n  \"selected_entries\": [\n    {\n      \"line_number\": 2,\n      \"source_file\": \"work/R10-T021/fixture_failure.md\",\n      \"category\": \"Databases\",\n      \"display_name\": \"Wrong Display Name\",\n      \"url\": \"https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV\",\n      \"metadata\": {\n        \"author\": null,\n        \"format\": \"screencast\",\n        \"raw_metadata\": \"(screencast)\"\n      }\n    }\n  ],\n  \"errors\": [\n    \"Line mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV: expected 21, got 2\",\n    \"Name mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV\",\n    \"Category mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV\",\n    \"Author mismatch for https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV\",\n    \"Missing expected entry URL: https://www.youtube.com/playlist?list=PLJ4lbwalqv3Eaiay2pCeU_QU6vb-Hz989\",\n    \"Missing expected entry URL: https://www.youtube.com/playlist?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD\"\n  ],\n  \"passed\": false\n}\n",
+      "cli_stderr": ""
     }
   },
-  "fixture_actual": [
-    {
-      "line_number": 15,
-      "source_file": "fixture.md",
-      "category": "Algoritmos",
-      "display_name": "Real Fragment Guide",
-      "url": "https://example.org/docs/intro#section-2",
-      "metadata": {
-        "author": "Jane Doe",
-        "format": "screencast",
-        "raw_metadata": "- Jane Doe (screencast)"
-      }
-    }
-  ],
-  "real_file_verification": {
-    "target_file": "casts/free-podcasts-screencasts-pt_BR.md",
-    "total_parsed_entries": 55,
-    "selected_entries": [
+  "source_verification": {
+    "input": "casts/free-podcasts-screencasts-pt_BR.md",
+    "expected_selected_entries": [
       {
         "line_number": 21,
         "source_file": "casts/free-podcasts-screencasts-pt_BR.md",
@@ -77,8 +130,50 @@
         }
       }
     ],
-    "errors": [],
-    "passed": true
+    "actual": {
+      "target_file": "casts/free-podcasts-screencasts-pt_BR.md",
+      "total_parsed_entries": 5,
+      "selected_entries": [
+        {
+          "line_number": 21,
+          "source_file": "casts/free-podcasts-screencasts-pt_BR.md",
+          "category": "Algoritmos",
+          "display_name": "Curso em Vídeo - Curso de Lógica de Programação",
+          "url": "https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV",
+          "metadata": {
+            "author": "Gustavo Guanabara",
+            "format": "screencast",
+            "raw_metadata": "- Gustavo Guanabara (screencast)"
+          }
+        },
+        {
+          "line_number": 22,
+          "source_file": "casts/free-podcasts-screencasts-pt_BR.md",
+          "category": "Algoritmos",
+          "display_name": "Portugol Studio",
+          "url": "https://www.youtube.com/playlist?list=PLJ4lbwalqv3Eaiay2pCeU_QU6vb-Hz989",
+          "metadata": {
+            "author": null,
+            "format": "screencast",
+            "raw_metadata": "(screencast)"
+          }
+        },
+        {
+          "line_number": 27,
+          "source_file": "casts/free-podcasts-screencasts-pt_BR.md",
+          "category": "Databases",
+          "display_name": "Bóson Treinamentos - Curso de Modelagem de Dados",
+          "url": "https://www.youtube.com/playlist?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD",
+          "metadata": {
+            "author": null,
+            "format": "screencast",
+            "raw_metadata": "(screencast)"
+          }
+        }
+      ],
+      "errors": [],
+      "passed": true
+    }
   },
   "self_test_passed": true
 }
