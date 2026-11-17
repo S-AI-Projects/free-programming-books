@@ -1,0 +1,654 @@
+{
+  "task_id": "R10-T025",
+  "tool_versions": {
+    "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "git": "git version 2.54.0 (Apple Git-157)"
+  },
+  "success_fixture": {
+    "input": "fixture_success.md",
+    "expected": {
+      "passed": true,
+      "selected_entries": [
+        {
+          "line_number": 7,
+          "display_name": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+          "category": "Android",
+          "creator": "उत्तर"
+        },
+        {
+          "line_number": 10,
+          "display_name": "Angular in Marathi",
+          "category": "Angular",
+          "creator": "Finishing School"
+        },
+        {
+          "line_number": 11,
+          "display_name": "Angular Tutorials in Marathi",
+          "category": "Angular",
+          "creator": "Developers Marathi"
+        }
+      ],
+      "proposed_changes": [],
+      "errors": []
+    },
+    "actual": {
+      "passed": true,
+      "selected_entries": [
+        {
+          "line_number": 7,
+          "display_name": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+          "category": "Android",
+          "creator": "उत्तर"
+        },
+        {
+          "line_number": 10,
+          "display_name": "Angular in Marathi",
+          "category": "Angular",
+          "creator": "Finishing School"
+        },
+        {
+          "line_number": 11,
+          "display_name": "Angular Tutorials in Marathi",
+          "category": "Angular",
+          "creator": "Developers Marathi"
+        }
+      ],
+      "proposed_changes": [],
+      "errors": []
+    },
+    "full_report": {
+      "source_file": "fixture_success.md",
+      "entry_count": 3,
+      "selected_entries": [
+        {
+          "line_number": 7,
+          "source_file": "fixture_success.md",
+          "category": "Android",
+          "display_name": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+          "url": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+          "creator": "उत्तर",
+          "metadata": "- उत्तर",
+          "expected_category": "Android",
+          "official_title": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+          "official_owner_channel": "उत्तर",
+          "official_final_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+          "subject_evidence": "The official playlist title identifies Android app development.",
+          "observed_on": "2026-11-17"
+        },
+        {
+          "line_number": 10,
+          "source_file": "fixture_success.md",
+          "category": "Angular",
+          "display_name": "Angular in Marathi",
+          "url": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+          "creator": "Finishing School",
+          "metadata": "- Finishing School",
+          "expected_category": "Angular",
+          "official_title": "Angular in Marathi",
+          "official_owner_channel": "Finishing School",
+          "official_final_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+          "subject_evidence": "The official playlist title identifies Angular instruction.",
+          "observed_on": "2026-11-17"
+        },
+        {
+          "line_number": 11,
+          "source_file": "fixture_success.md",
+          "category": "Angular",
+          "display_name": "Angular Tutorials in Marathi",
+          "url": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+          "creator": "Developers Marathi",
+          "metadata": "- Developers Marathi",
+          "expected_category": "Angular",
+          "official_title": "Angular Tutorials in Marathi",
+          "official_owner_channel": "Developers Marathi",
+          "official_final_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+          "subject_evidence": "The official playlist title identifies Angular tutorials.",
+          "observed_on": "2026-11-17"
+        }
+      ],
+      "evidence_table": [
+        {
+          "source_line": 7,
+          "catalogue_url": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+          "official_source_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+          "observed_on": "2026-11-17",
+          "fields": [
+            {
+              "field": "display_name",
+              "catalogue_value": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+              "observed_value": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+              "proposed_value": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+              "change_needed": false
+            },
+            {
+              "field": "creator",
+              "catalogue_value": "उत्तर",
+              "observed_value": "उत्तर",
+              "proposed_value": "उत्तर",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+              "change_needed": false
+            },
+            {
+              "field": "category",
+              "catalogue_value": "Android",
+              "observed_value": "The official playlist title identifies Android app development.",
+              "proposed_value": "Android",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+              "change_needed": false
+            },
+            {
+              "field": "url",
+              "catalogue_value": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+              "observed_value": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+              "proposed_value": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+              "note": "The final URL has the same playlist ID; retain the shorter youtube.com URL already in the catalogue.",
+              "change_needed": false
+            }
+          ]
+        },
+        {
+          "source_line": 10,
+          "catalogue_url": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+          "official_source_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+          "observed_on": "2026-11-17",
+          "fields": [
+            {
+              "field": "display_name",
+              "catalogue_value": "Angular in Marathi",
+              "observed_value": "Angular in Marathi",
+              "proposed_value": "Angular in Marathi",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+              "change_needed": false
+            },
+            {
+              "field": "creator",
+              "catalogue_value": "Finishing School",
+              "observed_value": "Finishing School",
+              "proposed_value": "Finishing School",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+              "change_needed": false
+            },
+            {
+              "field": "category",
+              "catalogue_value": "Angular",
+              "observed_value": "The official playlist title identifies Angular instruction.",
+              "proposed_value": "Angular",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+              "change_needed": false
+            },
+            {
+              "field": "url",
+              "catalogue_value": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+              "observed_value": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+              "proposed_value": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+              "note": "The final URL has the same playlist ID; retain the shorter youtube.com URL already in the catalogue.",
+              "change_needed": false
+            }
+          ]
+        },
+        {
+          "source_line": 11,
+          "catalogue_url": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+          "official_source_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+          "observed_on": "2026-11-17",
+          "fields": [
+            {
+              "field": "display_name",
+              "catalogue_value": "Angular Tutorials in Marathi",
+              "observed_value": "Angular Tutorials in Marathi",
+              "proposed_value": "Angular Tutorials in Marathi",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+              "change_needed": false
+            },
+            {
+              "field": "creator",
+              "catalogue_value": "Developers Marathi",
+              "observed_value": "Developers Marathi",
+              "proposed_value": "Developers Marathi",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+              "change_needed": false
+            },
+            {
+              "field": "category",
+              "catalogue_value": "Angular",
+              "observed_value": "The official playlist title identifies Angular tutorials.",
+              "proposed_value": "Angular",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+              "change_needed": false
+            },
+            {
+              "field": "url",
+              "catalogue_value": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+              "observed_value": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+              "proposed_value": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+              "note": "The final URL has the same playlist ID; retain the shorter youtube.com URL already in the catalogue.",
+              "change_needed": false
+            }
+          ]
+        }
+      ],
+      "proposed_changes": [],
+      "errors": [],
+      "passed": true
+    }
+  },
+  "missing_required_field_fixture": {
+    "input": "fixture_missing_creator.md",
+    "expected": {
+      "passed": false,
+      "missing_field": "creator",
+      "nonzero_cli_exit": true
+    },
+    "actual": {
+      "report": {
+        "source_file": "fixture_missing_creator.md",
+        "entry_count": 3,
+        "selected_entries": [
+          {
+            "line_number": 2,
+            "source_file": "fixture_missing_creator.md",
+            "category": "Android",
+            "display_name": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+            "url": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+            "creator": null,
+            "metadata": null,
+            "expected_category": "Android",
+            "official_title": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+            "official_owner_channel": "उत्तर",
+            "official_final_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+            "subject_evidence": "The official playlist title identifies Android app development.",
+            "observed_on": "2026-11-17"
+          },
+          {
+            "line_number": 5,
+            "source_file": "fixture_missing_creator.md",
+            "category": "Angular",
+            "display_name": "Angular in Marathi",
+            "url": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+            "creator": "Finishing School",
+            "metadata": "- Finishing School",
+            "expected_category": "Angular",
+            "official_title": "Angular in Marathi",
+            "official_owner_channel": "Finishing School",
+            "official_final_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+            "subject_evidence": "The official playlist title identifies Angular instruction.",
+            "observed_on": "2026-11-17"
+          },
+          {
+            "line_number": 6,
+            "source_file": "fixture_missing_creator.md",
+            "category": "Angular",
+            "display_name": "Angular Tutorials in Marathi",
+            "url": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+            "creator": "Developers Marathi",
+            "metadata": "- Developers Marathi",
+            "expected_category": "Angular",
+            "official_title": "Angular Tutorials in Marathi",
+            "official_owner_channel": "Developers Marathi",
+            "official_final_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+            "subject_evidence": "The official playlist title identifies Angular tutorials.",
+            "observed_on": "2026-11-17"
+          }
+        ],
+        "evidence_table": [
+          {
+            "source_line": 2,
+            "catalogue_url": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+            "official_source_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+            "observed_on": "2026-11-17",
+            "fields": [
+              {
+                "field": "display_name",
+                "catalogue_value": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+                "observed_value": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+                "proposed_value": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+                "evidence_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+                "change_needed": false
+              },
+              {
+                "field": "creator",
+                "catalogue_value": null,
+                "observed_value": "उत्तर",
+                "proposed_value": "उत्तर",
+                "evidence_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+                "change_needed": true
+              },
+              {
+                "field": "category",
+                "catalogue_value": "Android",
+                "observed_value": "The official playlist title identifies Android app development.",
+                "proposed_value": "Android",
+                "evidence_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+                "change_needed": false
+              },
+              {
+                "field": "url",
+                "catalogue_value": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+                "observed_value": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+                "proposed_value": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+                "evidence_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+                "note": "The final URL has the same playlist ID; retain the shorter youtube.com URL already in the catalogue.",
+                "change_needed": false
+              }
+            ]
+          },
+          {
+            "source_line": 5,
+            "catalogue_url": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+            "official_source_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+            "observed_on": "2026-11-17",
+            "fields": [
+              {
+                "field": "display_name",
+                "catalogue_value": "Angular in Marathi",
+                "observed_value": "Angular in Marathi",
+                "proposed_value": "Angular in Marathi",
+                "evidence_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+                "change_needed": false
+              },
+              {
+                "field": "creator",
+                "catalogue_value": "Finishing School",
+                "observed_value": "Finishing School",
+                "proposed_value": "Finishing School",
+                "evidence_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+                "change_needed": false
+              },
+              {
+                "field": "category",
+                "catalogue_value": "Angular",
+                "observed_value": "The official playlist title identifies Angular instruction.",
+                "proposed_value": "Angular",
+                "evidence_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+                "change_needed": false
+              },
+              {
+                "field": "url",
+                "catalogue_value": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+                "observed_value": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+                "proposed_value": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+                "evidence_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+                "note": "The final URL has the same playlist ID; retain the shorter youtube.com URL already in the catalogue.",
+                "change_needed": false
+              }
+            ]
+          },
+          {
+            "source_line": 6,
+            "catalogue_url": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+            "official_source_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+            "observed_on": "2026-11-17",
+            "fields": [
+              {
+                "field": "display_name",
+                "catalogue_value": "Angular Tutorials in Marathi",
+                "observed_value": "Angular Tutorials in Marathi",
+                "proposed_value": "Angular Tutorials in Marathi",
+                "evidence_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+                "change_needed": false
+              },
+              {
+                "field": "creator",
+                "catalogue_value": "Developers Marathi",
+                "observed_value": "Developers Marathi",
+                "proposed_value": "Developers Marathi",
+                "evidence_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+                "change_needed": false
+              },
+              {
+                "field": "category",
+                "catalogue_value": "Angular",
+                "observed_value": "The official playlist title identifies Angular tutorials.",
+                "proposed_value": "Angular",
+                "evidence_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+                "change_needed": false
+              },
+              {
+                "field": "url",
+                "catalogue_value": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+                "observed_value": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+                "proposed_value": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+                "evidence_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+                "note": "The final URL has the same playlist ID; retain the shorter youtube.com URL already in the catalogue.",
+                "change_needed": false
+              }
+            ]
+          }
+        ],
+        "proposed_changes": [
+          {
+            "source_line": 2,
+            "url": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+            "field": "creator",
+            "catalogue_value": null,
+            "observed_value": "उत्तर",
+            "proposed_value": "उत्तर",
+            "evidence_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+            "change_needed": true
+          }
+        ],
+        "errors": [
+          "Missing required creator for https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7"
+        ],
+        "passed": false
+      },
+      "cli_exit_code": 1,
+      "stdout": "{\n  \"source_file\": \"work/R10-T025/fixture_missing_creator.md\",\n  \"entry_count\": 3,\n  \"selected_entries\": [\n    {\n      \"line_number\": 2,\n      \"source_file\": \"work/R10-T025/fixture_missing_creator.md\",\n      \"category\": \"Android\",\n      \"display_name\": \"अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi\",\n      \"url\": \"https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7\",\n      \"creator\": null,\n      \"metadata\": null,\n      \"expected_category\": \"Android\",\n      \"official_title\": \"अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi\",\n      \"official_owner_channel\": \"उत्तर\",\n      \"official_final_url\": \"https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7\",\n      \"subject_evidence\": \"The official playlist title identifies Android app development.\",\n      \"observed_on\": \"2026-11-17\"\n    },\n    {\n      \"line_number\": 5,\n      \"source_file\": \"work/R10-T025/fixture_missing_creator.md\",\n      \"category\": \"Angular\",\n      \"display_name\": \"Angular in Marathi\",\n      \"url\": \"https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V\",\n      \"creator\": \"Finishing School\",\n      \"metadata\": \"- Finishing School\",\n      \"expected_category\": \"Angular\",\n      \"official_title\": \"Angular in Marathi\",\n      \"official_owner_channel\": \"Finishing School\",\n      \"official_final_url\": \"https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V\",\n      \"subject_evidence\": \"The official playlist title identifies Angular instruction.\",\n      \"observed_on\": \"2026-11-17\"\n    },\n    {\n      \"line_number\": 6,\n      \"source_file\": \"work/R10-T025/fixture_missing_creator.md\",\n      \"category\": \"Angular\",\n      \"display_name\": \"Angular Tutorials in Marathi\",\n      \"url\": \"https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN\",\n      \"creator\": \"Developers Marathi\",\n      \"metadata\": \"- Developers Marathi\",\n      \"expected_category\": \"Angular\",\n      \"official_title\": \"Angular Tutorials in Marathi\",\n      \"official_owner_channel\": \"Developers Marathi\",\n      \"official_final_url\": \"https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN\",\n      \"subject_evidence\": \"The official playlist title identifies Angular tutorials.\",\n      \"observed_on\": \"2026-11-17\"\n    }\n  ],\n  \"evidence_table\": [\n    {\n      \"source_line\": 2,\n      \"catalogue_url\": \"https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7\",\n      \"official_source_url\": \"https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7\",\n      \"observed_on\": \"2026-11-17\",\n      \"fields\": [\n        {\n          \"field\": \"display_name\",\n          \"catalogue_value\": \"अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi\",\n          \"observed_value\": \"अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi\",\n          \"proposed_value\": \"अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi\",\n          \"evidence_url\": \"https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7\",\n          \"change_needed\": false\n        },\n        {\n          \"field\": \"creator\",\n          \"catalogue_value\": null,\n          \"observed_value\": \"उत्तर\",\n          \"proposed_value\": \"उत्तर\",\n          \"evidence_url\": \"https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7\",\n          \"change_needed\": true\n        },\n        {\n          \"field\": \"category\",\n          \"catalogue_value\": \"Android\",\n          \"observed_value\": \"The official playlist title identifies Android app development.\",\n          \"proposed_value\": \"Android\",\n          \"evidence_url\": \"https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7\",\n          \"change_needed\": false\n        },\n        {\n          \"field\": \"url\",\n          \"catalogue_value\": \"https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7\",\n          \"observed_value\": \"https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7\",\n          \"proposed_value\": \"https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7\",\n          \"evidence_url\": \"https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7\",\n          \"note\": \"The final URL has the same playlist ID; retain the shorter youtube.com URL already in the catalogue.\",\n          \"change_needed\": false\n        }\n      ]\n    },\n    {\n      \"source_line\": 5,\n      \"catalogue_url\": \"https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V\",\n      \"official_source_url\": \"https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V\",\n      \"observed_on\": \"2026-11-17\",\n      \"fields\": [\n        {\n          \"field\": \"display_name\",\n          \"catalogue_value\": \"Angular in Marathi\",\n          \"observed_value\": \"Angular in Marathi\",\n          \"proposed_value\": \"Angular in Marathi\",\n          \"evidence_url\": \"https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V\",\n          \"change_needed\": false\n        },\n        {\n          \"field\": \"creator\",\n          \"catalogue_value\": \"Finishing School\",\n          \"observed_value\": \"Finishing School\",\n          \"proposed_value\": \"Finishing School\",\n          \"evidence_url\": \"https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V\",\n          \"change_needed\": false\n        },\n        {\n          \"field\": \"category\",\n          \"catalogue_value\": \"Angular\",\n          \"observed_value\": \"The official playlist title identifies Angular instruction.\",\n          \"proposed_value\": \"Angular\",\n          \"evidence_url\": \"https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V\",\n          \"change_needed\": false\n        },\n        {\n          \"field\": \"url\",\n          \"catalogue_value\": \"https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V\",\n          \"observed_value\": \"https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V\",\n          \"proposed_value\": \"https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V\",\n          \"evidence_url\": \"https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V\",\n          \"note\": \"The final URL has the same playlist ID; retain the shorter youtube.com URL already in the catalogue.\",\n          \"change_needed\": false\n        }\n      ]\n    },\n    {\n      \"source_line\": 6,\n      \"catalogue_url\": \"https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN\",\n      \"official_source_url\": \"https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN\",\n      \"observed_on\": \"2026-11-17\",\n      \"fields\": [\n        {\n          \"field\": \"display_name\",\n          \"catalogue_value\": \"Angular Tutorials in Marathi\",\n          \"observed_value\": \"Angular Tutorials in Marathi\",\n          \"proposed_value\": \"Angular Tutorials in Marathi\",\n          \"evidence_url\": \"https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN\",\n          \"change_needed\": false\n        },\n        {\n          \"field\": \"creator\",\n          \"catalogue_value\": \"Developers Marathi\",\n          \"observed_value\": \"Developers Marathi\",\n          \"proposed_value\": \"Developers Marathi\",\n          \"evidence_url\": \"https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN\",\n          \"change_needed\": false\n        },\n        {\n          \"field\": \"category\",\n          \"catalogue_value\": \"Angular\",\n          \"observed_value\": \"The official playlist title identifies Angular tutorials.\",\n          \"proposed_value\": \"Angular\",\n          \"evidence_url\": \"https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN\",\n          \"change_needed\": false\n        },\n        {\n          \"field\": \"url\",\n          \"catalogue_value\": \"https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN\",\n          \"observed_value\": \"https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN\",\n          \"proposed_value\": \"https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN\",\n          \"evidence_url\": \"https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN\",\n          \"note\": \"The final URL has the same playlist ID; retain the shorter youtube.com URL already in the catalogue.\",\n          \"change_needed\": false\n        }\n      ]\n    }\n  ],\n  \"proposed_changes\": [\n    {\n      \"source_line\": 2,\n      \"url\": \"https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7\",\n      \"field\": \"creator\",\n      \"catalogue_value\": null,\n      \"observed_value\": \"उत्तर\",\n      \"proposed_value\": \"उत्तर\",\n      \"evidence_url\": \"https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7\",\n      \"change_needed\": true\n    }\n  ],\n  \"errors\": [\n    \"Missing required creator for https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7\"\n  ],\n  \"passed\": false\n}\n",
+      "stderr": ""
+    }
+  },
+  "official_observations": {
+    "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7": {
+      "official_title": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+      "owner_channel": "उत्तर",
+      "final_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+      "category": "Android",
+      "subject_evidence": "The official playlist title identifies Android app development.",
+      "observed_on": "2026-11-17"
+    },
+    "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V": {
+      "official_title": "Angular in Marathi",
+      "owner_channel": "Finishing School",
+      "final_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+      "category": "Angular",
+      "subject_evidence": "The official playlist title identifies Angular instruction.",
+      "observed_on": "2026-11-17"
+    },
+    "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN": {
+      "official_title": "Angular Tutorials in Marathi",
+      "owner_channel": "Developers Marathi",
+      "final_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+      "category": "Angular",
+      "subject_evidence": "The official playlist title identifies Angular tutorials.",
+      "observed_on": "2026-11-17"
+    }
+  },
+  "source_verification": {
+    "input": "courses/free-courses-mr.md",
+    "actual": {
+      "source_file": "courses/free-courses-mr.md",
+      "entry_count": 24,
+      "selected_entries": [
+        {
+          "line_number": 19,
+          "source_file": "courses/free-courses-mr.md",
+          "category": "Android",
+          "display_name": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+          "url": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+          "creator": "उत्तर",
+          "metadata": "- उत्तर",
+          "expected_category": "Android",
+          "official_title": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+          "official_owner_channel": "उत्तर",
+          "official_final_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+          "subject_evidence": "The official playlist title identifies Android app development.",
+          "observed_on": "2026-11-17"
+        },
+        {
+          "line_number": 24,
+          "source_file": "courses/free-courses-mr.md",
+          "category": "Angular",
+          "display_name": "Angular in Marathi",
+          "url": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+          "creator": "Finishing School",
+          "metadata": "- Finishing School",
+          "expected_category": "Angular",
+          "official_title": "Angular in Marathi",
+          "official_owner_channel": "Finishing School",
+          "official_final_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+          "subject_evidence": "The official playlist title identifies Angular instruction.",
+          "observed_on": "2026-11-17"
+        },
+        {
+          "line_number": 25,
+          "source_file": "courses/free-courses-mr.md",
+          "category": "Angular",
+          "display_name": "Angular Tutorials in Marathi",
+          "url": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+          "creator": "Developers Marathi",
+          "metadata": "- Developers Marathi",
+          "expected_category": "Angular",
+          "official_title": "Angular Tutorials in Marathi",
+          "official_owner_channel": "Developers Marathi",
+          "official_final_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+          "subject_evidence": "The official playlist title identifies Angular tutorials.",
+          "observed_on": "2026-11-17"
+        }
+      ],
+      "evidence_table": [
+        {
+          "source_line": 19,
+          "catalogue_url": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+          "official_source_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+          "observed_on": "2026-11-17",
+          "fields": [
+            {
+              "field": "display_name",
+              "catalogue_value": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+              "observed_value": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+              "proposed_value": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+              "change_needed": false
+            },
+            {
+              "field": "creator",
+              "catalogue_value": "उत्तर",
+              "observed_value": "उत्तर",
+              "proposed_value": "उत्तर",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+              "change_needed": false
+            },
+            {
+              "field": "category",
+              "catalogue_value": "Android",
+              "observed_value": "The official playlist title identifies Android app development.",
+              "proposed_value": "Android",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+              "change_needed": false
+            },
+            {
+              "field": "url",
+              "catalogue_value": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+              "observed_value": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+              "proposed_value": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+              "note": "The final URL has the same playlist ID; retain the shorter youtube.com URL already in the catalogue.",
+              "change_needed": false
+            }
+          ]
+        },
+        {
+          "source_line": 24,
+          "catalogue_url": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+          "official_source_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+          "observed_on": "2026-11-17",
+          "fields": [
+            {
+              "field": "display_name",
+              "catalogue_value": "Angular in Marathi",
+              "observed_value": "Angular in Marathi",
+              "proposed_value": "Angular in Marathi",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+              "change_needed": false
+            },
+            {
+              "field": "creator",
+              "catalogue_value": "Finishing School",
+              "observed_value": "Finishing School",
+              "proposed_value": "Finishing School",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+              "change_needed": false
+            },
+            {
+              "field": "category",
+              "catalogue_value": "Angular",
+              "observed_value": "The official playlist title identifies Angular instruction.",
+              "proposed_value": "Angular",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+              "change_needed": false
+            },
+            {
+              "field": "url",
+              "catalogue_value": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+              "observed_value": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+              "proposed_value": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+              "note": "The final URL has the same playlist ID; retain the shorter youtube.com URL already in the catalogue.",
+              "change_needed": false
+            }
+          ]
+        },
+        {
+          "source_line": 25,
+          "catalogue_url": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+          "official_source_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+          "observed_on": "2026-11-17",
+          "fields": [
+            {
+              "field": "display_name",
+              "catalogue_value": "Angular Tutorials in Marathi",
+              "observed_value": "Angular Tutorials in Marathi",
+              "proposed_value": "Angular Tutorials in Marathi",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+              "change_needed": false
+            },
+            {
+              "field": "creator",
+              "catalogue_value": "Developers Marathi",
+              "observed_value": "Developers Marathi",
+              "proposed_value": "Developers Marathi",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+              "change_needed": false
+            },
+            {
+              "field": "category",
+              "catalogue_value": "Angular",
+              "observed_value": "The official playlist title identifies Angular tutorials.",
+              "proposed_value": "Angular",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+              "change_needed": false
+            },
+            {
+              "field": "url",
+              "catalogue_value": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+              "observed_value": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+              "proposed_value": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+              "evidence_url": "https://www.youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+              "note": "The final URL has the same playlist ID; retain the shorter youtube.com URL already in the catalogue.",
+              "change_needed": false
+            }
+          ]
+        }
+      ],
+      "proposed_changes": [],
+      "errors": [],
+      "passed": true
+    }
+  },
+  "self_test_passed": true
+}
