@@ -1,0 +1,12 @@
+test_failed_self_test_returns_nonzero (__main__.CourseCheckTests.test_failed_self_test_returns_nonzero) ... ok
+test_invalid_heading_hierarchy_has_a_line_diagnostic (__main__.CourseCheckTests.test_invalid_heading_hierarchy_has_a_line_diagnostic) ... ok
+test_malformed_bullet_is_rejected_with_its_source_line (__main__.CourseCheckTests.test_malformed_bullet_is_rejected_with_its_source_line) ... ok
+test_out_of_order_entries_are_reported_on_the_later_line (__main__.CourseCheckTests.test_out_of_order_entries_are_reported_on_the_later_line) ... ok
+test_russian_yo_sorts_after_e_and_before_zh (__main__.CourseCheckTests.test_russian_yo_sorts_after_e_and_before_zh) ... ok
+test_source_has_valid_headings_index_and_selected_bullet (__main__.CourseCheckTests.test_source_has_valid_headings_index_and_selected_bullet) ... ok
+test_valid_fixture_preserves_cyrillic_text_and_markdown_link (__main__.CourseCheckTests.test_valid_fixture_preserves_cyrillic_text_and_markdown_link) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
