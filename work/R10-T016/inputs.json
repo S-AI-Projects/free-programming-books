@@ -1,0 +1,24 @@
+{
+  "target_file": "books/free-programming-books-uk.md",
+  "target_section": "Ukrainian programming books; categories: C and C++, ClojureScript, Haskell",
+  "selected_entries": [
+    {
+      "display_name": "С/C++ Теорія та практика",
+      "url": "https://shron1.chtyvo.org.ua/Voitenko_Volodymyr/C_Cpp_Teoriia_ta_praktyka.pdf",
+      "category": "C and C++",
+      "line_number": 17
+    },
+    {
+      "display_name": "Розплутаний ClojureScript",
+      "url": "https://lambdabooks.github.io/clojurescript-unraveled",
+      "category": "ClojureScript",
+      "line_number": 22
+    },
+    {
+      "display_name": "Вивчить собі Хаскела на велике щастя!",
+      "url": "http://haskell.trygub.com",
+      "category": "Haskell",
+      "line_number": 27
+    }
+  ]
+}
