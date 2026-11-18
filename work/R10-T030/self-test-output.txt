@@ -1,0 +1,11 @@
+test_actual_entry_is_scoped_and_has_exact_source_line (__main__.CourseCheckTests.test_actual_entry_is_scoped_and_has_exact_source_line) ... ok
+test_changed_metadata_requests_review_without_proposing_an_edit (__main__.CourseCheckTests.test_changed_metadata_requests_review_without_proposing_an_edit) ... ok
+test_failed_self_test_returns_nonzero (__main__.CourseCheckTests.test_failed_self_test_returns_nonzero) ... ok
+test_fixture_outcomes_match_the_maintenance_cases (__main__.CourseCheckTests.test_fixture_outcomes_match_the_maintenance_cases) ... ok
+test_report_separates_facts_recommendations_and_before_after (__main__.CourseCheckTests.test_report_separates_facts_recommendations_and_before_after) ... ok
+test_same_fixture_produces_stable_report_bytes (__main__.CourseCheckTests.test_same_fixture_produces_stable_report_bytes) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK
