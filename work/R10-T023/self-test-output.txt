@@ -1,0 +1,13 @@
+test_exact_duplicate_and_no_automatic_deletion (__main__.CourseCheckTests.test_exact_duplicate_and_no_automatic_deletion) ... ok
+test_exact_duplicates (__main__.CourseCheckTests.test_exact_duplicates) ... ok
+test_failed_self_test_result_returns_nonzero (__main__.CourseCheckTests.test_failed_self_test_result_returns_nonzero) ... ok
+test_fenced_fake_links_are_ignored (__main__.CourseCheckTests.test_fenced_fake_links_are_ignored) ... ok
+test_missing_and_wrong_entry_assertions (__main__.CourseCheckTests.test_missing_and_wrong_entry_assertions) ... ok
+test_normalization_keeps_meaningful_parts_distinct (__main__.CourseCheckTests.test_normalization_keeps_meaningful_parts_distinct) ... ok
+test_parameter_order_is_normalized_but_values_are_not_merged (__main__.CourseCheckTests.test_parameter_order_is_normalized_but_values_are_not_merged) ... ok
+test_selected_source_entries (__main__.CourseCheckTests.test_selected_source_entries) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

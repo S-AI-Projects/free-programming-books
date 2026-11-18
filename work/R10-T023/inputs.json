@@ -1,0 +1,34 @@
+{
+  "target_file": "books/free-programming-books-cs.md",
+  "target_section": "Bash, C#, C++, and the full file duplicate scope",
+  "selected_entries": [
+    {
+      "display_name": "Bash očima Bohdana Milara",
+      "url": "http://i.iinfo.cz/files/root/k/bash_ocima_bohdana_milara.pdf",
+      "category": "Bash",
+      "line_number": 32,
+      "metadata": "(PDF)"
+    },
+    {
+      "display_name": "Systémové programování v jazyce C#",
+      "url": "https://phoenix.inf.upol.cz/esf/ucebni/sysprog.pdf",
+      "category": "C#",
+      "line_number": 37,
+      "metadata": "(PDF)"
+    },
+    {
+      "display_name": "Moderní programování objektových aplikací v C++",
+      "url": "https://akela.mendelu.cz/~xvencal2/CPP/opora.pdf",
+      "category": "C++",
+      "line_number": 42,
+      "metadata": "(PDF)"
+    }
+  ],
+  "normalization": [
+    "lowercase scheme and hostname",
+    "strip HTTP port 80 and HTTPS port 443",
+    "strip a trailing path slash",
+    "sort query parameter pairs",
+    "preserve paths, non-default schemes, fragment identifiers, and query values"
+  ]
+}
