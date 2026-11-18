@@ -1,0 +1,54 @@
+{
+  "expected": [
+    {
+      "display_name": "מערכות הפעלה",
+      "url": "https://data.cyber.org.il/os/os_book.pdf",
+      "category": "ללא תלות בשפה > מערכות הפעלה",
+      "line_number": 18
+    },
+    {
+      "display_name": "רשתות מחשבים",
+      "url": "https://data.cyber.org.il/networks/networks.pdf",
+      "category": "ללא תלות בשפה > רשתות",
+      "line_number": 23
+    },
+    {
+      "display_name": "ארגון המחשב ושפת סף",
+      "url": "https://data.cyber.org.il/assembly/assembly_book.pdf",
+      "category": "Assembly",
+      "line_number": 28
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "מערכות הפעלה",
+      "url": "https://data.cyber.org.il/os/os_book.pdf",
+      "category": "ללא תלות בשפה > מערכות הפעלה",
+      "line_number": 18,
+      "metadata": "– ברק גונן&rlm;, המרכז לחינוך סייבר&rlm; (PDF)"
+    },
+    {
+      "display_name": "רשתות מחשבים",
+      "url": "https://data.cyber.org.il/networks/networks.pdf",
+      "category": "ללא תלות בשפה > רשתות",
+      "line_number": 23,
+      "metadata": "– עומר רוזנבוים&rlm;, ברק גונן&rlm;, שלומי הוד&rlm;, המרכז לחינוך סייבר&rlm; (PDF)"
+    },
+    {
+      "display_name": "ארגון המחשב ושפת סף",
+      "url": "https://data.cyber.org.il/assembly/assembly_book.pdf",
+      "category": "Assembly",
+      "line_number": 28,
+      "metadata": "– ברק גונן&rlm;, המרכז לחינוך סייבר&rlm; (PDF)"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "syntax_errors": [],
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  }
+}
