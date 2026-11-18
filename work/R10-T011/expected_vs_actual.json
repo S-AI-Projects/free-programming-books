@@ -1,0 +1,57 @@
+{
+  "expected": [
+    {
+      "display_name": "Brus kódu",
+      "url": "http://bruskodu.cz",
+      "category": "Podcasty",
+      "line_number": 3,
+      "metadata": "- pro frontend vývojáře"
+    },
+    {
+      "display_name": "CZpodcast",
+      "url": "https://soundcloud.com/czpodcast-1",
+      "category": "Podcasty",
+      "line_number": 4,
+      "metadata": ""
+    },
+    {
+      "display_name": "DevMinutes",
+      "url": "http://devminutes.cz",
+      "category": "Podcasty",
+      "line_number": 5,
+      "metadata": ""
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "Brus kódu",
+      "url": "http://bruskodu.cz",
+      "category": "Podcasty",
+      "metadata": "- pro frontend vývojáře",
+      "line_number": 3
+    },
+    {
+      "display_name": "CZpodcast",
+      "url": "https://soundcloud.com/czpodcast-1",
+      "category": "Podcasty",
+      "metadata": "",
+      "line_number": 4
+    },
+    {
+      "display_name": "DevMinutes",
+      "url": "http://devminutes.cz",
+      "category": "Podcasty",
+      "metadata": "",
+      "line_number": 5
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "live_request_results": null
+}

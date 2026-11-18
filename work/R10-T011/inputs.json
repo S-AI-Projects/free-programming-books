@@ -1,0 +1,24 @@
+{
+  "target_file": "casts/free-podcasts-screencasts-cs.md",
+  "target_section": "Czech casts list; selected category: Podcasty",
+  "selected_entries": [
+    {
+      "display_name": "Brus kódu",
+      "url": "http://bruskodu.cz",
+      "category": "Podcasty",
+      "line_number": 3
+    },
+    {
+      "display_name": "CZpodcast",
+      "url": "https://soundcloud.com/czpodcast-1",
+      "category": "Podcasty",
+      "line_number": 4
+    },
+    {
+      "display_name": "DevMinutes",
+      "url": "http://devminutes.cz",
+      "category": "Podcasty",
+      "line_number": 5
+    }
+  ]
+}
