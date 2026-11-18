@@ -1,0 +1,24 @@
+{
+  "target_file": "casts/free-podcasts-screencasts-sv.md",
+  "target_section": "Swedish casts list; category: Language Agnostic",
+  "selected_entries": [
+    {
+      "display_name": "Agilpodden",
+      "url": "https://www.agilpodden.se",
+      "category": "Language Agnostic",
+      "line_number": 8
+    },
+    {
+      "display_name": "AI-Podden",
+      "url": "https://ai-podden.se",
+      "category": "Language Agnostic",
+      "line_number": 9
+    },
+    {
+      "display_name": "Asdf",
+      "url": "https://asdf.pizza",
+      "category": "Language Agnostic",
+      "line_number": 10
+    }
+  ]
+}
