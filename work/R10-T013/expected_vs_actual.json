@@ -1,0 +1,62 @@
+{
+  "expected": [
+    {
+      "display_name": "Agilpodden",
+      "url": "https://www.agilpodden.se",
+      "category": "Language Agnostic",
+      "line_number": 8,
+      "metadata": "- Dick Lyhammar, Erik Hultgren (podcast)"
+    },
+    {
+      "display_name": "AI-Podden",
+      "url": "https://ai-podden.se",
+      "category": "Language Agnostic",
+      "line_number": 9,
+      "metadata": "- Ather Gattami, Bitynamics, Cloudberry (podcast)"
+    },
+    {
+      "display_name": "Asdf",
+      "url": "https://asdf.pizza",
+      "category": "Language Agnostic",
+      "line_number": 10,
+      "metadata": "- Therése Komstadius, Anton Gunnarsson (podcast)"
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "Agilpodden",
+      "url": "https://www.agilpodden.se",
+      "category": "Language Agnostic",
+      "line_number": 8,
+      "metadata": "- Dick Lyhammar, Erik Hultgren (podcast)"
+    },
+    {
+      "display_name": "AI-Podden",
+      "url": "https://ai-podden.se",
+      "category": "Language Agnostic",
+      "line_number": 9,
+      "metadata": "- Ather Gattami, Bitynamics, Cloudberry (podcast)"
+    },
+    {
+      "display_name": "Asdf",
+      "url": "https://asdf.pizza",
+      "category": "Language Agnostic",
+      "line_number": 10,
+      "metadata": "- Therése Komstadius, Anton Gunnarsson (podcast)"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "duplicates": {
+    "exact_duplicate_count": 0,
+    "exact_duplicates": [],
+    "normalized_duplicate_count": 0,
+    "normalized_duplicates": []
+  }
+}
