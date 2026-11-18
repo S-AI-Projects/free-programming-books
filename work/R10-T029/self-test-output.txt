@@ -1,0 +1,12 @@
+test_access_fixture_scenarios_are_classified_with_source_citations (__main__.CourseCheckTests.test_access_fixture_scenarios_are_classified_with_source_citations) ... ok
+test_automated_404_without_manual_page_evidence_is_unverified (__main__.CourseCheckTests.test_automated_404_without_manual_page_evidence_is_unverified) ... ok
+test_claim_without_official_source_citation_is_unverified (__main__.CourseCheckTests.test_claim_without_official_source_citation_is_unverified) ... ok
+test_failed_self_test_returns_nonzero (__main__.CourseCheckTests.test_failed_self_test_returns_nonzero) ... ok
+test_no_fixture_contains_credential_fields (__main__.CourseCheckTests.test_no_fixture_contains_credential_fields) ... ok
+test_security_challenge_is_not_mislabeled_as_authentication (__main__.CourseCheckTests.test_security_challenge_is_not_mislabeled_as_authentication) ... ok
+test_selected_entries_and_line_numbers_match_source (__main__.CourseCheckTests.test_selected_entries_and_line_numbers_match_source) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK

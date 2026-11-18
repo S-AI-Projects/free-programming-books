@@ -1,0 +1,169 @@
+{
+  "source_validation": {
+    "status": "passed",
+    "errors": [],
+    "actual_entries": [
+      {
+        "title": "Structuri de Date și Algoritmi",
+        "url": "https://lectii.utm.md/courses/structuri-de-date-si-algoritmi/",
+        "section": "Algoritmi și Structuri de Date",
+        "metadata": " - Universitatea Tehnică a Moldovei",
+        "line_number": 11,
+        "expected": {
+          "title": "Structuri de Date și Algoritmi",
+          "url": "https://lectii.utm.md/courses/structuri-de-date-si-algoritmi/",
+          "section": "Algoritmi și Structuri de Date",
+          "line_number": 11
+        }
+      },
+      {
+        "title": "Programarea calculatoarelor",
+        "url": "https://lectii.utm.md/courses/programarea-calculatoarelor/",
+        "section": "C++",
+        "metadata": " - Universitatea Tehnică a Moldovei",
+        "line_number": 16,
+        "expected": {
+          "title": "Programarea calculatoarelor",
+          "url": "https://lectii.utm.md/courses/programarea-calculatoarelor/",
+          "section": "C++",
+          "line_number": 16
+        }
+      },
+      {
+        "title": "Programarea Orientată pe Obiecte",
+        "url": "https://lectii.utm.md/courses/programarea-orientata-pe-obiecte/",
+        "section": "C++",
+        "metadata": " - Universitatea Tehnică a Moldovei",
+        "line_number": 17,
+        "expected": {
+          "title": "Programarea Orientată pe Obiecte",
+          "url": "https://lectii.utm.md/courses/programarea-orientata-pe-obiecte/",
+          "section": "C++",
+          "line_number": 17
+        }
+      }
+    ]
+  },
+  "manual_access_results": [
+    {
+      "url": "https://lectii.utm.md/courses/structuri-de-date-si-algoritmi/",
+      "status": "unverified",
+      "automated_status": "browser navigation failed",
+      "source_url": "https://lectii.utm.md/courses/structuri-de-date-si-algoritmi/",
+      "evidence": "Browser load failed (ERR_FAILED); course content was unavailable.",
+      "requirements": null,
+      "authentication_required": null,
+      "registration_required": null,
+      "payment_required": null,
+      "environment_requirements": null,
+      "manual_verification": false,
+      "removal_recommendation": false,
+      "title": "Structuri de Date și Algoritmi",
+      "section": "Algoritmi și Structuri de Date",
+      "line_number": 11
+    },
+    {
+      "url": "https://lectii.utm.md/courses/programarea-calculatoarelor/",
+      "status": "unverified",
+      "automated_status": "browser navigation failed",
+      "source_url": "https://lectii.utm.md/courses/programarea-calculatoarelor/",
+      "evidence": "Browser load failed (ERR_FAILED); course content was unavailable.",
+      "requirements": null,
+      "authentication_required": null,
+      "registration_required": null,
+      "payment_required": null,
+      "environment_requirements": null,
+      "manual_verification": false,
+      "removal_recommendation": false,
+      "title": "Programarea calculatoarelor",
+      "section": "C++",
+      "line_number": 16
+    },
+    {
+      "url": "https://lectii.utm.md/courses/programarea-orientata-pe-obiecte/",
+      "status": "unverified",
+      "automated_status": "403 from Cloudflare challenge; origin page unverified",
+      "source_url": "https://lectii.utm.md/courses/programarea-orientata-pe-obiecte/",
+      "evidence": "Browser displayed a Cloudflare HTTP 403 security-verification challenge before the course content.",
+      "requirements": null,
+      "authentication_required": null,
+      "registration_required": null,
+      "payment_required": null,
+      "environment_requirements": null,
+      "manual_verification": false,
+      "removal_recommendation": false,
+      "title": "Programarea Orientată pe Obiecte",
+      "section": "C++",
+      "line_number": 17
+    }
+  ],
+  "fixtures": [
+    {
+      "name": "public_access",
+      "expected": "public_access_confirmed",
+      "actual": "public_access_confirmed",
+      "source_url": "https://example.test/course/public",
+      "requirements": [],
+      "automated_status": null
+    },
+    {
+      "name": "registration_required",
+      "expected": "requirements_confirmed",
+      "actual": "requirements_confirmed",
+      "source_url": "https://example.test/course/registration",
+      "requirements": [
+        "authentication",
+        "registration"
+      ],
+      "automated_status": null
+    },
+    {
+      "name": "payment_required",
+      "expected": "requirements_confirmed",
+      "actual": "requirements_confirmed",
+      "source_url": "https://example.test/course/payment",
+      "requirements": [
+        "payment"
+      ],
+      "automated_status": null
+    },
+    {
+      "name": "environment_required",
+      "expected": "requirements_confirmed",
+      "actual": "requirements_confirmed",
+      "source_url": "https://example.test/course/environment",
+      "requirements": [
+        "environment: Linux"
+      ],
+      "automated_status": null
+    },
+    {
+      "name": "unavailable_page",
+      "expected": "unverified",
+      "actual": "unverified",
+      "source_url": "https://example.test/course/unavailable",
+      "requirements": null,
+      "automated_status": null
+    },
+    {
+      "name": "automated_404",
+      "expected": "unverified",
+      "actual": "unverified",
+      "source_url": "https://example.test/course/404",
+      "requirements": null,
+      "automated_status": 404
+    },
+    {
+      "name": "automated_403_challenge",
+      "expected": "unverified",
+      "actual": "unverified",
+      "source_url": "https://example.test/course/challenge",
+      "requirements": null,
+      "automated_status": "403 from security challenge; origin page unverified"
+    }
+  ],
+  "self_test": {
+    "status": "passed"
+  },
+  "catalogue_corrections": []
+}

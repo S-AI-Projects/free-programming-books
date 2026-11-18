@@ -1,0 +1,68 @@
+{
+  "target_file": "courses/free-courses-ro.md",
+  "selected_entries": [
+    {
+      "title": "Structuri de Date și Algoritmi",
+      "url": "https://lectii.utm.md/courses/structuri-de-date-si-algoritmi/",
+      "section": "Algoritmi și Structuri de Date",
+      "metadata": " - Universitatea Tehnică a Moldovei",
+      "line_number": 11,
+      "expected": {
+        "title": "Structuri de Date și Algoritmi",
+        "url": "https://lectii.utm.md/courses/structuri-de-date-si-algoritmi/",
+        "section": "Algoritmi și Structuri de Date",
+        "line_number": 11
+      }
+    },
+    {
+      "title": "Programarea calculatoarelor",
+      "url": "https://lectii.utm.md/courses/programarea-calculatoarelor/",
+      "section": "C++",
+      "metadata": " - Universitatea Tehnică a Moldovei",
+      "line_number": 16,
+      "expected": {
+        "title": "Programarea calculatoarelor",
+        "url": "https://lectii.utm.md/courses/programarea-calculatoarelor/",
+        "section": "C++",
+        "line_number": 16
+      }
+    },
+    {
+      "title": "Programarea Orientată pe Obiecte",
+      "url": "https://lectii.utm.md/courses/programarea-orientata-pe-obiecte/",
+      "section": "C++",
+      "metadata": " - Universitatea Tehnică a Moldovei",
+      "line_number": 17,
+      "expected": {
+        "title": "Programarea Orientată pe Obiecte",
+        "url": "https://lectii.utm.md/courses/programarea-orientata-pe-obiecte/",
+        "section": "C++",
+        "line_number": 17
+      }
+    }
+  ],
+  "manual_page_observations": [
+    {
+      "url": "https://lectii.utm.md/courses/structuri-de-date-si-algoritmi/",
+      "source_url": "https://lectii.utm.md/courses/structuri-de-date-si-algoritmi/",
+      "manual_verified": false,
+      "observation": "Browser load failed (ERR_FAILED); course content was unavailable.",
+      "automated_status": "browser navigation failed"
+    },
+    {
+      "url": "https://lectii.utm.md/courses/programarea-calculatoarelor/",
+      "source_url": "https://lectii.utm.md/courses/programarea-calculatoarelor/",
+      "manual_verified": false,
+      "observation": "Browser load failed (ERR_FAILED); course content was unavailable.",
+      "automated_status": "browser navigation failed"
+    },
+    {
+      "url": "https://lectii.utm.md/courses/programarea-orientata-pe-obiecte/",
+      "source_url": "https://lectii.utm.md/courses/programarea-orientata-pe-obiecte/",
+      "manual_verified": false,
+      "observation": "Browser displayed a Cloudflare HTTP 403 security-verification challenge before the course content.",
+      "automated_status": "403 from Cloudflare challenge; origin page unverified"
+    }
+  ],
+  "credentials_used_or_saved": false
+}
