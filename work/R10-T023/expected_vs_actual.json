@@ -1,0 +1,82 @@
+{
+  "expected": [
+    {
+      "display_name": "Bash očima Bohdana Milara",
+      "url": "http://i.iinfo.cz/files/root/k/bash_ocima_bohdana_milara.pdf",
+      "category": "Bash",
+      "line_number": 32,
+      "metadata": "(PDF)"
+    },
+    {
+      "display_name": "Systémové programování v jazyce C#",
+      "url": "https://phoenix.inf.upol.cz/esf/ucebni/sysprog.pdf",
+      "category": "C#",
+      "line_number": 37,
+      "metadata": "(PDF)"
+    },
+    {
+      "display_name": "Moderní programování objektových aplikací v C++",
+      "url": "https://akela.mendelu.cz/~xvencal2/CPP/opora.pdf",
+      "category": "C++",
+      "line_number": 42,
+      "metadata": "(PDF)"
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "Bash očima Bohdana Milara",
+      "url": "http://i.iinfo.cz/files/root/k/bash_ocima_bohdana_milara.pdf",
+      "category": "Bash",
+      "line_number": 32,
+      "metadata": "(PDF)"
+    },
+    {
+      "display_name": "Systémové programování v jazyce C#",
+      "url": "https://phoenix.inf.upol.cz/esf/ucebni/sysprog.pdf",
+      "category": "C#",
+      "line_number": 37,
+      "metadata": "(PDF)"
+    },
+    {
+      "display_name": "Moderní programování objektových aplikací v C++",
+      "url": "https://akela.mendelu.cz/~xvencal2/CPP/opora.pdf",
+      "category": "C++",
+      "line_number": 42,
+      "metadata": "(PDF)"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "error": null
+  },
+  "exact_duplicate_groups": {
+    "https://knihy.nic.cz": [
+      {
+        "display_name": "Báječný svět elektronického podpisu",
+        "url": "https://knihy.nic.cz",
+        "category": "Language Agnostic > Bezpečnost",
+        "line_number": 72,
+        "metadata": "- Jiří Peterka (PDF, EPUB, MOBI)"
+      },
+      {
+        "display_name": "Buď pánem svého prostoru",
+        "url": "https://knihy.nic.cz",
+        "category": "Language Agnostic > Bezpečnost",
+        "line_number": 73,
+        "metadata": "- Linda McCarthy a Denise Weldon-Siviy (PDF)"
+      },
+      {
+        "display_name": "Internet jako objekt práva",
+        "url": "https://knihy.nic.cz",
+        "category": "Language Agnostic > Právo",
+        "line_number": 85,
+        "metadata": "- Ján Matejka (PDF)"
+      }
+    ]
+  },
+  "normalized_duplicate_groups": {},
+  "self_test": {
+    "status": "passed"
+  }
+}

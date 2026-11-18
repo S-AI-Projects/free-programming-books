@@ -1,0 +1,10 @@
+test_failed_live_request_does_not_remove_entry (__main__.CourseCheckTests.test_failed_live_request_does_not_remove_entry) ... ok
+test_failed_self_test_result_returns_nonzero (__main__.CourseCheckTests.test_failed_self_test_result_returns_nonzero) ... ok
+test_fenced_code_fixture_is_ignored (__main__.CourseCheckTests.test_fenced_code_fixture_is_ignored) ... ok
+test_missing_entry_raises_assertion_and_wrong_line_is_detected (__main__.CourseCheckTests.test_missing_entry_raises_assertion_and_wrong_line_is_detected) ... ok
+test_success_fixture_extracts_hierarchy_metadata_and_fragment (__main__.CourseCheckTests.test_success_fixture_extracts_hierarchy_metadata_and_fragment) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
