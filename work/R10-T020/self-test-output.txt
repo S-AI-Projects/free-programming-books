@@ -1,0 +1,11 @@
+test_actual_entries_scoped_and_exact_source_lines (__main__.CourseCheckTests.test_actual_entries_scoped_and_exact_source_lines) ... ok
+test_changed_metadata_fails_validation (__main__.CourseCheckTests.test_changed_metadata_fails_validation) ... ok
+test_failed_request_does_not_remove_entry (__main__.CourseCheckTests.test_failed_request_does_not_remove_entry) ... ok
+test_failed_self_test_result_returns_nonzero (__main__.CourseCheckTests.test_failed_self_test_result_returns_nonzero) ... ok
+test_missing_entry_fails_validation (__main__.CourseCheckTests.test_missing_entry_fails_validation) ... ok
+test_valid_fixture_produces_stable_passed_report (__main__.CourseCheckTests.test_valid_fixture_produces_stable_passed_report) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK

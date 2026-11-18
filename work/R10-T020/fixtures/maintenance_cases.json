@@ -1,0 +1,17 @@
+{
+  "valid": {
+    "filename": "valid.md",
+    "expected_validation": "passed",
+    "expected_entry_count": 3
+  },
+  "missing_entry": {
+    "filename": "missing-entry.md",
+    "expected_validation": "failed",
+    "expected_entry_count": 1
+  },
+  "changed_metadata": {
+    "filename": "changed-metadata.md",
+    "expected_validation": "failed",
+    "expected_entry_count": 3
+  }
+}
