@@ -1,0 +1,108 @@
+{
+  "fixture_results": [
+    {
+      "actual_diagnostics": [],
+      "actual_errors": [],
+      "actual_validation": "passed",
+      "expected_errors": [],
+      "expected_validation": "passed",
+      "name": "selected row matches"
+    },
+    {
+      "actual_diagnostics": [
+        {
+          "actual": "Other Creator",
+          "code": "metadata-mismatch",
+          "expected": "UDL.no",
+          "field": "creator",
+          "line_number": 8
+        }
+      ],
+      "actual_errors": [
+        "metadata-mismatch"
+      ],
+      "actual_validation": "failed",
+      "expected_errors": [
+        "metadata-mismatch"
+      ],
+      "expected_validation": "failed",
+      "name": "creator metadata differs"
+    },
+    {
+      "actual_diagnostics": [
+        {
+          "actual": 0,
+          "code": "selected-entry-count",
+          "expected": 1,
+          "line_number": null
+        }
+      ],
+      "actual_errors": [
+        "selected-entry-count"
+      ],
+      "actual_validation": "failed",
+      "expected_errors": [
+        "selected-entry-count"
+      ],
+      "expected_validation": "failed",
+      "name": "selected row is absent"
+    }
+  ],
+  "maintenance_report": {
+    "before_after_metadata": [
+      {
+        "after": {
+          "creator": "UDL.no",
+          "section": "Java",
+          "source_line": 8,
+          "title": "Java-programmering",
+          "url": "https://www.youtube.com/playlist?list=PLIrUJXSXz9cmvNZ_Y0QT-r25efmN42rm5"
+        },
+        "before": {
+          "creator": "UDL.no",
+          "section": "Java",
+          "source_line": 8,
+          "title": "Java-programmering",
+          "url": "https://www.youtube.com/playlist?list=PLIrUJXSXz9cmvNZ_Y0QT-r25efmN42rm5"
+        },
+        "url": "https://www.youtube.com/playlist?list=PLIrUJXSXz9cmvNZ_Y0QT-r25efmN42rm5"
+      }
+    ],
+    "catalogue_changes": [],
+    "manual_decisions": [
+      {
+        "decision": "retain",
+        "reason": "The selected source row matches the expected title, playlist URL, Java section, and UDL.no creator; no evidence supports a catalogue correction.",
+        "url": "https://www.youtube.com/playlist?list=PLIrUJXSXz9cmvNZ_Y0QT-r25efmN42rm5"
+      }
+    ],
+    "observed_facts": [
+      {
+        "creator": "UDL.no",
+        "section": "Java",
+        "source_line": 8,
+        "title": "Java-programmering",
+        "url": "https://www.youtube.com/playlist?list=PLIrUJXSXz9cmvNZ_Y0QT-r25efmN42rm5"
+      }
+    ],
+    "recommendations": [
+      {
+        "action": "retain_unchanged",
+        "reason": "The selected source row matches the expected title, playlist URL, Java section, and UDL.no creator; no evidence supports a catalogue correction.",
+        "url": "https://www.youtube.com/playlist?list=PLIrUJXSXz9cmvNZ_Y0QT-r25efmN42rm5"
+      }
+    ],
+    "section": "Java",
+    "source_file": "courses/free-courses-no.md",
+    "validation": "passed",
+    "validation_errors": []
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "validation": {
+    "actual": "passed",
+    "errors": [],
+    "expected": "passed"
+  }
+}

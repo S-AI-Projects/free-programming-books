@@ -1,0 +1,93 @@
+{
+  "note": "Synthetic offline scenarios only; they are not access claims about UTM courses.",
+  "cases": [
+    {
+      "name": "public_access",
+      "resource_url": "https://example.test/course/public",
+      "expected_status": "public_access_confirmed",
+      "evidence": {
+        "source_url": "https://example.test/course/public",
+        "manual_verified": true,
+        "observation": "Synthetic official page states no account or payment is needed.",
+        "authentication_required": false,
+        "registration_required": false,
+        "payment_required": false,
+        "environment_requirements": []
+      }
+    },
+    {
+      "name": "registration_required",
+      "resource_url": "https://example.test/course/registration",
+      "expected_status": "requirements_confirmed",
+      "evidence": {
+        "source_url": "https://example.test/course/registration",
+        "manual_verified": true,
+        "observation": "Synthetic official page requires account registration.",
+        "authentication_required": true,
+        "registration_required": true,
+        "payment_required": false,
+        "environment_requirements": []
+      }
+    },
+    {
+      "name": "payment_required",
+      "resource_url": "https://example.test/course/payment",
+      "expected_status": "requirements_confirmed",
+      "evidence": {
+        "source_url": "https://example.test/course/payment",
+        "manual_verified": true,
+        "observation": "Synthetic official page lists a required fee.",
+        "authentication_required": false,
+        "registration_required": false,
+        "payment_required": true,
+        "environment_requirements": []
+      }
+    },
+    {
+      "name": "environment_required",
+      "resource_url": "https://example.test/course/environment",
+      "expected_status": "requirements_confirmed",
+      "evidence": {
+        "source_url": "https://example.test/course/environment",
+        "manual_verified": true,
+        "observation": "Synthetic official page requires a specific local environment.",
+        "authentication_required": false,
+        "registration_required": false,
+        "payment_required": false,
+        "environment_requirements": ["Linux"]
+      }
+    },
+    {
+      "name": "unavailable_page",
+      "resource_url": "https://example.test/course/unavailable",
+      "expected_status": "unverified",
+      "evidence": {
+        "source_url": "https://example.test/course/unavailable",
+        "manual_verified": false,
+        "observation": "Synthetic browser navigation failed before page content loaded."
+      }
+    },
+    {
+      "name": "automated_404",
+      "resource_url": "https://example.test/course/404",
+      "expected_status": "unverified",
+      "evidence": {
+        "source_url": "https://example.test/course/404",
+        "manual_verified": false,
+        "automated_status": 404,
+        "observation": "Automated HTTP result was 404; no manual page confirmation."
+      }
+    },
+    {
+      "name": "automated_403_challenge",
+      "resource_url": "https://example.test/course/challenge",
+      "expected_status": "unverified",
+      "evidence": {
+        "source_url": "https://example.test/course/challenge",
+        "manual_verified": false,
+        "automated_status": "403 from security challenge; origin page unverified",
+        "observation": "A security challenge appeared before the course content."
+      }
+    }
+  ]
+}

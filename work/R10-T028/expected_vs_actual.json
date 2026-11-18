@@ -1,0 +1,60 @@
+{
+  "source_validation": {
+    "status": "passed",
+    "expected": {
+      "heading": "### Python",
+      "index_link": "* [Python](#python)",
+      "entry": {
+        "title": "Python онлайн: запусти код в браузере",
+        "url": "https://koddo.ru/playground/python",
+        "section": "Python",
+        "line_number": 8
+      }
+    },
+    "actual": {
+      "target_heading_line": 6,
+      "entries": [
+        {
+          "title": "Python онлайн: запусти код в браузере",
+          "url": "https://koddo.ru/playground/python",
+          "metadata": " - Koddo (без регистрации)",
+          "marker": "*",
+          "section": "Python",
+          "line_number": 8,
+          "raw_line": "* [Python онлайн: запусти код в браузере](https://koddo.ru/playground/python) - Koddo (без регистрации)"
+        }
+      ]
+    },
+    "errors": []
+  },
+  "fixtures": [
+    {
+      "fixture": "valid.md",
+      "expected": "valid",
+      "actual": "valid",
+      "diagnostic_line": null
+    },
+    {
+      "fixture": "malformed.md",
+      "expected": "malformed-list-entry",
+      "actual": "malformed-list-entry",
+      "diagnostic_line": 9
+    },
+    {
+      "fixture": "unsorted.md",
+      "expected": "out-of-order-entry",
+      "actual": "out-of-order-entry",
+      "diagnostic_line": 9
+    },
+    {
+      "fixture": "bad-heading.md",
+      "expected": "invalid-heading-level",
+      "actual": "invalid-heading-level",
+      "diagnostic_line": 6
+    }
+  ],
+  "self_test": {
+    "status": "passed"
+  },
+  "catalogue_corrections": []
+}
