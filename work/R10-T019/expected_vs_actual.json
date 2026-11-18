@@ -1,0 +1,125 @@
+{
+  "expected": [
+    {
+      "title": "رایانش ابری",
+      "url": "http://docs.occc.ir/books/Main%20Book-20110110_2.pdf",
+      "section": "رایانش ابری",
+      "line_number": 25
+    },
+    {
+      "title": "علم شبکه",
+      "url": "http://networksciencebook.com",
+      "section": "شبکه",
+      "line_number": 30
+    },
+    {
+      "title": "الگوهای طراحی",
+      "url": "https://holosen.net/what-is-design-pattern/",
+      "section": "مهندسی نرم‌افزار",
+      "line_number": 35
+    }
+  ],
+  "actual": [
+    {
+      "title": "رایانش ابری",
+      "url": "http://docs.occc.ir/books/Main%20Book-20110110_2.pdf",
+      "section": "رایانش ابری",
+      "metadata": "(PDF)",
+      "line_number": 25,
+      "expected": {
+        "title": "رایانش ابری",
+        "url": "http://docs.occc.ir/books/Main%20Book-20110110_2.pdf",
+        "section": "رایانش ابری",
+        "line_number": 25
+      }
+    },
+    {
+      "title": "علم شبکه",
+      "url": "http://networksciencebook.com",
+      "section": "شبکه",
+      "metadata": "- آلبرت لازلو باراباسی",
+      "line_number": 30,
+      "expected": {
+        "title": "علم شبکه",
+        "url": "http://networksciencebook.com",
+        "section": "شبکه",
+        "line_number": 30
+      }
+    },
+    {
+      "title": "الگوهای طراحی",
+      "url": "https://holosen.net/what-is-design-pattern/",
+      "section": "مهندسی نرم‌افزار",
+      "metadata": "- Hossein Badrnezhad&rlm; *(نیاز به ثبت نام دارد)*",
+      "line_number": 35,
+      "expected": {
+        "title": "الگوهای طراحی",
+        "url": "https://holosen.net/what-is-design-pattern/",
+        "section": "مهندسی نرم‌افزار",
+        "line_number": 35
+      }
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "classifications": [
+    {
+      "url": "http://docs.occc.ir/books/Main%20Book-20110110_2.pdf",
+      "status": "public_access_confirmed",
+      "automated_status": null,
+      "source_url": "http://docs.occc.ir/books/Main%20Book-20110110_2.pdf",
+      "evidence": "Direct public PDF access without authentication or registration requirements.",
+      "requirements": [],
+      "authentication_required": false,
+      "registration_required": false,
+      "payment_required": false,
+      "environment_requirements": [],
+      "manual_verification": true,
+      "removal_recommendation": false,
+      "title": "رایانش ابری",
+      "section": "رایانش ابری",
+      "line_number": 25
+    },
+    {
+      "url": "http://networksciencebook.com",
+      "status": "public_access_confirmed",
+      "automated_status": null,
+      "source_url": "http://networksciencebook.com",
+      "evidence": "Official online textbook with open HTML chapters; no login or payment required.",
+      "requirements": [],
+      "authentication_required": false,
+      "registration_required": false,
+      "payment_required": false,
+      "environment_requirements": [],
+      "manual_verification": true,
+      "removal_recommendation": false,
+      "title": "علم شبکه",
+      "section": "شبکه",
+      "line_number": 30
+    },
+    {
+      "url": "https://holosen.net/what-is-design-pattern/",
+      "status": "requirements_confirmed",
+      "automated_status": null,
+      "source_url": "https://holosen.net/what-is-design-pattern/",
+      "evidence": "Catalogue accurately notes registration requirement for full article access.",
+      "requirements": [
+        "registration"
+      ],
+      "authentication_required": false,
+      "registration_required": true,
+      "payment_required": false,
+      "environment_requirements": [],
+      "manual_verification": true,
+      "removal_recommendation": false,
+      "title": "الگوهای طراحی",
+      "section": "مهندسی نرم‌افزار",
+      "line_number": 35
+    }
+  ]
+}
