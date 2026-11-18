@@ -1,0 +1,76 @@
+{
+  "source_validation": {
+    "status": "passed",
+    "failures": []
+  },
+  "fixtures": [
+    {
+      "name": "http_200",
+      "expected": "success_head",
+      "actual": "success_head"
+    },
+    {
+      "name": "http_404",
+      "expected": "missing_resource",
+      "actual": "missing_resource"
+    },
+    {
+      "name": "http_403",
+      "expected": "forbidden",
+      "actual": "forbidden"
+    },
+    {
+      "name": "http_429",
+      "expected": "rate_limited",
+      "actual": "rate_limited"
+    },
+    {
+      "name": "head_405_get_200",
+      "expected": "success_get_fallback",
+      "actual": "success_get_fallback"
+    },
+    {
+      "name": "timeout",
+      "expected": "timeout",
+      "actual": "timeout"
+    },
+    {
+      "name": "dns_failure",
+      "expected": "dns_failure",
+      "actual": "dns_failure"
+    }
+  ],
+  "self_test": {
+    "status": "passed"
+  },
+  "live_request_results": [
+    {
+      "url": "https://anchor.fm/codemy",
+      "status": "request_error",
+      "method": "HEAD",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+      "head_fallback": false,
+      "manual_confirmation": false,
+      "removal_recommendation": false
+    },
+    {
+      "url": "https://roocket.ir/podcast/",
+      "status": "request_error",
+      "method": "HEAD",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1082)>",
+      "head_fallback": false,
+      "manual_confirmation": false,
+      "removal_recommendation": false
+    },
+    {
+      "url": "https://anchor.fm/parsclick/",
+      "status": "request_error",
+      "method": "HEAD",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+      "head_fallback": false,
+      "manual_confirmation": false,
+      "removal_recommendation": false
+    }
+  ],
+  "catalogue_corrections": []
+}
