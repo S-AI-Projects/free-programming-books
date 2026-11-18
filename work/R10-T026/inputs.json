@@ -1,0 +1,16 @@
+{
+  "target_file": "casts/free-podcasts-screencasts-my.md",
+  "target_section": "React",
+  "selected_entry": {
+    "display_name": "Learn React Docker And Containerized In Myanmar Language",
+    "url": "https://www.youtube.com/watch?v=Qqr8oabREA8",
+    "category": "React",
+    "line_number": 8,
+    "creator": "MyanmarFullStackDevelopers",
+    "kind": "screencast"
+  },
+  "live_limits": {
+    "timeout_seconds": 5,
+    "max_workers": 2
+  }
+}

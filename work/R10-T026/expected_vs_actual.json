@@ -1,0 +1,35 @@
+{
+  "expected": {
+    "display_name": "Learn React Docker And Containerized In Myanmar Language",
+    "url": "https://www.youtube.com/watch?v=Qqr8oabREA8",
+    "category": "React",
+    "line_number": 8,
+    "creator": "MyanmarFullStackDevelopers",
+    "kind": "screencast"
+  },
+  "actual": {
+    "display_name": "Learn React Docker And Containerized In Myanmar Language",
+    "url": "https://www.youtube.com/watch?v=Qqr8oabREA8",
+    "category": "React",
+    "line_number": 8,
+    "metadata": "- MyanmarFullStackDevelopers (screencast)",
+    "creator": "MyanmarFullStackDevelopers",
+    "kind": "screencast"
+  },
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "live_request_results": [
+    {
+      "url": "https://www.youtube.com/watch?v=Qqr8oabREA8",
+      "status": "success",
+      "http_status": 204,
+      "final_url": "https://www.youtube.com/watch?v=Qqr8oabREA8"
+    }
+  ]
+}
