@@ -1,0 +1,98 @@
+{
+  "expected": [
+    {
+      "display_name": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+      "url": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+      "category": "Android",
+      "line_number": 19,
+      "author": "उत्तर",
+      "provider": "YouTube"
+    },
+    {
+      "display_name": "Angular in Marathi",
+      "url": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+      "category": "Angular",
+      "line_number": 24,
+      "author": "Finishing School",
+      "provider": "YouTube"
+    },
+    {
+      "display_name": "Angular Tutorials in Marathi",
+      "url": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+      "category": "Angular",
+      "line_number": 25,
+      "author": "Developers Marathi",
+      "provider": "YouTube"
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+      "url": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+      "category": "Android",
+      "line_number": 19,
+      "author": "उत्तर",
+      "provider": "YouTube",
+      "metadata": "- उत्तर"
+    },
+    {
+      "display_name": "Angular in Marathi",
+      "url": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+      "category": "Angular",
+      "line_number": 24,
+      "author": "Finishing School",
+      "provider": "YouTube",
+      "metadata": "- Finishing School"
+    },
+    {
+      "display_name": "Angular Tutorials in Marathi",
+      "url": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+      "category": "Angular",
+      "line_number": 25,
+      "author": "Developers Marathi",
+      "provider": "YouTube",
+      "metadata": "- Developers Marathi"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "error": null
+  },
+  "evidence_changes": [],
+  "live_request_results": [
+    {
+      "url": "https://youtube.com/playlist?list=PLy1NOWTMDFjDLCgmxRNLDJtlutJOYl2d7",
+      "display_name": "अँड्रॉइड ऍप डेव्हलपमेंट मराठी | Android App Development in Marathi",
+      "author": "उत्तर",
+      "provider": "YouTube",
+      "category": "Android",
+      "line_number": 19,
+      "observation_date": "2026-11-18",
+      "status": "success"
+    },
+    {
+      "url": "https://youtube.com/playlist?list=PLpDAynbYcV3sruD9MNfmZtimPCKHicA2V",
+      "display_name": "Angular in Marathi",
+      "author": "Finishing School",
+      "provider": "YouTube",
+      "category": "Angular",
+      "line_number": 24,
+      "observation_date": "2026-11-18",
+      "status": "success"
+    },
+    {
+      "url": "https://youtube.com/playlist?list=PLMs908ICeVMEBw4CevNdPvvIJDaQV1ISN",
+      "display_name": "Angular Tutorials in Marathi",
+      "author": "Developers Marathi",
+      "provider": "YouTube",
+      "category": "Angular",
+      "line_number": 25,
+      "observation_date": "2026-11-18",
+      "status": "success"
+    }
+  ],
+  "self_test": {
+    "status": "passed"
+  }
+}
