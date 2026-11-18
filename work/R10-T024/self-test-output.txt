@@ -1,0 +1,11 @@
+test_failed_self_test_result_returns_nonzero (__main__.CourseCheckTests.test_failed_self_test_result_returns_nonzero) ... ok
+test_misplaced_fixture_is_detected (__main__.CourseCheckTests.test_misplaced_fixture_is_detected) ... ok
+test_missing_entry_raises_assertion (__main__.CourseCheckTests.test_missing_entry_raises_assertion) ... ok
+test_repeated_java_heading_is_detected (__main__.CourseCheckTests.test_repeated_java_heading_is_detected) ... ok
+test_source_selected_entries_and_no_repeated_headings (__main__.CourseCheckTests.test_source_selected_entries_and_no_repeated_headings) ... ok
+test_valid_fixture_preserves_categories (__main__.CourseCheckTests.test_valid_fixture_preserves_categories) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
