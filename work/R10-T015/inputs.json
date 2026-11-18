@@ -1,0 +1,30 @@
+{
+  "target_file": "courses/free-courses-it.md",
+  "target_section": "Italian courses list; categories: Android and Algoritmi e Strutture Dati",
+  "selected_entries": [
+    {
+      "display_name": "Corso Java - Android",
+      "url": "https://www.youtube.com/playlist?list=PL0qAPtx8YtJeqmBWbE1Rbac2QWHoPCjR2",
+      "category": "Android",
+      "line_number": 43,
+      "author": "Fabrizio Camuso",
+      "provider": "YouTube"
+    },
+    {
+      "display_name": "AlgoMOOC - Algoritmi quotidiani",
+      "url": "https://www.youtube.com/playlist?list=PLjTV6y5YWc5HNnLyXkzUe9IlkG2n6guxU",
+      "category": "Algoritmi e Strutture Dati",
+      "line_number": 48,
+      "author": "Alessandro Bogliolo",
+      "provider": "YouTube"
+    },
+    {
+      "display_name": "Algoritmi e Programmazione (C)",
+      "url": "https://www.youtube.com/playlist?list=PLUFFnpJdi99nqESTPaxlPMOF7yEEb8_sS",
+      "category": "Algoritmi e Strutture Dati",
+      "line_number": 49,
+      "author": "P. Camurati, G. Cabodi, Politecnico di Torino",
+      "provider": "YouTube"
+    }
+  ]
+}
