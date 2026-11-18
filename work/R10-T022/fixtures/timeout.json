@@ -1,0 +1,5 @@
+{
+  "url": "https://example.test/slow",
+  "status": null,
+  "error": "timed out"
+}

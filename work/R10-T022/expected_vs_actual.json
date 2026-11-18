@@ -1,0 +1,88 @@
+{
+  "expected": [
+    {
+      "display_name": "The Little Go Book",
+      "url": "https://github.com/nainglinaung/the-little-go-book",
+      "category": "Go",
+      "line_number": 10,
+      "kind": "primary"
+    },
+    {
+      "display_name": "HTML",
+      "url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md",
+      "category": "Go",
+      "line_number": 10,
+      "kind": "HTML"
+    },
+    {
+      "display_name": "Đắm chìm vào Học sâu",
+      "url": "https://d2l.aivivn.com",
+      "category": "Học máy",
+      "line_number": 15,
+      "kind": "primary"
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "The Little Go Book",
+      "url": "https://github.com/nainglinaung/the-little-go-book",
+      "category": "Go",
+      "line_number": 10,
+      "kind": "primary"
+    },
+    {
+      "display_name": "HTML",
+      "url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md",
+      "category": "Go",
+      "line_number": 10,
+      "kind": "HTML"
+    },
+    {
+      "display_name": "Đắm chìm vào Học sâu",
+      "url": "https://d2l.aivivn.com",
+      "category": "Học máy",
+      "line_number": 15,
+      "kind": "primary"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "live_request_results": [
+    {
+      "url": "https://github.com/nainglinaung/the-little-go-book",
+      "final_url": "https://github.com/nainglinaung/the-little-go-book",
+      "redirect_count": 0,
+      "classification": "official_200",
+      "status": 200,
+      "display_name": "The Little Go Book",
+      "line_number": 10,
+      "observation_date": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md",
+      "final_url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md",
+      "redirect_count": 0,
+      "classification": "official_200",
+      "status": 200,
+      "display_name": "HTML",
+      "line_number": 10,
+      "observation_date": "2026-11-18"
+    },
+    {
+      "url": "https://d2l.aivivn.com",
+      "final_url": "https://d2l.aivivn.com",
+      "redirect_count": 0,
+      "classification": "official_200",
+      "status": 200,
+      "display_name": "Đắm chìm vào Học sâu",
+      "line_number": 15,
+      "observation_date": "2026-11-18"
+    }
+  ]
+}

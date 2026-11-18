@@ -1,0 +1,7 @@
+{
+  "url": "https://example.test/loop-a",
+  "status": null,
+  "final_url": "https://example.test/loop-b",
+  "redirect_count": 10,
+  "error": "urllib redirect loop detected"
+}
