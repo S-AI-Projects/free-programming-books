@@ -1,0 +1,14 @@
+{
+  "url": "https://example.test/old-page",
+  "final_url": "https://example.test/official-page",
+  "chain": [
+    {
+      "status": 301,
+      "location": "https://example.test/official-page"
+    },
+    {
+      "status": 200,
+      "location": "https://example.test/official-page"
+    }
+  ]
+}
