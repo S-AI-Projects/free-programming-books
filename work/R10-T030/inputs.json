@@ -1,0 +1,24 @@
+{
+  "actual_source_rows": [
+    {
+      "creator": "UDL.no",
+      "line_number": 8,
+      "metadata": "- UDL.no",
+      "section": "Java",
+      "title": "Java-programmering",
+      "url": "https://www.youtube.com/playlist?list=PLIrUJXSXz9cmvNZ_Y0QT-r25efmN42rm5"
+    }
+  ],
+  "fixture_file": "work/R10-T030/fixtures/maintenance_cases.json",
+  "manual_decision_input": {
+    "decision": "retain",
+    "reason": "The selected source row matches the expected title, playlist URL, Java section, and UDL.no creator; no evidence supports a catalogue correction."
+  },
+  "selected_entry": {
+    "creator": "UDL.no",
+    "section": "Java",
+    "title": "Java-programmering",
+    "url": "https://www.youtube.com/playlist?list=PLIrUJXSXz9cmvNZ_Y0QT-r25efmN42rm5"
+  },
+  "target_file": "courses/free-courses-no.md"
+}
