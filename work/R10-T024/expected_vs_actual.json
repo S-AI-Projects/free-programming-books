@@ -1,0 +1,55 @@
+{
+  "expected": [
+    {
+      "display_name": "Le podcast AWS en français",
+      "url": "https://aws.amazon.com/fr/blogs/france/podcasts",
+      "category": "Cloud computing",
+      "line_number": 9
+    },
+    {
+      "display_name": "Les Cast Codeurs Podcast",
+      "url": "https://lescastcodeurs.com",
+      "category": "Langage Agnostique",
+      "line_number": 20
+    },
+    {
+      "display_name": "Artisan Developpeur",
+      "url": "https://artisandeveloppeur.fr/podcast",
+      "category": "Langage Agnostique",
+      "line_number": 14
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "Le podcast AWS en français",
+      "url": "https://aws.amazon.com/fr/blogs/france/podcasts",
+      "category": "Cloud computing",
+      "line_number": 9,
+      "metadata": "(podcast)"
+    },
+    {
+      "display_name": "Les Cast Codeurs Podcast",
+      "url": "https://lescastcodeurs.com",
+      "category": "Langage Agnostique",
+      "line_number": 20,
+      "metadata": "(podcast)"
+    },
+    {
+      "display_name": "Artisan Developpeur",
+      "url": "https://artisandeveloppeur.fr/podcast",
+      "category": "Langage Agnostique",
+      "line_number": 14,
+      "metadata": "(podcast)"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "category_mismatches": [],
+    "duplicate_headings": [],
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  }
+}

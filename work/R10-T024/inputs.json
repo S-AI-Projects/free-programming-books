@@ -1,0 +1,41 @@
+{
+  "target_file": "casts/free-podcasts-screencasts-fr.md",
+  "target_section": "Cloud computing and Langage Agnostique",
+  "selected_entries": [
+    {
+      "display_name": "Le podcast AWS en français",
+      "url": "https://aws.amazon.com/fr/blogs/france/podcasts",
+      "category": "Cloud computing",
+      "line_number": 9
+    },
+    {
+      "display_name": "Les Cast Codeurs Podcast",
+      "url": "https://lescastcodeurs.com",
+      "category": "Langage Agnostique",
+      "line_number": 20
+    },
+    {
+      "display_name": "Artisan Developpeur",
+      "url": "https://artisandeveloppeur.fr/podcast",
+      "category": "Langage Agnostique",
+      "line_number": 14
+    }
+  ],
+  "subject_evidence": {
+    "https://lescastcodeurs.com": {
+      "url": "https://lescastcodeurs.com",
+      "evidence": "The homepage covers Java/JDK, Rust, TypeScript, PHP, data/AI, infrastructure, web, security, and tooling rather than Java alone.",
+      "observed": "2026-11-18"
+    },
+    "https://aws.amazon.com/fr/blogs/france/podcasts": {
+      "url": "https://aws.amazon.com/fr/blogs/france/podcasts",
+      "evidence": "The resource is an AWS France podcast list.",
+      "observed": "2026-11-18"
+    },
+    "https://artisandeveloppeur.fr/podcast": {
+      "url": "https://artisandeveloppeur.fr/podcast",
+      "evidence": "The resource covers software craftsmanship and general development topics.",
+      "observed": "2026-11-18"
+    }
+  }
+}
