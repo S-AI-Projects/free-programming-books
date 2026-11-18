@@ -1,0 +1,5 @@
+{
+  "url": "https://example.test/hanging-server",
+  "status": null,
+  "error": "The read operation timed out"
+}

@@ -1,0 +1,76 @@
+{
+  "expected": [
+    {
+      "display_name": "Програмиране = ++Алгоритми;",
+      "url": "https://programirane.org/download-now",
+      "category": "C",
+      "line_number": 15
+    },
+    {
+      "display_name": "ANSI C - Курс за начинаещи",
+      "url": "https://www.progstarter.com/index.php?option=com_content&view=article&id=8&Itemid=121&lang=bg",
+      "category": "C",
+      "line_number": 16
+    },
+    {
+      "display_name": "ANSI C - Пълен справочник",
+      "url": "https://progstarter.com/index.php?option=com_content&view=article&id=9&Itemid=122&lang=bg",
+      "category": "C",
+      "line_number": 17
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "Програмиране = ++Алгоритми;",
+      "url": "https://programirane.org/download-now",
+      "category": "C",
+      "line_number": 15
+    },
+    {
+      "display_name": "ANSI C - Курс за начинаещи",
+      "url": "https://www.progstarter.com/index.php?option=com_content&view=article&id=8&Itemid=121&lang=bg",
+      "category": "C",
+      "line_number": 16
+    },
+    {
+      "display_name": "ANSI C - Пълен справочник",
+      "url": "https://progstarter.com/index.php?option=com_content&view=article&id=9&Itemid=122&lang=bg",
+      "category": "C",
+      "line_number": 17
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "live_request_results": [
+    {
+      "url": "https://programirane.org/download-now",
+      "final_url": "https://programirane.org/download-now",
+      "classification": "official_200",
+      "display_name": "Програмиране = ++Алгоритми;",
+      "line_number": 15,
+      "observation_date": "2026-11-18"
+    },
+    {
+      "url": "https://www.progstarter.com/index.php?option=com_content&view=article&id=8&Itemid=121&lang=bg",
+      "final_url": "https://www.progstarter.com/index.php?option=com_content&view=article&id=8&Itemid=121&lang=bg",
+      "classification": "official_200",
+      "display_name": "ANSI C - Курс за начинаещи",
+      "line_number": 16,
+      "observation_date": "2026-11-18"
+    },
+    {
+      "url": "https://progstarter.com/index.php?option=com_content&view=article&id=9&Itemid=122&lang=bg",
+      "final_url": "https://progstarter.com/index.php?option=com_content&view=article&id=9&Itemid=122&lang=bg",
+      "classification": "official_200",
+      "display_name": "ANSI C - Пълен справочник",
+      "line_number": 17,
+      "observation_date": "2026-11-18"
+    }
+  ]
+}

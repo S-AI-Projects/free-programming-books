@@ -1,0 +1,12 @@
+test_failed_live_request_does_not_remove_entry (__main__.CourseCheckTests.test_failed_live_request_does_not_remove_entry) ... ok
+test_failed_self_test_result_returns_nonzero (__main__.CourseCheckTests.test_failed_self_test_result_returns_nonzero) ... ok
+test_offline_200 (__main__.CourseCheckTests.test_offline_200) ... ok
+test_offline_301_then_200 (__main__.CourseCheckTests.test_offline_301_then_200) ... ok
+test_offline_redirect_loop (__main__.CourseCheckTests.test_offline_redirect_loop) ... ok
+test_offline_timeout (__main__.CourseCheckTests.test_offline_timeout) ... ok
+test_selected_entries_and_source_lines (__main__.CourseCheckTests.test_selected_entries_and_source_lines) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+OK
