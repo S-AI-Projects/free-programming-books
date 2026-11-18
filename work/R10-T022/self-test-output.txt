@@ -8,6 +8,6 @@ test_offline_timeout (__main__.CourseCheckTests.test_offline_timeout) ... ok
 test_selected_entries_and_source_lines (__main__.CourseCheckTests.test_selected_entries_and_source_lines) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 0.002s
+Ran 8 tests in 0.001s
 
 OK
