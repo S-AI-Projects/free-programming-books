@@ -1,0 +1,57 @@
+{
+  "expected": [
+    {
+      "display_name": "С/C++ Теорія та практика",
+      "url": "https://shron1.chtyvo.org.ua/Voitenko_Volodymyr/C_Cpp_Teoriia_ta_praktyka.pdf",
+      "category": "C and C++",
+      "line_number": 17,
+      "metadata": "- Володимир Войтенко (PDF)"
+    },
+    {
+      "display_name": "Розплутаний ClojureScript",
+      "url": "https://lambdabooks.github.io/clojurescript-unraveled",
+      "category": "ClojureScript",
+      "line_number": 22,
+      "metadata": "- Роман Лютіков (LambdaBooks)"
+    },
+    {
+      "display_name": "Вивчить собі Хаскела на велике щастя!",
+      "url": "http://haskell.trygub.com",
+      "category": "Haskell",
+      "line_number": 27,
+      "metadata": "- Міран Ліповача"
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "С/C++ Теорія та практика",
+      "url": "https://shron1.chtyvo.org.ua/Voitenko_Volodymyr/C_Cpp_Teoriia_ta_praktyka.pdf",
+      "category": "C and C++",
+      "line_number": 17,
+      "metadata": "- Володимир Войтенко (PDF)"
+    },
+    {
+      "display_name": "Розплутаний ClojureScript",
+      "url": "https://lambdabooks.github.io/clojurescript-unraveled",
+      "category": "ClojureScript",
+      "line_number": 22,
+      "metadata": "- Роман Лютіков (LambdaBooks)"
+    },
+    {
+      "display_name": "Вивчить собі Хаскела на велике щастя!",
+      "url": "http://haskell.trygub.com",
+      "category": "Haskell",
+      "line_number": 27,
+      "metadata": "- Міран Ліповача"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "live_results": []
+}
