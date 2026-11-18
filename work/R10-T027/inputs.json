@@ -1,0 +1,43 @@
+{
+  "target_file": "casts/free-podcasts-screencasts-fa_IR.md",
+  "selected_entries": [
+    {
+      "display_name": "پادکست کافه برنامه نویس",
+      "url": "https://anchor.fm/codemy",
+      "category": "Programming News",
+      "line_number": 11,
+      "expected": {
+        "display_name": "پادکست کافه برنامه نویس",
+        "url": "https://anchor.fm/codemy",
+        "category": "Programming News"
+      }
+    },
+    {
+      "display_name": "راکت کست",
+      "url": "https://roocket.ir/podcast/",
+      "category": "Programming News",
+      "line_number": 12,
+      "expected": {
+        "display_name": "راکت کست",
+        "url": "https://roocket.ir/podcast/",
+        "category": "Programming News"
+      }
+    },
+    {
+      "display_name": "پارس کلیک",
+      "url": "https://anchor.fm/parsclick/",
+      "category": "Technology",
+      "line_number": 17,
+      "expected": {
+        "display_name": "پارس کلیک",
+        "url": "https://anchor.fm/parsclick/",
+        "category": "Technology"
+      }
+    }
+  ],
+  "live_limits": {
+    "timeout_seconds": 5,
+    "max_workers": 2
+  },
+  "offline_fixture_file": "work/R10-T027/fixtures/http_responses.json"
+}

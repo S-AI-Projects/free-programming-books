@@ -1,0 +1,52 @@
+[
+  {
+    "name": "http_200",
+    "steps": [
+      {"method": "HEAD", "status": 200}
+    ],
+    "expected_label": "success_head"
+  },
+  {
+    "name": "http_404",
+    "steps": [
+      {"method": "HEAD", "status": 404}
+    ],
+    "expected_label": "missing_resource"
+  },
+  {
+    "name": "http_403",
+    "steps": [
+      {"method": "HEAD", "status": 403}
+    ],
+    "expected_label": "forbidden"
+  },
+  {
+    "name": "http_429",
+    "steps": [
+      {"method": "HEAD", "status": 429}
+    ],
+    "expected_label": "rate_limited"
+  },
+  {
+    "name": "head_405_get_200",
+    "steps": [
+      {"method": "HEAD", "status": 405},
+      {"method": "GET", "status": 200}
+    ],
+    "expected_label": "success_get_fallback"
+  },
+  {
+    "name": "timeout",
+    "steps": [
+      {"method": "HEAD", "error": "timeout"}
+    ],
+    "expected_label": "timeout"
+  },
+  {
+    "name": "dns_failure",
+    "steps": [
+      {"method": "HEAD", "error": "dns_failure"}
+    ],
+    "expected_label": "dns_failure"
+  }
+]
