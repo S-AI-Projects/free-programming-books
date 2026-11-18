@@ -1,0 +1,11 @@
+test_failed_self_test_result_returns_nonzero (__main__.CourseCheckTests.test_failed_self_test_result_returns_nonzero) ... ok
+test_fenced_code_ignored (__main__.CourseCheckTests.test_fenced_code_ignored) ... ok
+test_misplaced_fixture_is_identified_with_subject_evidence (__main__.CourseCheckTests.test_misplaced_fixture_is_identified_with_subject_evidence) ... ok
+test_repeated_headings_are_flagged (__main__.CourseCheckTests.test_repeated_headings_are_flagged) ... ok
+test_selected_source_entries (__main__.CourseCheckTests.test_selected_source_entries) ... ok
+test_valid_fixture_preserves_valid_categories (__main__.CourseCheckTests.test_valid_fixture_preserves_valid_categories) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK

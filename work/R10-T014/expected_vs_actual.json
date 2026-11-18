@@ -1,0 +1,55 @@
+{
+  "expected": [
+    {
+      "display_name": "DevOps With Zack",
+      "url": "https://anchor.fm/arshad-zackeriya",
+      "category": "DevOps",
+      "line_number": 9,
+      "metadata": "- Arshad Zackeriya"
+    },
+    {
+      "display_name": "SLIIT FOSSCAST",
+      "url": "https://anchor.fm/sliit-foss-community",
+      "category": "FOSS",
+      "line_number": 14,
+      "metadata": "- SLIIT FOSS Community"
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "DevOps With Zack",
+      "url": "https://anchor.fm/arshad-zackeriya",
+      "category": "DevOps",
+      "line_number": 9,
+      "metadata": "- Arshad Zackeriya"
+    },
+    {
+      "display_name": "SLIIT FOSSCAST",
+      "url": "https://anchor.fm/sliit-foss-community",
+      "category": "FOSS",
+      "line_number": 14,
+      "metadata": "- SLIIT FOSS Community"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "repeated_headings": [],
+  "subject_evidence": {
+    "https://anchor.fm/arshad-zackeriya": {
+      "url": "https://anchor.fm/arshad-zackeriya",
+      "evidence": "DevOps podcast by Arshad Zackeriya covering DevOps principles and practices in Sinhala.",
+      "observed": "2026-11-18"
+    },
+    "https://anchor.fm/sliit-foss-community": {
+      "url": "https://anchor.fm/sliit-foss-community",
+      "evidence": "FOSS podcast by the SLIIT FOSS Community covering Free and Open Source Software.",
+      "observed": "2026-11-18"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "target_file": "casts/free-podcasts-screencasts-si.md",
+  "target_section": "Sinhala casts list; categories: DevOps and FOSS",
+  "selected_entries": [
+    {
+      "display_name": "DevOps With Zack",
+      "url": "https://anchor.fm/arshad-zackeriya",
+      "category": "DevOps",
+      "line_number": 9
+    },
+    {
+      "display_name": "SLIIT FOSSCAST",
+      "url": "https://anchor.fm/sliit-foss-community",
+      "category": "FOSS",
+      "line_number": 14
+    }
+  ]
+}
