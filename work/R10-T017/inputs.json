@@ -1,0 +1,24 @@
+{
+  "target_file": "more/free-programming-cheatsheets.md",
+  "target_section": "Cheatsheets list; category: Angular",
+  "selected_entries": [
+    {
+      "display_name": "Angular Cheat Sheet",
+      "url": "https://angular.io/guide/cheatsheet",
+      "category": "Angular",
+      "line_number": 79
+    },
+    {
+      "display_name": "Angular Cheat Sheet",
+      "url": "https://zerotomastery.io/cheatsheets/angular-cheat-sheet/",
+      "category": "Angular",
+      "line_number": 80
+    },
+    {
+      "display_name": "Angular Cheat Sheet – A Basic Guide to Angular",
+      "url": "https://www.geeksforgeeks.org/angular-cheat-sheet-a-basic-guide-to-angular/",
+      "category": "Angular",
+      "line_number": 81
+    }
+  ]
+}
