@@ -1,0 +1,13 @@
+test_403_and_404_are_not_mislabeled_as_rate_limits_or_success (__main__.CourseCheckTests.test_403_and_404_are_not_mislabeled_as_rate_limits_or_success) ... ok
+test_failed_self_test_result_returns_nonzero (__main__.CourseCheckTests.test_failed_self_test_result_returns_nonzero) ... ok
+test_live_check_is_limited_to_the_fixed_entries (__main__.CourseCheckTests.test_live_check_is_limited_to_the_fixed_entries) ... ok
+test_only_assigned_entries_are_parsed_with_line_numbers (__main__.CourseCheckTests.test_only_assigned_entries_are_parsed_with_line_numbers) ... ok
+test_removal_requires_manual_confirmation_and_missing_label (__main__.CourseCheckTests.test_removal_requires_manual_confirmation_and_missing_label) ... ok
+test_response_fixtures_have_distinct_outcomes (__main__.CourseCheckTests.test_response_fixtures_have_distinct_outcomes) ... ok
+test_timeout_and_dns_errors_are_distinguished (__main__.CourseCheckTests.test_timeout_and_dns_errors_are_distinguished) ... ok
+test_unassigned_url_is_rejected (__main__.CourseCheckTests.test_unassigned_url_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK
