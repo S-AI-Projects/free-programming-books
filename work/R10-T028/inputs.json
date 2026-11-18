@@ -1,0 +1,23 @@
+{
+  "target_file": "more/free-programming-playgrounds-ru.md",
+  "target_section": "Python",
+  "expected_entry": {
+    "title": "Python онлайн: запусти код в браузере",
+    "url": "https://koddo.ru/playground/python",
+    "section": "Python",
+    "line_number": 8
+  },
+  "actual_entries": [
+    {
+      "title": "Python онлайн: запусти код в браузере",
+      "url": "https://koddo.ru/playground/python",
+      "metadata": " - Koddo (без регистрации)",
+      "marker": "*",
+      "section": "Python",
+      "line_number": 8,
+      "raw_line": "* [Python онлайн: запусти код в браузере](https://koddo.ru/playground/python) - Koddo (без регистрации)"
+    }
+  ],
+  "source_line_numbers_preserved": true,
+  "external_requests": "not applicable; formatting-only check"
+}
