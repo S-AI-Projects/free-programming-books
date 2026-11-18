@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "name": "selected row matches",
+      "fixture": "valid.md",
+      "expected_validation": "passed",
+      "expected_errors": []
+    },
+    {
+      "name": "creator metadata differs",
+      "fixture": "changed-metadata.md",
+      "expected_validation": "failed",
+      "expected_errors": ["metadata-mismatch"]
+    },
+    {
+      "name": "selected row is absent",
+      "fixture": "missing-entry.md",
+      "expected_validation": "failed",
+      "expected_errors": ["selected-entry-count"]
+    }
+  ]
+}
