@@ -1,0 +1,32 @@
+{
+  "target_file": "books/free-programming-books-vi.md",
+  "target_section": "Go and Học máy",
+  "selected_entries": [
+    {
+      "display_name": "The Little Go Book",
+      "url": "https://github.com/nainglinaung/the-little-go-book",
+      "category": "Go",
+      "line_number": 10,
+      "kind": "primary"
+    },
+    {
+      "display_name": "HTML",
+      "url": "https://github.com/quangnh89/the-little-go-book/blob/master/vi/go.md",
+      "category": "Go",
+      "line_number": 10,
+      "kind": "HTML"
+    },
+    {
+      "display_name": "Đắm chìm vào Học sâu",
+      "url": "https://d2l.aivivn.com",
+      "category": "Học máy",
+      "line_number": 15,
+      "kind": "primary"
+    }
+  ],
+  "limits": {
+    "timeout_seconds": 5,
+    "max_workers": 2,
+    "max_redirects": 10
+  }
+}

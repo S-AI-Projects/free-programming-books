@@ -1,0 +1,14 @@
+{
+  "url": "https://example.test/old",
+  "chain": [
+    {
+      "status": 301,
+      "location": "https://example.test/moved"
+    },
+    {
+      "status": 200,
+      "location": "https://example.test/moved"
+    }
+  ],
+  "final_url": "https://example.test/moved"
+}
