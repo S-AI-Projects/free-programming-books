@@ -1,0 +1,156 @@
+{
+  "expected": [
+    {
+      "title": "Bitcoin - On Point",
+      "url": "https://eimaung.com/bitcoin/",
+      "section": "Blockchain",
+      "line_number": 18
+    },
+    {
+      "title": "The Little Go Book",
+      "url": "https://github.com/nainglinaung/the-little-go-book",
+      "section": "Go",
+      "line_number": 23
+    },
+    {
+      "title": "HTML",
+      "url": "https://github.com/nainglinaung/the-little-go-book/blob/master/mm/go.md",
+      "section": "Go",
+      "line_number": 23
+    }
+  ],
+  "actual": [
+    {
+      "title": "Bitcoin - On Point",
+      "url": "https://eimaung.com/bitcoin/",
+      "section": "Blockchain",
+      "line_number": 18
+    },
+    {
+      "title": "The Little Go Book",
+      "url": "https://github.com/nainglinaung/the-little-go-book",
+      "section": "Go",
+      "line_number": 23
+    },
+    {
+      "title": "HTML",
+      "url": "https://github.com/nainglinaung/the-little-go-book/blob/master/mm/go.md",
+      "section": "Go",
+      "line_number": 23
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "maintenance_report": {
+    "source_file": "books/free-programming-books-my.md",
+    "validation": "passed",
+    "observed_facts": [
+      {
+        "title": "Bitcoin - On Point",
+        "url": "https://eimaung.com/bitcoin/",
+        "section": "Blockchain",
+        "source_line": 18
+      },
+      {
+        "title": "The Little Go Book",
+        "url": "https://github.com/nainglinaung/the-little-go-book",
+        "section": "Go",
+        "source_line": 23
+      },
+      {
+        "title": "HTML",
+        "url": "https://github.com/nainglinaung/the-little-go-book/blob/master/mm/go.md",
+        "section": "Go",
+        "source_line": 23
+      }
+    ],
+    "before_after_metadata": [
+      {
+        "url": "https://eimaung.com/bitcoin/",
+        "before": {
+          "title": "Bitcoin - On Point",
+          "url": "https://eimaung.com/bitcoin/",
+          "section": "Blockchain",
+          "source_line": 18
+        },
+        "after": {
+          "title": "Bitcoin - On Point",
+          "url": "https://eimaung.com/bitcoin/",
+          "section": "Blockchain",
+          "source_line": 18
+        }
+      },
+      {
+        "url": "https://github.com/nainglinaung/the-little-go-book",
+        "before": {
+          "title": "The Little Go Book",
+          "url": "https://github.com/nainglinaung/the-little-go-book",
+          "section": "Go",
+          "source_line": 23
+        },
+        "after": {
+          "title": "The Little Go Book",
+          "url": "https://github.com/nainglinaung/the-little-go-book",
+          "section": "Go",
+          "source_line": 23
+        }
+      },
+      {
+        "url": "https://github.com/nainglinaung/the-little-go-book/blob/master/mm/go.md",
+        "before": {
+          "title": "HTML",
+          "url": "https://github.com/nainglinaung/the-little-go-book/blob/master/mm/go.md",
+          "section": "Go",
+          "source_line": 23
+        },
+        "after": {
+          "title": "HTML",
+          "url": "https://github.com/nainglinaung/the-little-go-book/blob/master/mm/go.md",
+          "section": "Go",
+          "source_line": 23
+        }
+      }
+    ],
+    "manual_decisions": [
+      {
+        "url": "https://eimaung.com/bitcoin/",
+        "decision": "retain_unchanged",
+        "reason": "Direct PDF link confirmed accessible and valid."
+      },
+      {
+        "url": "https://github.com/nainglinaung/the-little-go-book",
+        "decision": "retain_unchanged",
+        "reason": "Active repository containing Myanmar translation of The Little Go Book."
+      },
+      {
+        "url": "https://github.com/nainglinaung/the-little-go-book/blob/master/mm/go.md",
+        "decision": "retain_unchanged",
+        "reason": "Direct link to Myanmar markdown chapter on GitHub is active and accessible."
+      }
+    ],
+    "recommendations": [
+      {
+        "url": "https://eimaung.com/bitcoin/",
+        "action": "retain_unchanged",
+        "reason": "Direct PDF link confirmed accessible and valid."
+      },
+      {
+        "url": "https://github.com/nainglinaung/the-little-go-book",
+        "action": "retain_unchanged",
+        "reason": "Active repository containing Myanmar translation of The Little Go Book."
+      },
+      {
+        "url": "https://github.com/nainglinaung/the-little-go-book/blob/master/mm/go.md",
+        "action": "retain_unchanged",
+        "reason": "Direct link to Myanmar markdown chapter on GitHub is active and accessible."
+      }
+    ],
+    "validation_errors": [],
+    "catalogue_changes": []
+  }
+}
