@@ -1,0 +1,24 @@
+{
+  "target_file": "books/free-programming-books-fa_IR.md",
+  "target_section": "Persian programming books; sections: رایانش ابری, شبکه, مهندسی نرم‌افزار",
+  "selected_entries": [
+    {
+      "title": "رایانش ابری",
+      "url": "http://docs.occc.ir/books/Main%20Book-20110110_2.pdf",
+      "section": "رایانش ابری",
+      "line_number": 25
+    },
+    {
+      "title": "علم شبکه",
+      "url": "http://networksciencebook.com",
+      "section": "شبکه",
+      "line_number": 30
+    },
+    {
+      "title": "الگوهای طراحی",
+      "url": "https://holosen.net/what-is-design-pattern/",
+      "section": "مهندسی نرم‌افزار",
+      "line_number": 35
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "cases": [
+    {
+      "name": "public_access",
+      "resource_url": "http://networksciencebook.com",
+      "expected_status": "public_access_confirmed",
+      "evidence": {
+        "source_url": "http://networksciencebook.com",
+        "manual_verified": true,
+        "observation": "Book is freely accessible online as HTML chapters without login or registration.",
+        "authentication_required": false,
+        "registration_required": false,
+        "payment_required": false,
+        "environment_requirements": []
+      }
+    },
+    {
+      "name": "registration_required",
+      "resource_url": "https://holosen.net/what-is-design-pattern/",
+      "expected_status": "requirements_confirmed",
+      "evidence": {
+        "source_url": "https://holosen.net/what-is-design-pattern/",
+        "manual_verified": true,
+        "observation": "Accessing full article requires free user registration as noted on page.",
+        "authentication_required": false,
+        "registration_required": true,
+        "payment_required": false,
+        "environment_requirements": []
+      }
+    },
+    {
+      "name": "automated_404",
+      "resource_url": "http://docs.occc.ir/books/Main%20Book-20110110_2.pdf",
+      "expected_status": "unverified",
+      "evidence": {
+        "source_url": "http://docs.occc.ir/books/Main%20Book-20110110_2.pdf",
+        "manual_verified": false,
+        "observation": "Server returned HTTP error or timeout during automated check; content was not verified in browser.",
+        "automated_status": "HTTP 404 or timeout; unverified"
+      }
+    },
+    {
+      "name": "security_challenge",
+      "resource_url": "https://holosen.net/what-is-design-pattern/",
+      "expected_status": "unverified",
+      "evidence": {
+        "source_url": "https://holosen.net/what-is-design-pattern/",
+        "manual_verified": false,
+        "observation": "Encountered bot-detection or firewall challenge before reaching origin site.",
+        "automated_status": "security challenge; origin unverified"
+      }
+    }
+  ]
+}
