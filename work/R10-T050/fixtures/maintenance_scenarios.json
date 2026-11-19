@@ -1,0 +1,112 @@
+{
+  "scenarios": [
+    {
+      "name": "valid_uio_latex_entry",
+      "entry": {
+        "title": "LaTeX for nybegynnere",
+        "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/latex-for-nybegynnere.pdf",
+        "author": "Dag Langmyhr",
+        "format": "PDF",
+        "category": "Latex",
+        "line_number": 8
+      },
+      "observed_facts": {
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_length_bytes": 9432358,
+        "observed_title": "LaTeX for nybegynnere",
+        "observed_author": "Dag Langmyhr",
+        "observed_format": "PDF",
+        "manual_verification": true,
+        "notes": "Verified official lecture guide hosted at Department of Informatics, University of Oslo."
+      },
+      "expected_recommendation": {
+        "action": "retain",
+        "removal_recommended": false,
+        "metadata_change_recommended": false,
+        "decision_rationale": "Resource is available, format is valid PDF, metadata accurately reflects document attributes."
+      }
+    },
+    {
+      "name": "metadata_drift_detected",
+      "entry": {
+        "title": "LaTeX Guide",
+        "url": "https://example.uio.no/latex-guide.pdf",
+        "author": "Old Author",
+        "format": "PDF",
+        "category": "Latex",
+        "line_number": 15
+      },
+      "observed_facts": {
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_length_bytes": 1048576,
+        "observed_title": "LaTeX Guide (2nd Edition)",
+        "observed_author": "New Author",
+        "observed_format": "PDF",
+        "manual_verification": true,
+        "notes": "Author updated in new edition; document is still free and valid."
+      },
+      "expected_recommendation": {
+        "action": "update_metadata",
+        "removal_recommended": false,
+        "metadata_change_recommended": true,
+        "decision_rationale": "Resource is valid but catalog metadata drifted; propose metadata update without removing link."
+      }
+    },
+    {
+      "name": "transient_automated_failure",
+      "entry": {
+        "title": "Lokal guide til farger i LaTeX",
+        "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/farger.pdf",
+        "author": "Dag Langmyhr",
+        "format": "PDF",
+        "category": "Latex",
+        "line_number": 10
+      },
+      "observed_facts": {
+        "http_status": 503,
+        "content_type": "text/html",
+        "content_length_bytes": 512,
+        "observed_title": null,
+        "observed_author": null,
+        "observed_format": null,
+        "manual_verification": false,
+        "notes": "Automated crawl encountered HTTP 503 Service Unavailable; manual check not conducted."
+      },
+      "expected_recommendation": {
+        "action": "investigate",
+        "removal_recommended": false,
+        "metadata_change_recommended": false,
+        "decision_rationale": "Single automated request failure must not cause link deletion; requires manual review."
+      }
+    },
+    {
+      "name": "confirmed_offline_resource",
+      "entry": {
+        "title": "Deprecated Guide",
+        "url": "https://example.uio.no/obsolete.pdf",
+        "author": "Author",
+        "format": "PDF",
+        "category": "Latex",
+        "line_number": 20
+      },
+      "observed_facts": {
+        "http_status": 404,
+        "content_type": "text/html",
+        "content_length_bytes": 2048,
+        "observed_title": null,
+        "observed_author": null,
+        "observed_format": null,
+        "manual_verification": true,
+        "notes": "Manual inspection confirmed resource was deleted upstream with no redirect or replacement available."
+      },
+      "expected_recommendation": {
+        "action": "propose_removal",
+        "removal_recommended": true,
+        "metadata_change_recommended": false,
+        "decision_rationale": "Manual inspection confirmed resource is permanently gone; removal proposal justified."
+      }
+    }
+  ]
+}

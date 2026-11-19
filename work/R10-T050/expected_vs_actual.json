@@ -1,0 +1,168 @@
+{
+  "expected": [
+    {
+      "title": "LaTeX for nybegynnere",
+      "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/latex-for-nybegynnere.pdf",
+      "category": "Latex",
+      "line_number": 8,
+      "author": "Dag Langmyhr",
+      "format": "PDF",
+      "metadata": "- Dag Langmyhr (PDF)"
+    },
+    {
+      "title": "LaTeX for viderekomne",
+      "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/latex-videre.pdf",
+      "category": "Latex",
+      "line_number": 9,
+      "author": "Dag Langmyhr",
+      "format": "PDF",
+      "metadata": "- Dag Langmyhr (PDF)"
+    },
+    {
+      "title": "Lokal guide til farger i LaTeX",
+      "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/farger.pdf",
+      "category": "Latex",
+      "line_number": 10,
+      "author": "Dag Langmyhr",
+      "format": "PDF",
+      "metadata": "- Dag Langmyhr (PDF)"
+    }
+  ],
+  "actual": [
+    {
+      "title": "LaTeX for nybegynnere",
+      "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/latex-for-nybegynnere.pdf",
+      "category": "Latex",
+      "line_number": 8,
+      "author": "Dag Langmyhr",
+      "format": "PDF",
+      "metadata": "- Dag Langmyhr (PDF)",
+      "expected": {
+        "title": "LaTeX for nybegynnere",
+        "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/latex-for-nybegynnere.pdf",
+        "category": "Latex",
+        "line_number": 8,
+        "author": "Dag Langmyhr",
+        "format": "PDF",
+        "metadata": "- Dag Langmyhr (PDF)"
+      }
+    },
+    {
+      "title": "LaTeX for viderekomne",
+      "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/latex-videre.pdf",
+      "category": "Latex",
+      "line_number": 9,
+      "author": "Dag Langmyhr",
+      "format": "PDF",
+      "metadata": "- Dag Langmyhr (PDF)",
+      "expected": {
+        "title": "LaTeX for viderekomne",
+        "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/latex-videre.pdf",
+        "category": "Latex",
+        "line_number": 9,
+        "author": "Dag Langmyhr",
+        "format": "PDF",
+        "metadata": "- Dag Langmyhr (PDF)"
+      }
+    },
+    {
+      "title": "Lokal guide til farger i LaTeX",
+      "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/farger.pdf",
+      "category": "Latex",
+      "line_number": 10,
+      "author": "Dag Langmyhr",
+      "format": "PDF",
+      "metadata": "- Dag Langmyhr (PDF)",
+      "expected": {
+        "title": "Lokal guide til farger i LaTeX",
+        "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/farger.pdf",
+        "category": "Latex",
+        "line_number": 10,
+        "author": "Dag Langmyhr",
+        "format": "PDF",
+        "metadata": "- Dag Langmyhr (PDF)"
+      }
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "failures": []
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "maintenance_report": [
+    {
+      "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/latex-for-nybegynnere.pdf",
+      "line_number": 8,
+      "title": "LaTeX for nybegynnere",
+      "category": "Latex",
+      "author": "Dag Langmyhr",
+      "format": "PDF",
+      "observed_facts": {
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_length_bytes": 9432358,
+        "observed_title": "LaTeX for nybegynnere",
+        "observed_author": "Dag Langmyhr",
+        "observed_format": "PDF",
+        "manual_verification": true,
+        "notes": "Verified official lecture notes by Dag Langmyhr at UiO IFI; publicly accessible PDF."
+      },
+      "recommendation": {
+        "action": "retain",
+        "removal_recommended": false,
+        "metadata_change_recommended": false,
+        "decision_rationale": "Resource is available, format is valid PDF, metadata accurately reflects document attributes."
+      }
+    },
+    {
+      "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/latex-videre.pdf",
+      "line_number": 9,
+      "title": "LaTeX for viderekomne",
+      "category": "Latex",
+      "author": "Dag Langmyhr",
+      "format": "PDF",
+      "observed_facts": {
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_length_bytes": 487711,
+        "observed_title": "LaTeX for viderekomne",
+        "observed_author": "Dag Langmyhr",
+        "observed_format": "PDF",
+        "manual_verification": true,
+        "notes": "Verified advanced LaTeX notes by Dag Langmyhr at UiO IFI; publicly accessible PDF."
+      },
+      "recommendation": {
+        "action": "retain",
+        "removal_recommended": false,
+        "metadata_change_recommended": false,
+        "decision_rationale": "Resource is available, format is valid PDF, metadata accurately reflects document attributes."
+      }
+    },
+    {
+      "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/farger.pdf",
+      "line_number": 10,
+      "title": "Lokal guide til farger i LaTeX",
+      "category": "Latex",
+      "author": "Dag Langmyhr",
+      "format": "PDF",
+      "observed_facts": {
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_length_bytes": 131814,
+        "observed_title": "Lokal guide til farger i LaTeX",
+        "observed_author": "Dag Langmyhr",
+        "observed_format": "PDF",
+        "manual_verification": true,
+        "notes": "Verified color guide by Dag Langmyhr at UiO IFI; publicly accessible PDF."
+      },
+      "recommendation": {
+        "action": "retain",
+        "removal_recommended": false,
+        "metadata_change_recommended": false,
+        "decision_rationale": "Resource is available, format is valid PDF, metadata accurately reflects document attributes."
+      }
+    }
+  ]
+}
