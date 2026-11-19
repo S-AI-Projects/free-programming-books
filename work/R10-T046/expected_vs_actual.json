@@ -1,0 +1,57 @@
+{
+  "expected": [
+    {
+      "display_name": "Kahvit näppikselle",
+      "url": "https://www.aalto.fi/fi/podcastit/kahvit-nappikselle",
+      "category": "Podcastit",
+      "line_number": 3,
+      "metadata": "- Aalto-yliopisto (podcast)"
+    },
+    {
+      "display_name": "Koodarikuiskaajan podcast",
+      "url": "https://koodarikuiskaaja.simplecast.com",
+      "category": "Podcastit",
+      "line_number": 4,
+      "metadata": "- Elisa Heikura (podcast)"
+    },
+    {
+      "display_name": "Koodia pinnan alla",
+      "url": "https://koodiapinnanalla.fi",
+      "category": "Podcastit",
+      "line_number": 5,
+      "metadata": "- Markus Hjort ja Yrjö Kari-Koskinen (podcast)"
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "Kahvit näppikselle",
+      "url": "https://www.aalto.fi/fi/podcastit/kahvit-nappikselle",
+      "category": "Podcastit",
+      "line_number": 3,
+      "metadata": "- Aalto-yliopisto (podcast)"
+    },
+    {
+      "display_name": "Koodarikuiskaajan podcast",
+      "url": "https://koodarikuiskaaja.simplecast.com",
+      "category": "Podcastit",
+      "line_number": 4,
+      "metadata": "- Elisa Heikura (podcast)"
+    },
+    {
+      "display_name": "Koodia pinnan alla",
+      "url": "https://koodiapinnanalla.fi",
+      "category": "Podcastit",
+      "line_number": 5,
+      "metadata": "- Markus Hjort ja Yrjö Kari-Koskinen (podcast)"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "live_results": null
+}

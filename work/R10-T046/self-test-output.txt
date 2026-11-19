@@ -1,0 +1,13 @@
+test_failed_request_does_not_remove_entry (__main__.CourseCheckTests.test_failed_request_does_not_remove_entry) ... ok
+test_failed_self_test_result_returns_nonzero (__main__.CourseCheckTests.test_failed_self_test_result_returns_nonzero) ... ok
+test_fenced_rows_are_not_catalogue_entries (__main__.CourseCheckTests.test_fenced_rows_are_not_catalogue_entries) ... ok
+test_malformed_rows_produce_explicit_failures (__main__.CourseCheckTests.test_malformed_rows_produce_explicit_failures) ... ok
+test_missing_entry_raises_assertion (__main__.CourseCheckTests.test_missing_entry_raises_assertion) ... ok
+test_source_entry_matches_expected_fields (__main__.CourseCheckTests.test_source_entry_matches_expected_fields) ... ok
+test_unusual_url_characters_are_preserved_and_validated (__main__.CourseCheckTests.test_unusual_url_characters_are_preserved_and_validated) ... ok
+test_valid_row_fixture (__main__.CourseCheckTests.test_valid_row_fixture) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.002s
+
+OK
