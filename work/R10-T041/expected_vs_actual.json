@@ -1,0 +1,57 @@
+{
+  "expected": [
+    {
+      "display_name": "AI School",
+      "url": "https://lillytechsystems.com/ai-school/",
+      "category": "0 - MOOC",
+      "line_number": 127,
+      "metadata": ""
+    },
+    {
+      "display_name": "AIMarket Courses",
+      "url": "https://alexar76.github.io/aimarket-courses/",
+      "category": "0 - MOOC",
+      "line_number": 128,
+      "metadata": "- Aleksandr Artamokhov (HTML) (MIT)"
+    },
+    {
+      "display_name": "CheatGrid",
+      "url": "https://www.cheatgrid.com/roadmaps",
+      "category": "0 - MOOC",
+      "line_number": 129,
+      "metadata": ""
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "AI School",
+      "url": "https://lillytechsystems.com/ai-school/",
+      "category": "0 - MOOC",
+      "metadata": "",
+      "line_number": 127
+    },
+    {
+      "display_name": "AIMarket Courses",
+      "url": "https://alexar76.github.io/aimarket-courses/",
+      "category": "0 - MOOC",
+      "metadata": "- Aleksandr Artamokhov (HTML) (MIT)",
+      "line_number": 128
+    },
+    {
+      "display_name": "CheatGrid",
+      "url": "https://www.cheatgrid.com/roadmaps",
+      "category": "0 - MOOC",
+      "metadata": "",
+      "line_number": 129
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "live_request_results": null
+}
