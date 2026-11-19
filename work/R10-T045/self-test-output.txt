@@ -1,0 +1,10 @@
+test_failed_self_test_result_returns_nonzero (__main__.CourseCheckTests.test_failed_self_test_result_returns_nonzero) ... ok
+test_fenced_code_ignored (__main__.CourseCheckTests.test_fenced_code_ignored) ... ok
+test_missing_required_field_fails (__main__.CourseCheckTests.test_missing_required_field_fails) ... ok
+test_selected_source_entries (__main__.CourseCheckTests.test_selected_source_entries) ... ok
+test_valid_fixture (__main__.CourseCheckTests.test_valid_fixture) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK

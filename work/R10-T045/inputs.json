@@ -1,0 +1,24 @@
+{
+  "target_file": "books/free-programming-books-ml.md",
+  "target_section": "Computer Science Malayalam textbooks",
+  "selected_entries": [
+    {
+      "display_name": "XI_Computer_Science_Part_I",
+      "url": "https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Class_XI/CompSciencepart1/XI_Computer_Science_Part_1.pdf",
+      "category": "Computer Science",
+      "line_number": 8
+    },
+    {
+      "display_name": "XI_Computer_Science_Part_II",
+      "url": "https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Class_XI/CompSciencepart1/XI_Computer_Science_Part_II.pdf",
+      "category": "Computer Science",
+      "line_number": 9
+    },
+    {
+      "display_name": "XII_Computer_Science_Part_I",
+      "url": "https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Class_XII/MAL_MED/Computer%20Science%20Part%201%20.pdf",
+      "category": "Computer Science",
+      "line_number": 10
+    }
+  ]
+}
