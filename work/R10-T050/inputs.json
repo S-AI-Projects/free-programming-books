@@ -1,0 +1,30 @@
+{
+  "target_file": "books/free-programming-books-no.md",
+  "target_section": "Norwegian programming books: Latex",
+  "selected_entries": [
+    {
+      "title": "LaTeX for nybegynnere",
+      "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/latex-for-nybegynnere.pdf",
+      "category": "Latex",
+      "line_number": 8,
+      "author": "Dag Langmyhr",
+      "format": "PDF"
+    },
+    {
+      "title": "LaTeX for viderekomne",
+      "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/latex-videre.pdf",
+      "category": "Latex",
+      "line_number": 9,
+      "author": "Dag Langmyhr",
+      "format": "PDF"
+    },
+    {
+      "title": "Lokal guide til farger i LaTeX",
+      "url": "https://www.mn.uio.no/ifi/tjenester/it/hjelp/latex/farger.pdf",
+      "category": "Latex",
+      "line_number": 10,
+      "author": "Dag Langmyhr",
+      "format": "PDF"
+    }
+  ]
+}
