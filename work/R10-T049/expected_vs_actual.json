@@ -1,0 +1,144 @@
+{
+  "expected": [
+    {
+      "title": "C programming in Kannada",
+      "url": "https://youtube.com/playlist?list=PLUZkVL-W-8GLVwteCNH_HNoIAhbfBHnLb",
+      "category": "C",
+      "line_number": 12,
+      "metadata": "- script kiddie"
+    },
+    {
+      "title": "Complete C Language Course in KANNADA",
+      "url": "https://youtube.com/playlist?list=PLjvPj4x59YBUYkNJr4kCKOXsP3NyM4-ik",
+      "category": "C",
+      "line_number": 13,
+      "metadata": "- The Coding Class: Yuvaraj Madha"
+    },
+    {
+      "title": "CSS in Kannada (ಕನ್ನಡದಲ್ಲಿ) - Beginner to Advanced.",
+      "url": "https://youtube.com/playlist?list=PLBGSzVCM24iHnpfOMnhuyiyEo_NGSxdPD",
+      "category": "HTML and CSS",
+      "line_number": 18,
+      "metadata": "- DEBUG CODING"
+    }
+  ],
+  "actual": [
+    {
+      "title": "C programming in Kannada",
+      "url": "https://youtube.com/playlist?list=PLUZkVL-W-8GLVwteCNH_HNoIAhbfBHnLb",
+      "category": "C",
+      "metadata": "- script kiddie",
+      "line_number": 12,
+      "expected": {
+        "title": "C programming in Kannada",
+        "url": "https://youtube.com/playlist?list=PLUZkVL-W-8GLVwteCNH_HNoIAhbfBHnLb",
+        "category": "C",
+        "line_number": 12,
+        "metadata": "- script kiddie"
+      }
+    },
+    {
+      "title": "Complete C Language Course in KANNADA",
+      "url": "https://youtube.com/playlist?list=PLjvPj4x59YBUYkNJr4kCKOXsP3NyM4-ik",
+      "category": "C",
+      "metadata": "- The Coding Class: Yuvaraj Madha",
+      "line_number": 13,
+      "expected": {
+        "title": "Complete C Language Course in KANNADA",
+        "url": "https://youtube.com/playlist?list=PLjvPj4x59YBUYkNJr4kCKOXsP3NyM4-ik",
+        "category": "C",
+        "line_number": 13,
+        "metadata": "- The Coding Class: Yuvaraj Madha"
+      }
+    },
+    {
+      "title": "CSS in Kannada (ಕನ್ನಡದಲ್ಲಿ) - Beginner to Advanced.",
+      "url": "https://youtube.com/playlist?list=PLBGSzVCM24iHnpfOMnhuyiyEo_NGSxdPD",
+      "category": "HTML and CSS",
+      "metadata": "- DEBUG CODING",
+      "line_number": 18,
+      "expected": {
+        "title": "CSS in Kannada (ಕನ್ನಡದಲ್ಲಿ) - Beginner to Advanced.",
+        "url": "https://youtube.com/playlist?list=PLBGSzVCM24iHnpfOMnhuyiyEo_NGSxdPD",
+        "category": "HTML and CSS",
+        "line_number": 18,
+        "metadata": "- DEBUG CODING"
+      }
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "failures": []
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "classifications": [
+    {
+      "url": "https://youtube.com/playlist?list=PLUZkVL-W-8GLVwteCNH_HNoIAhbfBHnLb",
+      "status": "public_access_confirmed",
+      "automated_status": null,
+      "source_url": "https://youtube.com/playlist?list=PLUZkVL-W-8GLVwteCNH_HNoIAhbfBHnLb",
+      "evidence": "Public YouTube playlist with 28 videos by script kiddie; free access without login or payment.",
+      "requirements": [
+        "environment: Web browser or YouTube client with video streaming capability"
+      ],
+      "authentication_required": false,
+      "registration_required": false,
+      "payment_required": false,
+      "environment_requirements": [
+        "Web browser or YouTube client with video streaming capability"
+      ],
+      "manual_verification": true,
+      "removal_recommendation": false,
+      "title": "C programming in Kannada",
+      "category": "C",
+      "line_number": 12,
+      "metadata": "- script kiddie"
+    },
+    {
+      "url": "https://youtube.com/playlist?list=PLjvPj4x59YBUYkNJr4kCKOXsP3NyM4-ik",
+      "status": "public_access_confirmed",
+      "automated_status": null,
+      "source_url": "https://youtube.com/playlist?list=PLjvPj4x59YBUYkNJr4kCKOXsP3NyM4-ik",
+      "evidence": "Public YouTube playlist by The Coding Class: Yuvaraj Madha; freely watchable without registration or payment.",
+      "requirements": [
+        "environment: Web browser or YouTube client with video streaming capability"
+      ],
+      "authentication_required": false,
+      "registration_required": false,
+      "payment_required": false,
+      "environment_requirements": [
+        "Web browser or YouTube client with video streaming capability"
+      ],
+      "manual_verification": true,
+      "removal_recommendation": false,
+      "title": "Complete C Language Course in KANNADA",
+      "category": "C",
+      "line_number": 13,
+      "metadata": "- The Coding Class: Yuvaraj Madha"
+    },
+    {
+      "url": "https://youtube.com/playlist?list=PLBGSzVCM24iHnpfOMnhuyiyEo_NGSxdPD",
+      "status": "public_access_confirmed",
+      "automated_status": null,
+      "source_url": "https://youtube.com/playlist?list=PLBGSzVCM24iHnpfOMnhuyiyEo_NGSxdPD",
+      "evidence": "Public YouTube playlist by DEBUG CODING; free access without credentials, accounts, or payment.",
+      "requirements": [
+        "environment: Web browser or YouTube client with video streaming capability"
+      ],
+      "authentication_required": false,
+      "registration_required": false,
+      "payment_required": false,
+      "environment_requirements": [
+        "Web browser or YouTube client with video streaming capability"
+      ],
+      "manual_verification": true,
+      "removal_recommendation": false,
+      "title": "CSS in Kannada (ಕನ್ನಡದಲ್ಲಿ) - Beginner to Advanced.",
+      "category": "HTML and CSS",
+      "line_number": 18,
+      "metadata": "- DEBUG CODING"
+    }
+  ]
+}

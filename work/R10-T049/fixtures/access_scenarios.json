@@ -1,0 +1,57 @@
+{
+  "cases": [
+    {
+      "name": "public_youtube_course",
+      "resource_url": "https://youtube.com/playlist?list=PLUZkVL-W-8GLVwteCNH_HNoIAhbfBHnLb",
+      "expected_status": "public_access_confirmed",
+      "evidence": {
+        "source_url": "https://youtube.com/playlist?list=PLUZkVL-W-8GLVwteCNH_HNoIAhbfBHnLb",
+        "manual_verified": true,
+        "observation": "Public YouTube playlist accessible without account, registration or payment.",
+        "authentication_required": false,
+        "registration_required": false,
+        "payment_required": false,
+        "environment_requirements": []
+      }
+    },
+    {
+      "name": "registration_course",
+      "resource_url": "https://example.test/course-reg",
+      "expected_status": "requirements_confirmed",
+      "evidence": {
+        "source_url": "https://example.test/course-reg",
+        "manual_verified": true,
+        "observation": "Course platform requires user registration before video access.",
+        "authentication_required": false,
+        "registration_required": true,
+        "payment_required": false,
+        "environment_requirements": []
+      }
+    },
+    {
+      "name": "automated_404",
+      "resource_url": "https://youtube.com/playlist?list=PLUZkVL-W-8GLVwteCNH_HNoIAhbfBHnLb",
+      "expected_status": "unverified",
+      "evidence": {
+        "source_url": "https://youtube.com/playlist?list=PLUZkVL-W-8GLVwteCNH_HNoIAhbfBHnLb",
+        "automated_status": "HTTP 404",
+        "manual_verified": false,
+        "observation": "Automated HEAD request returned 404 but manual inspection was not conducted."
+      }
+    },
+    {
+      "name": "login_wall",
+      "resource_url": "https://example.test/login-required",
+      "expected_status": "requirements_confirmed",
+      "evidence": {
+        "source_url": "https://example.test/login-required",
+        "manual_verified": true,
+        "observation": "Institutional login required.",
+        "authentication_required": true,
+        "registration_required": false,
+        "payment_required": false,
+        "environment_requirements": []
+      }
+    }
+  ]
+}
