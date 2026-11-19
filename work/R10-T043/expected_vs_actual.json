@@ -1,0 +1,58 @@
+{
+  "expected": [
+    {
+      "display_name": "A Way to Practice Competitive Programming",
+      "url": "https://github.com/E869120/Competitive-Programming/blob/master/%5BTutorial%5D%20A%20Way%20to%20Practice%20Competitive%20Programming.pdf",
+      "category": "Competitive Programming",
+      "line_number": 13,
+      "metadata": "- Masataka Yoneda (PDF)"
+    },
+    {
+      "display_name": "A2 Online Judge",
+      "url": "https://a2oj.netlify.app",
+      "category": "Competitive Programming",
+      "line_number": 14,
+      "metadata": ""
+    },
+    {
+      "display_name": "Algorithms for Competitive Programming",
+      "url": "https://cp-algorithms.com",
+      "category": "Competitive Programming",
+      "line_number": 15,
+      "metadata": ""
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "A Way to Practice Competitive Programming",
+      "url": "https://github.com/E869120/Competitive-Programming/blob/master/%5BTutorial%5D%20A%20Way%20to%20Practice%20Competitive%20Programming.pdf",
+      "category": "Competitive Programming",
+      "line_number": 13,
+      "metadata": "- Masataka Yoneda (PDF)"
+    },
+    {
+      "display_name": "A2 Online Judge",
+      "url": "https://a2oj.netlify.app",
+      "category": "Competitive Programming",
+      "line_number": 14,
+      "metadata": ""
+    },
+    {
+      "display_name": "Algorithms for Competitive Programming",
+      "url": "https://cp-algorithms.com",
+      "category": "Competitive Programming",
+      "line_number": 15,
+      "metadata": ""
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "exact_duplicate_groups_count": 4,
+  "normalized_duplicate_groups_count": 1
+}
