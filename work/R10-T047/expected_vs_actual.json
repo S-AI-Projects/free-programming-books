@@ -1,0 +1,68 @@
+{
+  "expected": [
+    {
+      "display_name": "C-programmering",
+      "url": "https://sv.wikibooks.org/wiki/C-programmering",
+      "category": "C",
+      "line_number": 13
+    },
+    {
+      "display_name": "Programmera spel i C++ för nybörjare",
+      "url": "https://sv.wikibooks.org/wiki/Programmera_spel_i_C%2B%2B_f%C3%B6r_nyb%C3%B6rjare",
+      "category": "C++",
+      "line_number": 18
+    },
+    {
+      "display_name": "Pro Git",
+      "url": "https://git-scm.com/book/sv/v2",
+      "category": "Git",
+      "line_number": 23
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "C-programmering",
+      "url": "https://sv.wikibooks.org/wiki/C-programmering",
+      "category": "C",
+      "line_number": 13,
+      "expected": {
+        "display_name": "C-programmering",
+        "url": "https://sv.wikibooks.org/wiki/C-programmering",
+        "category": "C",
+        "line_number": 13
+      }
+    },
+    {
+      "display_name": "Programmera spel i C++ för nybörjare",
+      "url": "https://sv.wikibooks.org/wiki/Programmera_spel_i_C%2B%2B_f%C3%B6r_nyb%C3%B6rjare",
+      "category": "C++",
+      "line_number": 18,
+      "expected": {
+        "display_name": "Programmera spel i C++ för nybörjare",
+        "url": "https://sv.wikibooks.org/wiki/Programmera_spel_i_C%2B%2B_f%C3%B6r_nyb%C3%B6rjare",
+        "category": "C++",
+        "line_number": 18
+      }
+    },
+    {
+      "display_name": "Pro Git",
+      "url": "https://git-scm.com/book/sv/v2",
+      "category": "Git",
+      "line_number": 23,
+      "expected": {
+        "display_name": "Pro Git",
+        "url": "https://git-scm.com/book/sv/v2",
+        "category": "Git",
+        "line_number": 23
+      }
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "failures": []
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "live_results": null
+}
