@@ -1,0 +1,24 @@
+{
+  "target_file": "courses/free-courses-kk.md",
+  "target_section": "Kazakh free courses: Android, HTML/CSS, JavaScript",
+  "selected_entries": [
+    {
+      "display_name": "Android",
+      "url": "https://bilgen.academy/course/view.php?id=512",
+      "category": "Android",
+      "line_number": 19
+    },
+    {
+      "display_name": "HTML/CSS. базалық веб-дизайн құрудағы кодтау.",
+      "url": "https://bilgen.academy/course/view.php?id=510",
+      "category": "HTML and CSS",
+      "line_number": 24
+    },
+    {
+      "display_name": "Javascript. Java курсының негізі",
+      "url": "https://bilgen.academy/course/view.php?id=506",
+      "category": "JavaScript",
+      "line_number": 29
+    }
+  ]
+}

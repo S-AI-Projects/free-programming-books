@@ -1,0 +1,56 @@
+{
+  "expected": [
+    {
+      "display_name": "Android",
+      "url": "https://bilgen.academy/course/view.php?id=512",
+      "category": "Android",
+      "line_number": 19,
+      "metadata": "(BEGINNER)"
+    },
+    {
+      "display_name": "HTML/CSS. базалық веб-дизайн құрудағы кодтау.",
+      "url": "https://bilgen.academy/course/view.php?id=510",
+      "category": "HTML and CSS",
+      "line_number": 24,
+      "metadata": "(BEGINNER)"
+    },
+    {
+      "display_name": "Javascript. Java курсының негізі",
+      "url": "https://bilgen.academy/course/view.php?id=506",
+      "category": "JavaScript",
+      "line_number": 29,
+      "metadata": "(BEGINNER)"
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "Android",
+      "url": "https://bilgen.academy/course/view.php?id=512",
+      "category": "Android",
+      "line_number": 19,
+      "metadata": "(BEGINNER)"
+    },
+    {
+      "display_name": "HTML/CSS. базалық веб-дизайн құрудағы кодтау.",
+      "url": "https://bilgen.academy/course/view.php?id=510",
+      "category": "HTML and CSS",
+      "line_number": 24,
+      "metadata": "(BEGINNER)"
+    },
+    {
+      "display_name": "Javascript. Java курсының негізі",
+      "url": "https://bilgen.academy/course/view.php?id=506",
+      "category": "JavaScript",
+      "line_number": 29,
+      "metadata": "(BEGINNER)"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "formatting_errors": []
+  },
+  "self_test": {
+    "status": "passed"
+  }
+}

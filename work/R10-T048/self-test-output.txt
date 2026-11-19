@@ -1,0 +1,11 @@
+test_bad_heading_hierarchy_rejected (__main__.CourseCheckTests.test_bad_heading_hierarchy_rejected) ... ok
+test_failed_self_test_result_returns_nonzero (__main__.CourseCheckTests.test_failed_self_test_result_returns_nonzero) ... ok
+test_malformed_fixture_rejected_with_line_number (__main__.CourseCheckTests.test_malformed_fixture_rejected_with_line_number) ... ok
+test_source_entries_match_expected_fields (__main__.CourseCheckTests.test_source_entries_match_expected_fields) ... ok
+test_unsorted_sections_rejected (__main__.CourseCheckTests.test_unsorted_sections_rejected) ... ok
+test_valid_fixture (__main__.CourseCheckTests.test_valid_fixture) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK
