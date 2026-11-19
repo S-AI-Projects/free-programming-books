@@ -1,0 +1,24 @@
+{
+  "target_file": "courses/free-courses-kn.md",
+  "target_section": "Kannada free courses: C, HTML and CSS",
+  "selected_entries": [
+    {
+      "title": "C programming in Kannada",
+      "url": "https://youtube.com/playlist?list=PLUZkVL-W-8GLVwteCNH_HNoIAhbfBHnLb",
+      "category": "C",
+      "line_number": 12
+    },
+    {
+      "title": "Complete C Language Course in KANNADA",
+      "url": "https://youtube.com/playlist?list=PLjvPj4x59YBUYkNJr4kCKOXsP3NyM4-ik",
+      "category": "C",
+      "line_number": 13
+    },
+    {
+      "title": "CSS in Kannada (ಕನ್ನಡದಲ್ಲಿ) - Beginner to Advanced.",
+      "url": "https://youtube.com/playlist?list=PLBGSzVCM24iHnpfOMnhuyiyEo_NGSxdPD",
+      "category": "HTML and CSS",
+      "line_number": 18
+    }
+  ]
+}

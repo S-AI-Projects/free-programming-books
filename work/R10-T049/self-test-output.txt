@@ -1,0 +1,10 @@
+test_access_fixture_scenarios_are_classified_with_source_citations (__main__.CourseCheckTests.test_access_fixture_scenarios_are_classified_with_source_citations) ... ok
+test_automated_failure_without_manual_page_evidence_is_unverified (__main__.CourseCheckTests.test_automated_failure_without_manual_page_evidence_is_unverified) ... ok
+test_failed_self_test_result_returns_nonzero (__main__.CourseCheckTests.test_failed_self_test_result_returns_nonzero) ... ok
+test_no_credentials_are_stored (__main__.CourseCheckTests.test_no_credentials_are_stored) ... ok
+test_selected_entries_and_line_numbers_match_source (__main__.CourseCheckTests.test_selected_entries_and_line_numbers_match_source) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
