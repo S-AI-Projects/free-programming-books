@@ -1,0 +1,24 @@
+{
+  "target_file": "courses/free-courses-en.md",
+  "target_section": "English free courses list; selected category: 0 - MOOC",
+  "selected_entries": [
+    {
+      "display_name": "AI School",
+      "url": "https://lillytechsystems.com/ai-school/",
+      "category": "0 - MOOC",
+      "line_number": 127
+    },
+    {
+      "display_name": "AIMarket Courses",
+      "url": "https://alexar76.github.io/aimarket-courses/",
+      "category": "0 - MOOC",
+      "line_number": 128
+    },
+    {
+      "display_name": "CheatGrid",
+      "url": "https://www.cheatgrid.com/roadmaps",
+      "category": "0 - MOOC",
+      "line_number": 129
+    }
+  ]
+}
