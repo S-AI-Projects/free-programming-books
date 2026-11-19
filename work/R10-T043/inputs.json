@@ -1,0 +1,24 @@
+{
+  "target_file": "more/problem-sets-competitive-programming.md",
+  "target_section": "Competitive Programming and Ladders",
+  "selected_entries": [
+    {
+      "display_name": "A Way to Practice Competitive Programming",
+      "url": "https://github.com/E869120/Competitive-Programming/blob/master/%5BTutorial%5D%20A%20Way%20to%20Practice%20Competitive%20Programming.pdf",
+      "category": "Competitive Programming",
+      "line_number": 13
+    },
+    {
+      "display_name": "A2 Online Judge",
+      "url": "https://a2oj.netlify.app",
+      "category": "Competitive Programming",
+      "line_number": 14
+    },
+    {
+      "display_name": "Algorithms for Competitive Programming",
+      "url": "https://cp-algorithms.com",
+      "category": "Competitive Programming",
+      "line_number": 15
+    }
+  ]
+}
