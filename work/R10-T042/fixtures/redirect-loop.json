@@ -1,0 +1,7 @@
+{
+  "url": "https://example.test/loop",
+  "status": null,
+  "final_url": "https://example.test/loop",
+  "error": "too many redirects",
+  "redirect_count": 11
+}

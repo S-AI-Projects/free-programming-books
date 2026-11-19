@@ -1,0 +1,14 @@
+{
+  "url": "http://koodiaapinen.fi",
+  "final_url": "https://koodiaapinen.fi/",
+  "chain": [
+    {
+      "status": 301,
+      "location": "https://koodiaapinen.fi/"
+    },
+    {
+      "status": 200,
+      "location": "https://koodiaapinen.fi/"
+    }
+  ]
+}

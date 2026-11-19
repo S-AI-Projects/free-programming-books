@@ -1,0 +1,24 @@
+{
+  "target_file": "courses/free-courses-fi.md",
+  "target_section": "Finnish free courses list; selected C# and Other entries",
+  "selected_entries": [
+    {
+      "display_name": "Jyväskylän yliopiston C#-kieli ohjelmointikurssi",
+      "url": "https://tim.jyu.fi/view/kurssit/tie/ohj1/moniste/Ohjelmointi-1",
+      "category": "C#",
+      "line_number": 11
+    },
+    {
+      "display_name": "Elements of AI",
+      "url": "https://www.elementsofai.com/fi/",
+      "category": "Other",
+      "line_number": 16
+    },
+    {
+      "display_name": "Koodiaapinen",
+      "url": "https://koodiaapinen.fi",
+      "category": "Other",
+      "line_number": 17
+    }
+  ]
+}
