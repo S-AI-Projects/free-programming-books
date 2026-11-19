@@ -1,0 +1,24 @@
+{
+  "target_file": "more/free-programming-playgrounds.md",
+  "target_section": "Algorithms playgrounds",
+  "selected_entries": [
+    {
+      "display_name": "Data Structures Visualization",
+      "url": "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html",
+      "category": "Algorithms",
+      "line_number": 61
+    },
+    {
+      "display_name": "The Algorithm Visualizer",
+      "url": "https://algorithm-visualizer.org",
+      "category": "Algorithms",
+      "line_number": 62
+    },
+    {
+      "display_name": "visualising data structures and algorithms through animation",
+      "url": "https://visualgo.net/en",
+      "category": "Algorithms",
+      "line_number": 63
+    }
+  ]
+}

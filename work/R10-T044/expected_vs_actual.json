@@ -1,0 +1,57 @@
+{
+  "expected": [
+    {
+      "display_name": "Data Structures Visualization",
+      "url": "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html",
+      "category": "Algorithms",
+      "line_number": 61,
+      "metadata": "- David Galles"
+    },
+    {
+      "display_name": "The Algorithm Visualizer",
+      "url": "https://algorithm-visualizer.org",
+      "category": "Algorithms",
+      "line_number": 62,
+      "metadata": ""
+    },
+    {
+      "display_name": "visualising data structures and algorithms through animation",
+      "url": "https://visualgo.net/en",
+      "category": "Algorithms",
+      "line_number": 63,
+      "metadata": ""
+    }
+  ],
+  "actual": [
+    {
+      "display_name": "Data Structures Visualization",
+      "url": "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html",
+      "category": "Algorithms",
+      "line_number": 61,
+      "metadata": "- David Galles"
+    },
+    {
+      "display_name": "The Algorithm Visualizer",
+      "url": "https://algorithm-visualizer.org",
+      "category": "Algorithms",
+      "line_number": 62,
+      "metadata": ""
+    },
+    {
+      "display_name": "visualising data structures and algorithms through animation",
+      "url": "https://visualgo.net/en",
+      "category": "Algorithms",
+      "line_number": 63,
+      "metadata": ""
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "mismatches": [],
+    "error": null
+  },
+  "self_test": {
+    "status": "passed"
+  },
+  "repeated_headings": []
+}
