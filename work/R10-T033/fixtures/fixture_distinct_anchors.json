@@ -1,0 +1,12 @@
+{
+  "fixture": "distinct_anchors",
+  "description": "Same base URL but different fragments — must NOT be merged (anchors point to different sections)",
+  "entries": [
+    {"line_no": 20, "title": "Book Chapter 1", "url": "http://example.com/book#chapter-1", "section": "S"},
+    {"line_no": 21, "title": "Book Chapter 2", "url": "http://example.com/book#chapter-2", "section": "S"}
+  ],
+  "expected": {
+    "duplicate_groups": 0,
+    "note": "Distinct anchors are intentionally kept separate"
+  }
+}

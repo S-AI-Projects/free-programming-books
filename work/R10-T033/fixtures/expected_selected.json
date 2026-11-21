@@ -1,0 +1,32 @@
+[
+  {
+    "line_no": 13,
+    "title": "Beej's Guide til Netvarksprogrammierung",
+    "url": "https://web.archive.org/web/20190701062226/http://artcreationforever.com/bgnet.html",
+    "author": "Brian \"Beej Jorgensen\" Hall, Art of Science",
+    "fmt": "HTML",
+    "section": "C",
+    "selected": true,
+    "is_duplicate": false
+  },
+  {
+    "line_no": 14,
+    "title": "Programmering i C",
+    "url": "http://people.cs.aau.dk/~normark/c-prog-06/pdf/all.pdf",
+    "author": "Kurt Nørmark",
+    "fmt": "PDF",
+    "section": "C",
+    "selected": true,
+    "is_duplicate": false
+  },
+  {
+    "line_no": 19,
+    "title": "Object-oriented Programming in C#",
+    "url": "http://people.cs.aau.dk/~normark/oop-csharp/pdf/all.pdf",
+    "author": "Kurt Nørmark",
+    "fmt": "PDF",
+    "section": "C\\#",
+    "selected": true,
+    "is_duplicate": false
+  }
+]

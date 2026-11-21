@@ -1,0 +1,12 @@
+{
+  "fixture": "exact_duplicate",
+  "description": "Two entries with byte-identical URLs must be grouped as duplicates",
+  "entries": [
+    {"line_no": 30, "title": "Objektorienteret programmering i Java", "url": "http://javabog.dk", "section": "Java"},
+    {"line_no": 31, "title": "The Complete Reference Java",          "url": "http://javabog.dk", "section": "Java"}
+  ],
+  "expected": {
+    "duplicate_groups": 1,
+    "group_count": 2
+  }
+}

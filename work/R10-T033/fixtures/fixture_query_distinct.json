@@ -1,0 +1,12 @@
+{
+  "fixture": "query_distinct",
+  "description": "Same base URL with different query param VALUES serve different resources — must NOT be merged",
+  "entries": [
+    {"line_no": 40, "title": "Book ID 1", "url": "http://example.com/dl?id=1", "section": "S"},
+    {"line_no": 41, "title": "Book ID 2", "url": "http://example.com/dl?id=2", "section": "S"}
+  ],
+  "expected": {
+    "duplicate_groups": 0,
+    "note": "Different query param values identify different resources; must not be merged"
+  }
+}

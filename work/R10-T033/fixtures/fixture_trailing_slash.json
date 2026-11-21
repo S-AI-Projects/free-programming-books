@@ -1,0 +1,12 @@
+{
+  "fixture": "trailing_slash",
+  "description": "URLs differing only by trailing slash must be normalised and grouped as duplicates",
+  "entries": [
+    {"line_no": 30, "title": "Guide (no slash)",   "url": "http://example.com/guide",  "section": "S"},
+    {"line_no": 31, "title": "Guide (with slash)", "url": "http://example.com/guide/", "section": "S"}
+  ],
+  "expected": {
+    "duplicate_groups": 1,
+    "normalised_to": "http://example.com/guide"
+  }
+}

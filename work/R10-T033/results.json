@@ -1,0 +1,64 @@
+{
+  "selected_entries": [
+    {
+      "line_no": 13,
+      "title": "Beej's Guide til Netvarksprogrammierung",
+      "url": "https://web.archive.org/web/20190701062226/http://artcreationforever.com/bgnet.html",
+      "author": "B",
+      "fmt": "",
+      "notes": "rian \"Beej Jorgensen\" Hall, Art of Science (HTML) *( :card_file_box: archived)*",
+      "section": "C",
+      "selected": true
+    },
+    {
+      "line_no": 14,
+      "title": "Programmering i C",
+      "url": "http://people.cs.aau.dk/~normark/c-prog-06/pdf/all.pdf",
+      "author": "K",
+      "fmt": "",
+      "notes": "urt Nørmark (PDF)",
+      "section": "C",
+      "selected": true
+    },
+    {
+      "line_no": 19,
+      "title": "Object-oriented Programming in C#",
+      "url": "http://people.cs.aau.dk/~normark/oop-csharp/pdf/all.pdf",
+      "author": "K",
+      "fmt": "",
+      "notes": "urt Nørmark (PDF)",
+      "section": "<a id=\"csharp\"></a>C\\#",
+      "selected": true
+    }
+  ],
+  "duplicate_groups": [
+    {
+      "normalised_url": "http://javabog.dk/",
+      "count": 2,
+      "entries": [
+        {
+          "line_no": 30,
+          "title": "Objektorienteret programmering i Java",
+          "url": "http://javabog.dk",
+          "author": "J",
+          "fmt": "",
+          "notes": "acob Nordfalk",
+          "section": "Java",
+          "selected": false
+        },
+        {
+          "line_no": 31,
+          "title": "The Complete Reference Java",
+          "url": "http://javabog.dk",
+          "author": "S",
+          "fmt": "",
+          "notes": "waminaryan",
+          "section": "Java",
+          "selected": false
+        }
+      ],
+      "requires_manual_review": true,
+      "note": "These entries share the same normalised URL. Verify in a browser before removing any entry. A rate-limit or transient error is NOT grounds for removal."
+    }
+  ]
+}
