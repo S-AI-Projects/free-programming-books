@@ -1,0 +1,29 @@
+[
+  {
+    "line_no": 23,
+    "title": "การออกแบบและวิเคราะห์อัลกอริทึม",
+    "url": "https://youtube.com/playlist?list=PL0ROnaCzUGB65_YkASLAEmcW_mtxFtq4m",
+    "author": "สมชาย ประสิทธิ์จูตระกูล",
+    "fmt": "",
+    "section": "Algorithms & Data Structures",
+    "selected": true
+  },
+  {
+    "line_no": 28,
+    "title": "Natural Language Processing 2023",
+    "url": "https://www.youtube.com/playlist?list=PLyyEwPZh6aHpCAaG6dot5xXrlEK73oF4J",
+    "author": "อรรถพล ธำรงรัตนฤทธิ์",
+    "fmt": "",
+    "section": "Artificial Intelligence",
+    "selected": true
+  },
+  {
+    "line_no": 29,
+    "title": "NLP 2021",
+    "url": "https://youtube.com/playlist?list=PLcBOyD1N1T-PIYnPZ9_iHtug9e-BcHIob",
+    "author": "EkapolC",
+    "fmt": "",
+    "section": "Artificial Intelligence",
+    "selected": true
+  }
+]
