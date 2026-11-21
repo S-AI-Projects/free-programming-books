@@ -1,0 +1,49 @@
+============================================================
+R10-T038 Self-Test (offline fixture-based)
+============================================================
+
+[Fixture 1] Malformed bullet syntax
+  PASS  Malformed bullet is detected
+  PASS  Error mentions 'Malformed bullet'
+  PASS  Valid bullet passes syntax check
+
+[Fixture 2] Non-English text and markdown links preserved
+  PASS  Unicode title: 1 entry parsed
+  PASS  Unicode title preserved verbatim
+  PASS  Unicode entry URL correct
+
+[Fixture 3] Heading hierarchy check
+  PASS  Skipped heading level detected
+  PASS  Error mentions level jump
+  PASS  Valid heading hierarchy: no errors
+
+[Fixture 4] Alphabetical ordering check
+  PASS  Out-of-order section detected
+  PASS  Warning mentions section name
+  PASS  In-order section: no warnings
+
+[Fixture 5] Trailing whitespace
+  PASS  Trailing whitespace detected
+  PASS  No trailing whitespace: passes
+
+[Fixture 6] Selected entries in actual target file
+  PASS  Three selected entries found
+  PASS  Line 3 entry exists
+  PASS  Line 3 title
+  PASS  Line 3 URL is anchor
+  PASS  Line 8 entry exists
+  PASS  Line 8 title
+  PASS  Line 8 URL
+  PASS  Line 9 entry exists
+  PASS  Line 9 title
+  PASS  Line 9 URL
+  PASS  Target file has no bullet syntax errors
+
+[Fixture 7] Fragment anchor URL accepted
+  PASS  Fragment anchor: 1 entry parsed
+  PASS  Fragment anchor URL preserved
+  PASS  Fragment anchor URL not flagged as empty
+
+============================================================
+RESULT: All 28 assertions passed.
+All self-tests passed.

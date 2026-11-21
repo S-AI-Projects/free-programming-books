@@ -1,0 +1,34 @@
+{
+  "task": "R10-T038",
+  "target_file": "books/free-programming-books-en.md",
+  "stats": {
+    "total_lines": 10,
+    "total_headings": 2,
+    "total_entries": 3
+  },
+  "selected_entries": [
+    {
+      "lineno": 3,
+      "section": "Index",
+      "title": "All",
+      "url": "#all",
+      "rest": ""
+    },
+    {
+      "lineno": 8,
+      "section": "All",
+      "title": "English, By Programming Language",
+      "url": "free-programming-books-langs.md",
+      "rest": ""
+    },
+    {
+      "lineno": 9,
+      "section": "All",
+      "title": "English, By Subject",
+      "url": "free-programming-books-subjects.md",
+      "rest": ""
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}
