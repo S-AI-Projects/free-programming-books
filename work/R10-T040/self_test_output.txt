@@ -1,0 +1,78 @@
+============================================================
+R10-T040 Self-Test (offline fixture-based)
+============================================================
+
+[Fixture 1] Malformed row — no URL
+  PASS  Malformed row: entry count == 0
+
+[Fixture 2] Three selected entries parsed from target file
+  PASS  Three selected entries found
+  PASS  Line 45 found
+  PASS  Line 45 title
+  PASS  Line 45 author
+  PASS  Line 45 URL is YouTube playlist
+  PASS  Line 46 found
+  PASS  Line 46 title
+  PASS  Line 46 author
+  PASS  Line 46 URL is YouTube playlist
+  PASS  Line 47 found
+  PASS  Line 47 title
+  PASS  Line 47 author
+  PASS  Line 47 URL is YouTube playlist
+
+[Fixture 3] Observed facts extraction — stable and correct
+  PASS  Source line preserved in facts
+  PASS  URL host correct
+  PASS  Is YouTube playlist
+  PASS  Playlist ID extracted
+  PASS  Has author
+  PASS  Title is not ASCII (Korean)
+  PASS  URL hash is stable across runs
+
+[Fixture 4] Recommendations are separate from observed facts
+  PASS  OK status → no_change
+  PASS  OK rationale is non-empty
+  PASS  404 → verify_manually
+  PASS  404 confidence is low
+  PASS  404 rationale mentions single failure
+  PASS  429 → no_change (not a dead link)
+  PASS  429 rationale mentions rate-limited
+  PASS  Timeout → no_change
+  PASS  Skipped → no_change
+
+[Fixture 5] Simulated HTTP 200 → 'ok'
+  PASS  HEAD 200 → STATUS_OK
+
+[Fixture 6] Simulated HTTP 429 → 'rate_limited' (not removed)
+  PASS  HTTP 429 → rate_limited
+  PASS  429 recommendation is not 'remove'
+
+[Fixture 7] DNS failure → 'dns_failure'
+  PASS  DNS failure → STATUS_DNS_FAIL
+
+[Fixture 8] Timeout → 'timeout'
+  PASS  Timeout → STATUS_TIMEOUT
+
+[Fixture 9] Full report structure integrity
+  PASS  Report has 3 entries
+  PASS  Line 45: 'before' key present
+  PASS  Line 45: 'observed_facts' key present
+  PASS  Line 45: 'recommendation' key present
+  PASS  Line 45: 'after' key present
+  PASS  Line 45: before==after (no changes)
+  PASS  Line 46: 'before' key present
+  PASS  Line 46: 'observed_facts' key present
+  PASS  Line 46: 'recommendation' key present
+  PASS  Line 46: 'after' key present
+  PASS  Line 46: before==after (no changes)
+  PASS  Line 47: 'before' key present
+  PASS  Line 47: 'observed_facts' key present
+  PASS  Line 47: 'recommendation' key present
+  PASS  Line 47: 'after' key present
+  PASS  Line 47: before==after (no changes)
+  PASS  Report contains policy statement
+  PASS  Tool version present
+
+============================================================
+RESULT: All 53 assertions passed.
+All self-tests passed.

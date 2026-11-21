@@ -1,0 +1,138 @@
+{
+  "task": "R10-T040",
+  "target_file": "courses/free-courses-ko.md",
+  "live_mode": false,
+  "total_entries_in_file": 133,
+  "selected_lines": [
+    45,
+    46,
+    47
+  ],
+  "report": [
+    {
+      "before": {
+        "source_line": 45,
+        "title": "실전 알고리즘 강좌",
+        "url": "https://www.youtube.com/playlist?list=PLRx0vPvlEmdDHxCvAQS1_6XV4deOwfVrz",
+        "author": "동빈나",
+        "format": "",
+        "notes": ""
+      },
+      "observed_facts": {
+        "source_line": 45,
+        "title": "실전 알고리즘 강좌",
+        "url": "https://www.youtube.com/playlist?list=PLRx0vPvlEmdDHxCvAQS1_6XV4deOwfVrz",
+        "author": "동빈나",
+        "format_hint": "",
+        "url_scheme": "https",
+        "url_host": "www.youtube.com",
+        "url_path_prefix": "/playlist?list=PLRx0vPvlEmdDHxCvAQS1_6XV4deOwfVrz",
+        "is_youtube_playlist": true,
+        "playlist_id": "PLRx0vPvlEmdDHxCvAQS1_6XV4deOwfVrz",
+        "has_author": true,
+        "title_is_ascii": false,
+        "url_hash": "55cbcc064791"
+      },
+      "http_status": "skipped",
+      "http_detail": "offline mode; use --live",
+      "recommendation": {
+        "action": "no_change",
+        "rationale": "Not probed (offline mode). No change recommended without evidence.",
+        "confidence": "high"
+      },
+      "after": {
+        "source_line": 45,
+        "title": "실전 알고리즘 강좌",
+        "url": "https://www.youtube.com/playlist?list=PLRx0vPvlEmdDHxCvAQS1_6XV4deOwfVrz",
+        "author": "동빈나",
+        "format": "",
+        "notes": "",
+        "changed": false
+      }
+    },
+    {
+      "before": {
+        "source_line": 46,
+        "title": "알고리즘 강좌",
+        "url": "https://www.youtube.com/playlist?list=PLNvbgg5to7cfAx80VeQFW1Sq1mHGfiECo",
+        "author": "권오흠",
+        "format": "",
+        "notes": ""
+      },
+      "observed_facts": {
+        "source_line": 46,
+        "title": "알고리즘 강좌",
+        "url": "https://www.youtube.com/playlist?list=PLNvbgg5to7cfAx80VeQFW1Sq1mHGfiECo",
+        "author": "권오흠",
+        "format_hint": "",
+        "url_scheme": "https",
+        "url_host": "www.youtube.com",
+        "url_path_prefix": "/playlist?list=PLNvbgg5to7cfAx80VeQFW1Sq1mHGfiECo",
+        "is_youtube_playlist": true,
+        "playlist_id": "PLNvbgg5to7cfAx80VeQFW1Sq1mHGfiECo",
+        "has_author": true,
+        "title_is_ascii": false,
+        "url_hash": "3462760ecd62"
+      },
+      "http_status": "skipped",
+      "http_detail": "offline mode; use --live",
+      "recommendation": {
+        "action": "no_change",
+        "rationale": "Not probed (offline mode). No change recommended without evidence.",
+        "confidence": "high"
+      },
+      "after": {
+        "source_line": 46,
+        "title": "알고리즘 강좌",
+        "url": "https://www.youtube.com/playlist?list=PLNvbgg5to7cfAx80VeQFW1Sq1mHGfiECo",
+        "author": "권오흠",
+        "format": "",
+        "notes": "",
+        "changed": false
+      }
+    },
+    {
+      "before": {
+        "source_line": 47,
+        "title": "이상진의 자료구조 (2017)",
+        "url": "https://www.youtube.com/playlist?list=PL7mmuO705dG12pP82RPUR3wdD5dbYu9gZ",
+        "author": "프리렉",
+        "format": "",
+        "notes": ""
+      },
+      "observed_facts": {
+        "source_line": 47,
+        "title": "이상진의 자료구조 (2017)",
+        "url": "https://www.youtube.com/playlist?list=PL7mmuO705dG12pP82RPUR3wdD5dbYu9gZ",
+        "author": "프리렉",
+        "format_hint": "",
+        "url_scheme": "https",
+        "url_host": "www.youtube.com",
+        "url_path_prefix": "/playlist?list=PL7mmuO705dG12pP82RPUR3wdD5dbYu9gZ",
+        "is_youtube_playlist": true,
+        "playlist_id": "PL7mmuO705dG12pP82RPUR3wdD5dbYu9gZ",
+        "has_author": true,
+        "title_is_ascii": false,
+        "url_hash": "a87ea7302265"
+      },
+      "http_status": "skipped",
+      "http_detail": "offline mode; use --live",
+      "recommendation": {
+        "action": "no_change",
+        "rationale": "Not probed (offline mode). No change recommended without evidence.",
+        "confidence": "high"
+      },
+      "after": {
+        "source_line": 47,
+        "title": "이상진의 자료구조 (2017)",
+        "url": "https://www.youtube.com/playlist?list=PL7mmuO705dG12pP82RPUR3wdD5dbYu9gZ",
+        "author": "프리렉",
+        "format": "",
+        "notes": "",
+        "changed": false
+      }
+    }
+  ],
+  "policy": "No link is removed solely because a single automated request failed. Observed facts and recommendations are kept separate. Stable output: same fixtures always produce same facts.",
+  "tool_version": "r10-t040 v1.0"
+}
