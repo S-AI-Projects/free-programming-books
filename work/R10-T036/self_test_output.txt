@@ -1,0 +1,44 @@
+============================================================
+R10-T036 Self-Test (offline fixture-based)
+============================================================
+
+[Fixture 1] Malformed row — no URL
+  PASS  Malformed row: entry count == 0
+
+[Fixture 2] Valid row with percent-encoded URL
+  PASS  Percent-encoded URL fixture: 1 entry parsed
+  PASS  Percent-encoded URL preserved verbatim
+  PASS  URL contains percent-encoded chars
+  PASS  No author (empty string)
+  PASS  Format is PDF
+
+[Fixture 3] Valid row with linked author
+  PASS  Linked-author fixture: 1 entry parsed
+  PASS  Author name extracted correctly
+  PASS  Author URL extracted correctly
+  PASS  Book URL preserved
+  PASS  Format is PDF
+
+[Fixture 4] Valid row, no author
+  PASS  No-author fixture: 1 entry parsed
+  PASS  Author field is empty string
+  PASS  Author URL is None
+  PASS  Format field is PDF
+
+[Fixture 5] Selected entries in actual target file
+  PASS  Two selected entries found (lines 32, 33)
+  PASS  Line 32 entry exists
+  PASS  Line 32 title
+  PASS  Line 32 URL is percent-encoded
+  PASS  Line 32 format is PDF
+  PASS  Line 32 no author
+  PASS  Line 33 entry exists
+  PASS  Line 33 title
+  PASS  Line 33 author name
+  PASS  Line 33 author URL
+  PASS  Line 33 format is PDF
+  PASS  Line 33 URL contains percent-encoded chars
+
+============================================================
+RESULT: All 27 assertions passed.
+All self-tests passed.
