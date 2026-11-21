@@ -1,0 +1,17 @@
+{
+  "fixture": "timeout",
+  "description": "URL does not respond within the 10-second budget — classified as TIMEOUT, NOT removed",
+  "input_url": "https://example.com/slow",
+  "expected": {
+    "classification": "TIMEOUT"
+  },
+  "policy_note": "A TIMEOUT is NOT grounds for removal. The entry must be reported and manually verified in a browser before any catalogue change.",
+  "simulated_output": {
+    "status": -3,
+    "final_url": "https://example.com/slow",
+    "hops": 0,
+    "classification": "TIMEOUT",
+    "checked_at": "2026-11-21T00:00:00Z",
+    "error": "timed out"
+  }
+}

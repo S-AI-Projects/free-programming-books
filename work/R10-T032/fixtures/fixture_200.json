@@ -1,0 +1,17 @@
+{
+  "fixture": "200",
+  "description": "URL returns HTTP 200 directly — no redirect",
+  "input_url": "https://example.com/ok",
+  "expected": {
+    "status": 200,
+    "classification": "OK",
+    "hops": 0
+  },
+  "simulated_output": {
+    "status": 200,
+    "final_url": "https://example.com/ok",
+    "hops": 0,
+    "classification": "OK",
+    "checked_at": "2026-11-21T00:00:00Z"
+  }
+}

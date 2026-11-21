@@ -1,0 +1,19 @@
+{
+  "fixture": "login_wall",
+  "description": "URL redirects to a login/authentication page (e.g. accounts.google.com)",
+  "input_url": "https://example.com/protected",
+  "redirect_chain": [
+    {"url": "https://example.com/protected", "status": 302, "location": "https://accounts.google.com/signin?..."}
+  ],
+  "expected": {
+    "classification": "LOGIN_WALL",
+    "final_url_contains": "accounts.google.com"
+  },
+  "simulated_output": {
+    "status": -2,
+    "final_url": "https://accounts.google.com/signin",
+    "hops": 1,
+    "classification": "LOGIN_WALL",
+    "checked_at": "2026-11-21T00:00:00Z"
+  }
+}

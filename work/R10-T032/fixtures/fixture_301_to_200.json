@@ -1,0 +1,21 @@
+{
+  "fixture": "301_to_200",
+  "description": "URL returns HTTP 301 redirecting to a new location that returns 200",
+  "input_url": "https://example.com/old",
+  "redirect_chain": [
+    {"url": "https://example.com/old", "status": 301, "location": "https://example.com/new"},
+    {"url": "https://example.com/new", "status": 200}
+  ],
+  "expected": {
+    "classification": "REDIRECTED",
+    "final_url": "https://example.com/new",
+    "hops_min": 1
+  },
+  "simulated_output": {
+    "status": 200,
+    "final_url": "https://example.com/new",
+    "hops": 1,
+    "classification": "REDIRECTED",
+    "checked_at": "2026-11-21T00:00:00Z"
+  }
+}

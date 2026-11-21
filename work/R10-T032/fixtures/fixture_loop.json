@@ -1,0 +1,19 @@
+{
+  "fixture": "loop",
+  "description": "URL enters a redirect cycle (A→B→A or exceeds MAX_REDIRECTS=10)",
+  "input_url": "https://example.com/loop-a",
+  "redirect_chain": [
+    {"url": "https://example.com/loop-a", "status": 301, "location": "https://example.com/loop-b"},
+    {"url": "https://example.com/loop-b", "status": 301, "location": "https://example.com/loop-a"}
+  ],
+  "expected": {
+    "classification": "LOOP"
+  },
+  "simulated_output": {
+    "status": -1,
+    "final_url": "https://example.com/loop",
+    "hops": 10,
+    "classification": "LOOP",
+    "checked_at": "2026-11-21T00:00:00Z"
+  }
+}
