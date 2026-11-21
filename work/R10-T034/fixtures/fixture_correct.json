@@ -1,0 +1,15 @@
+{
+  "fixture": "correct",
+  "description": "Angular entry correctly placed under Angular section — must NOT be flagged",
+  "entry": {
+    "line_no": 43,
+    "title": "Angular In Telugu | ANGULAR 10 IN TELUGU | angular in telugu | ANGULAR INTRODUCTION FOR BEGINNERS(2021)",
+    "url": "https://www.youtube.com/watch?v=9MxS8oNlnMM",
+    "section": "Angular",
+    "subsection": ""
+  },
+  "expected": {
+    "ok": true,
+    "suggested": null
+  }
+}

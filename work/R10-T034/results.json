@@ -1,0 +1,62 @@
+{
+  "selected_entries": [
+    {
+      "line_no": 37,
+      "title": "Android Development course in 2 Hours in Telugu",
+      "url": "https://www.youtube.com/watch?v=7ZLKpN8vXLo",
+      "author": "P",
+      "fmt": "",
+      "section": "Android",
+      "subsection": "",
+      "section_label": "Android",
+      "selected": true,
+      "placement": {
+        "ok": true,
+        "section": "Android",
+        "suggested": null,
+        "reason": "Entry appears correctly placed."
+      }
+    },
+    {
+      "line_no": 38,
+      "title": "Android App Development Tutorials For Beginners in Telugu Android Studio",
+      "url": "https://www.youtube.com/playlist?list=PLeCpoxUq3EhmgHp7KI-Ih3X2PcNYRtC5y",
+      "author": "S",
+      "fmt": "",
+      "section": "Android",
+      "subsection": "",
+      "section_label": "Android",
+      "selected": true,
+      "placement": {
+        "ok": true,
+        "section": "Android",
+        "suggested": null,
+        "reason": "Entry appears correctly placed."
+      }
+    },
+    {
+      "line_no": 43,
+      "title": "Angular In Telugu \\| ANGULAR 10 IN TELUGU \\| angular in telugu \\| ANGULAR INTRODUCTION FOR BEGINNERS(2021)",
+      "url": "https://www.youtube.com/watch?v=9MxS8oNlnMM",
+      "author": "T",
+      "fmt": "",
+      "section": "Angular",
+      "subsection": "",
+      "section_label": "Angular",
+      "selected": true,
+      "placement": {
+        "ok": true,
+        "section": "Angular",
+        "suggested": null,
+        "reason": "Entry appears correctly placed."
+      }
+    }
+  ],
+  "duplicate_headings": [],
+  "headings_not_in_index": [
+    [
+      143,
+      "Data Structures"
+    ]
+  ]
+}

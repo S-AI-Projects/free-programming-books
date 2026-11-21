@@ -1,0 +1,15 @@
+{
+  "fixture": "misplaced",
+  "description": "Entry with Android content placed under Python section — must be flagged",
+  "entry": {
+    "line_no": 10,
+    "title": "Android Tutorial in Telugu",
+    "url": "https://example.com/android",
+    "section": "Python",
+    "subsection": ""
+  },
+  "expected": {
+    "ok": false,
+    "suggested": "Android"
+  }
+}

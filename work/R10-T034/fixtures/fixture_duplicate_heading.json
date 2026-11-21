@@ -1,0 +1,14 @@
+{
+  "fixture": "duplicate_heading",
+  "description": "File has 'Python' heading appearing twice — must be detected",
+  "headings": [
+    [10, 3, "Data Structures and Algorithms"],
+    [40, 3, "Data Structures"],
+    [50, 3, "Python"],
+    [80, 3, "Python"]
+  ],
+  "expected": {
+    "duplicate_groups": 1,
+    "duplicate_text": "python"
+  }
+}

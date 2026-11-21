@@ -1,0 +1,19 @@
+{
+  "fixture": "missing_from_index",
+  "description": "Heading 'Data Structures' exists in file body but not in Index — must be flagged",
+  "headings_in_body": [
+    [143, 3, "Data Structures"]
+  ],
+  "index_sections": [
+    "Android", "Angular", "Python", "Data Structures and Algorithms"
+  ],
+  "expected": {
+    "missing_count": 1,
+    "missing_heading": "Data Structures"
+  },
+  "real_occurrence": {
+    "line": 143,
+    "file": "courses/free-courses-te.md",
+    "note": "This stray heading is an actual structural issue in the target file"
+  }
+}
