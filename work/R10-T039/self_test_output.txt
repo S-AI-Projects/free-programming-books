@@ -1,0 +1,51 @@
+============================================================
+R10-T039 Self-Test (offline fixture-based)
+============================================================
+
+[Fixture 1] Malformed row — no URL
+  PASS  Malformed row: entry count == 0
+
+[Fixture 2] Selected entry in actual target file
+  PASS  One selected entry found (line 8)
+  PASS  Line 8 title
+  PASS  Line 8 URL
+  PASS  Line 8 author
+  PASS  Line 8 format
+  PASS  Default access is skipped
+
+[Fixture 3] Simulated HEAD 200 → 'free_no_registration'
+  PASS  HEAD 200 → free_no_registration
+  PASS  Detail mentions '200'
+
+[Fixture 4] Simulated HTTP 401 → 'paywalled'
+  PASS  HTTP 401 → paywalled
+
+[Fixture 5] Simulated HTTP 403 → 'paywalled'
+  PASS  HTTP 403 → paywalled
+
+[Fixture 6] Simulated HTTP 429 → 'unverified' (not removed)
+  PASS  HTTP 429 → unverified
+  PASS  Evidence explains rate-limit not dead
+
+[Fixture 7] Simulated HTTP 404 → 'unverified' (verify manually)
+  PASS  HTTP 404 → unverified
+  PASS  Evidence says verify manually
+
+[Fixture 8] Simulated timeout → 'unverified'
+  PASS  Timeout → unverified
+  PASS  Detail mentions timeout
+
+[Fixture 9] Simulated DNS failure → 'unverified'
+  PASS  DNS failure → unverified
+  PASS  Evidence mentions hostname
+
+[Fixture 10] HEAD 405 → GET 200 (no paywall) → 'free_no_registration'
+  PASS  HEAD 405 → GET 200 (no signals) → free_no_registration
+  PASS  Detail mentions GET and 200
+
+[Fixture 11] All access labels are distinct
+  PASS  All 6 access labels are unique
+
+============================================================
+RESULT: All 22 assertions passed.
+All self-tests passed.

@@ -1,0 +1,28 @@
+{
+  "task": "R10-T039",
+  "target_file": "casts/free-podcasts-screencasts-de.md",
+  "live_mode": false,
+  "total_entries": 2,
+  "selected_entries": [
+    {
+      "lineno": 8,
+      "title": "Python Podcast",
+      "url": "https://python-podcast.de/show",
+      "author": "Jochen, Dominik",
+      "format": "podcast",
+      "notes": "",
+      "access": "skipped",
+      "access_detail": "offline mode; use --live for HTTP check",
+      "access_evidence": "python-podcast.de/show is a publicly listed German Python podcast. No registration or payment required based on public catalogue information. Classification: likely free_no_registration — verify in browser to confirm."
+    }
+  ],
+  "access_labels": {
+    "free_no_registration": "Freely accessible, no account required",
+    "free_with_registration": "Freely accessible, but registration required",
+    "paywalled": "Requires payment",
+    "environment_required": "Requires specific software/hardware",
+    "unverified": "Could not confirm — treat conservatively",
+    "skipped": "Not checked (offline mode)"
+  },
+  "policy": "No link is removed solely because a single automated request failed. An unavailable resource is labelled 'unverified', not 'free' or 'broken'. No credentials are saved. Rate-limited (429) and timeouts → unverified."
+}
