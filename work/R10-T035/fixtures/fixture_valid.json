@@ -1,0 +1,16 @@
+{
+  "fixture": "valid",
+  "description": "Fully valid entry with all required fields — must pass with empty evidence table",
+  "entry": {
+    "line_no": 13,
+    "title": "Code Klets",
+    "url": "https://open.spotify.com/show/0Sf8c3aGZmtGiNUEwgDTSu?si=bc273e44deae4584",
+    "author": "Bernard, Jonny, Kishen, Pauline, Wouter & Saber",
+    "fmt": "podcast",
+    "section": "Podcasts"
+  },
+  "expected": {
+    "overall_ok": true,
+    "evidence_count": 0
+  }
+}

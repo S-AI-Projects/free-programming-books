@@ -1,0 +1,18 @@
+{
+  "fixture": "unknown_format",
+  "description": "Entry with format 'livestream' which is not a recognised cast type — must fail with UNKNOWN_FORMAT",
+  "entry": {
+    "line_no": 12,
+    "title": "Test Show",
+    "url": "https://example.com/show",
+    "author": "Host",
+    "fmt": "livestream",
+    "section": "Podcasts"
+  },
+  "valid_formats": ["podcast", "screencast", "video", "audio"],
+  "expected": {
+    "overall_ok": false,
+    "failing_field": "Format",
+    "status": "UNKNOWN_FORMAT"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fixture": "missing_format",
+  "description": "Entry without format field — must fail metadata check",
+  "entry": {
+    "line_no": 11,
+    "title": "Test Podcast",
+    "url": "https://example.com/podcast",
+    "author": "Some Author",
+    "fmt": "",
+    "section": "Podcasts"
+  },
+  "expected": {
+    "overall_ok": false,
+    "failing_field": "Format",
+    "status": "MISSING"
+  }
+}

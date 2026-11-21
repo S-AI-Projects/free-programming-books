@@ -1,0 +1,84 @@
+{
+  "checked_at": "2026-11-21T15:30:13Z",
+  "results": [
+    {
+      "line_no": 3,
+      "title": "Code Klets",
+      "url": "https://open.spotify.com/show/0Sf8c3aGZmtGiNUEwgDTSu?si=bc273e44deae4584",
+      "section": "Podcasts",
+      "overall_ok": true,
+      "fields": [
+        {
+          "field": "Title",
+          "observed": "Code Klets",
+          "status": "PRESENT",
+          "note": "",
+          "proposed": null
+        },
+        {
+          "field": "URL",
+          "observed": "https://open.spotify.com/show/0Sf8c3aGZmtGiNUEwgDTSu?si=bc273e44deae4584",
+          "status": "PRESENT",
+          "note": "",
+          "proposed": null
+        },
+        {
+          "field": "Author",
+          "observed": "Bernard, Jonny, Kishen, Pauline, Wouter & Saber",
+          "status": "PRESENT",
+          "note": "",
+          "proposed": null
+        },
+        {
+          "field": "Format",
+          "observed": "podcast",
+          "status": "PRESENT",
+          "note": "",
+          "proposed": null
+        }
+      ],
+      "evidence": [],
+      "checked_at": "2026-11-21T15:30:13Z"
+    },
+    {
+      "line_no": 4,
+      "title": "TDS Team",
+      "url": "https://open.spotify.com/show/63diy2DtpHzQfeNVxAPZgU",
+      "section": "Podcasts",
+      "overall_ok": true,
+      "fields": [
+        {
+          "field": "Title",
+          "observed": "TDS Team",
+          "status": "PRESENT",
+          "note": "",
+          "proposed": null
+        },
+        {
+          "field": "URL",
+          "observed": "https://open.spotify.com/show/63diy2DtpHzQfeNVxAPZgU",
+          "status": "PRESENT",
+          "note": "",
+          "proposed": null
+        },
+        {
+          "field": "Author",
+          "observed": "The TDS team",
+          "status": "PRESENT",
+          "note": "",
+          "proposed": null
+        },
+        {
+          "field": "Format",
+          "observed": "podcast",
+          "status": "PRESENT",
+          "note": "",
+          "proposed": null
+        }
+      ],
+      "evidence": [],
+      "checked_at": "2026-11-21T15:30:13Z"
+    }
+  ],
+  "evidence_table": []
+}

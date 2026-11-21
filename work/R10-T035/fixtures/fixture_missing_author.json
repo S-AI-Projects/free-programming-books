@@ -1,0 +1,18 @@
+{
+  "fixture": "missing_author",
+  "description": "Entry without author field — must fail metadata check",
+  "entry": {
+    "line_no": 10,
+    "title": "Test Podcast",
+    "url": "https://example.com/podcast",
+    "author": "",
+    "fmt": "podcast",
+    "section": "Podcasts"
+  },
+  "expected": {
+    "overall_ok": false,
+    "failing_field": "Author",
+    "status": "MISSING",
+    "evidence_count_min": 1
+  }
+}
