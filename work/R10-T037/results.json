@@ -1,0 +1,40 @@
+{
+  "task": "R10-T037",
+  "target_file": "courses/free-courses-km.md",
+  "live_mode": false,
+  "total_entries": 18,
+  "selected_entries": [
+    {
+      "lineno": 13,
+      "title": "ចំនេះដឹងទូទៅ",
+      "url": "https://youtube.com/playlist?list=PLB5U9f77LXqL-IC2MAoaKl1tJOuiQZbZQ",
+      "author": "TFD",
+      "format": "",
+      "notes": "",
+      "status": "skipped",
+      "status_detail": "offline mode; use --live for HTTP checks"
+    },
+    {
+      "lineno": 18,
+      "title": "Flutter food ordering app",
+      "url": "https://youtube.com/playlist?list=PL9nDNu0HsFZk6qC7nfhdYbnB-B9wyfKV9",
+      "author": "Chunlee Thong",
+      "format": "",
+      "notes": "",
+      "status": "skipped",
+      "status_detail": "offline mode; use --live for HTTP checks"
+    },
+    {
+      "lineno": 19,
+      "title": "Flutter UI Speed Code",
+      "url": "https://youtube.com/playlist?list=PLVY9IbkulBUiKDrT5BFcMKXxtk4b0IJIX",
+      "author": "Sopheaman Van",
+      "format": "",
+      "notes": "",
+      "status": "skipped",
+      "status_detail": "offline mode; use --live for HTTP checks"
+    }
+  ],
+  "recommendations": [],
+  "policy": "A link is never removed solely because a single automated request failed. Rate-limiting (429) and timeouts are NOT indicators of a dead link. Only manually confirmed missing resources should be removed."
+}

@@ -1,0 +1,49 @@
+============================================================
+R10-T037 Self-Test (offline fixture-based)
+============================================================
+
+[Fixture 1] Malformed row — no URL
+  PASS  Malformed row: entry count == 0
+
+[Fixture 2] Valid entries in target file
+  PASS  Three selected entries found (lines 13, 18, 19)
+  PASS  Line 13 found
+  PASS  Line 13 title
+  PASS  Line 13 author
+  PASS  Line 13 URL
+  PASS  Line 18 found
+  PASS  Line 18 title
+  PASS  Line 18 author
+  PASS  Line 18 URL
+  PASS  Line 19 found
+  PASS  Line 19 title
+  PASS  Line 19 author
+  PASS  Line 19 URL
+
+[Fixture 3] Simulated HTTP 200 → 'ok'
+  PASS  HTTP 200 → STATUS_OK
+  PASS  HTTP 200 detail contains '200'
+
+[Fixture 4] Simulated HTTP 404 → 'not_found'
+  PASS  HTTP 404 → STATUS_NOT_FOUND
+
+[Fixture 5] Simulated HTTP 429 → 'rate_limited'
+  PASS  HTTP 429 → STATUS_RATE_LIMITED
+
+[Fixture 6] HEAD 405 then GET 200 → 'head_unsupported_get_ok'
+  PASS  HEAD 405 → GET 200 → STATUS_HEAD_UNSUPPORTED
+  PASS  Detail mentions '405'
+  PASS  Detail mentions '200'
+
+[Fixture 7] DNS failure → 'dns_failure'
+  PASS  DNS failure → STATUS_DNS_FAIL
+
+[Fixture 8] Timeout → 'timeout'
+  PASS  Timeout → STATUS_TIMEOUT
+
+[Fixture 9] All status labels are distinct
+  PASS  All 9 status labels are unique
+
+============================================================
+RESULT: All 24 assertions passed.
+All self-tests passed.
