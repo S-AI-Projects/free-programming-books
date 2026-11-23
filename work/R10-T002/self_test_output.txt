@@ -1,0 +1,22 @@
+Verified redirect verification report for casts/free-podcasts-screencasts-ru.md:
+Observation Date: 2026-11-23
+
+  Line 24 | Title         : Квант безопасности
+            Initial URL   : https://soundcloud.com/nikita-remezov
+            Final URL     : https://soundcloud.com/nikita-remezov
+            Class         : DIRECT_OK
+            Recommendation: KEEP: Resource active at original URL
+
+  Line 25 | Title         : LinkMeUp
+            Initial URL   : http://linkmeup.ru
+            Final URL     : https://linkmeup.ru/
+            Class         : MOVED_PERMANENTLY
+            Recommendation: UPDATE_HTTPS: Upgrade link to https://linkmeup.ru per repo HTTPS preference
+
+  Line 26 | Title         : Noise Security Bit
+            Initial URL   : https://noisebit.podster.fm
+            Final URL     : https://podster.fm/podcasts/noisebit
+            Class         : MOVED_PERMANENTLY
+            Recommendation: UPDATE_FINAL: Domain redirected; official target is https://podster.fm/podcasts/noisebit
+
+Saved results to /Users/anshumanholkar/Desktop/S and AI/free-programming-books/tools/course_checks/../../work/R10-T002/results.json

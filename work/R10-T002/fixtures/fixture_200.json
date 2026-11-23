@@ -1,0 +1,11 @@
+{
+  "initial_url": "https://soundcloud.com/nikita-remezov",
+  "hops": [
+    {
+      "status": 200,
+      "url": "https://soundcloud.com/nikita-remezov"
+    }
+  ],
+  "final_url": "https://soundcloud.com/nikita-remezov",
+  "classification": "DIRECT_OK"
+}

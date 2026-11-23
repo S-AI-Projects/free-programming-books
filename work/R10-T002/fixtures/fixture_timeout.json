@@ -1,0 +1,7 @@
+{
+  "initial_url": "https://slow.example.com/stream",
+  "hops": [],
+  "error": "TimeoutError: Request exceeded deadline of 5.0 seconds",
+  "final_url": null,
+  "classification": "TIMEOUT"
+}
