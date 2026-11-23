@@ -1,0 +1,5 @@
+[R10-T005] Running self-test suite...
+  ✓ Assertion 1 passed: Valid fixture entries satisfy all required metadata fields.
+  ✓ Assertion 2 passed: Fixtures with missing required fields correctly failed validation.
+  ✓ Assertion 3 passed: All selected entries map to exact source lines (35, 36, 41) with complete metadata matching expected_selected.json.
+[R10-T005] All self-tests passed successfully (exit 0).

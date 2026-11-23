@@ -1,0 +1,111 @@
+{
+  "target_file": "courses/free-courses-ta.md",
+  "total_entries": 110,
+  "validation_failures": [],
+  "evidence_table": [
+    {
+      "line": 35,
+      "url": "https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm",
+      "field": "title",
+      "catalogue_value": "AI Tutorials in Tamil",
+      "official_value": "AI Tutorials in Tamil",
+      "official_source": "https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm&format=json",
+      "status": "CONFIRMED_MATCH"
+    },
+    {
+      "line": 35,
+      "url": "https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm",
+      "field": "author",
+      "catalogue_value": "Endless Knowledge",
+      "official_value": "Endless Knowledge",
+      "official_source": "https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm&format=json",
+      "status": "CONFIRMED_MATCH"
+    },
+    {
+      "line": 35,
+      "url": "https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm",
+      "field": "category",
+      "catalogue_value": "AI",
+      "official_value": "AI",
+      "official_source": "https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm&format=json",
+      "status": "CONFIRMED_MATCH"
+    },
+    {
+      "line": 36,
+      "url": "https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV",
+      "field": "title",
+      "catalogue_value": "Artificial Intelligence Course for Beginners in Tamil",
+      "official_value": "Artificial Intelligence Course for Beginners in Tamil",
+      "official_source": "https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV&format=json",
+      "status": "CONFIRMED_MATCH"
+    },
+    {
+      "line": 36,
+      "url": "https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV",
+      "field": "author",
+      "catalogue_value": "Hope Artificial Intelligence",
+      "official_value": "Hope Artificial Intelligence",
+      "official_source": "https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV&format=json",
+      "status": "CONFIRMED_MATCH"
+    },
+    {
+      "line": 36,
+      "url": "https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV",
+      "field": "category",
+      "catalogue_value": "AI",
+      "official_value": "AI",
+      "official_source": "https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV&format=json",
+      "status": "CONFIRMED_MATCH"
+    },
+    {
+      "line": 41,
+      "url": "https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B",
+      "field": "title",
+      "catalogue_value": "Android In Tamil 2019",
+      "official_value": "Android In Tamil 2019",
+      "official_source": "https://www.youtube.com/oembed?url=https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B&format=json",
+      "status": "CONFIRMED_MATCH"
+    },
+    {
+      "line": 41,
+      "url": "https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B",
+      "field": "author",
+      "catalogue_value": "Tutor Joe's Stanley",
+      "official_value": "Tutor Joe's Stanley",
+      "official_source": "https://www.youtube.com/oembed?url=https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B&format=json",
+      "status": "CONFIRMED_MATCH"
+    },
+    {
+      "line": 41,
+      "url": "https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B",
+      "field": "category",
+      "catalogue_value": "Android",
+      "official_value": "Android",
+      "official_source": "https://www.youtube.com/oembed?url=https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B&format=json",
+      "status": "CONFIRMED_MATCH"
+    }
+  ],
+  "selected_entries": [
+    {
+      "line": 35,
+      "title": "AI Tutorials in Tamil",
+      "url": "https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm",
+      "author": "Endless Knowledge",
+      "category": "AI"
+    },
+    {
+      "line": 36,
+      "title": "Artificial Intelligence Course for Beginners in Tamil",
+      "url": "https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV",
+      "author": "Hope Artificial Intelligence",
+      "category": "AI"
+    },
+    {
+      "line": 41,
+      "title": "Android In Tamil 2019",
+      "url": "https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B",
+      "author": "Tutor Joe's Stanley",
+      "category": "Android"
+    }
+  ]
+}
