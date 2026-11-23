@@ -1,0 +1,7 @@
+[R10-T006] Running offline self-test suite...
+  ✓ Assertion 1 passed: Valid rows with Unicode and escaped pipes correctly parsed.
+  ✓ Assertion 2 passed: Malformed rows safely rejected and recorded (3 errors detected, 0 false positive entries).
+  ✓ Assertion 3 passed: Unusual URL characters (percent encoding, query params, fragments) preserved.
+  ✓ Assertion 4 passed: URLs containing balanced parentheses parsed accurately without truncation.
+  ✓ Assertion 5 passed: Selected entries map to source lines (19, 24, 25) with exact metadata matching expected_selected.json.
+[R10-T006] All offline self-tests passed successfully (exit 0).

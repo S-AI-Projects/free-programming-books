@@ -1,0 +1,27 @@
+{
+  "target_file": "courses/free-courses-si.md",
+  "total_entries": 30,
+  "selected_entries": [
+    {
+      "line": 19,
+      "title": "Data Structures and Algorithms | Sinhala",
+      "url": "https://www.youtube.com/playlist?list=PL495mke12zYDIwsabzb61OLdBpg3QDcXg",
+      "author": "CodePRO LK",
+      "category": "Algorithms & Data Structures"
+    },
+    {
+      "line": 24,
+      "title": "Deep Learning Tutorial | Sinhala",
+      "url": "https://www.youtube.com/playlist?list=PL495mke12zYBLz2j_RoYbIltaYxvaTd9k",
+      "author": "CodePRO LK",
+      "category": "Artificial Intelligence"
+    },
+    {
+      "line": 25,
+      "title": "Machine Learning Tutorial | Sinhala",
+      "url": "https://www.youtube.com/playlist?list=PL495mke12zYDHN9ONfcal1eQfo8VqmOgu",
+      "author": "CodePRO LK",
+      "category": "Artificial Intelligence"
+    }
+  ]
+}
