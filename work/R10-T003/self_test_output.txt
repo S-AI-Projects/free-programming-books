@@ -1,21 +1,7 @@
-Duplicate Analysis for books/free-programming-books-sk.md:
-Total entries parsed: 5
-Duplicate groups found: 0
-
-Selected entries audit (3):
-  Line 15 | Title         : Zodpovednosť na internete
-            Original URL  : https://knihy.nic.cz
-            Normalized URL: https://knihy.nic.cz
-            Status        : UNIQUE (No duplicates)
-
-  Line 20 | Title         : Malá kniha programovania
-            Original URL  : https://greenie.elist.sk/knihy/html/mala-kniha-programovania.html
-            Normalized URL: https://greenie.elist.sk/knihy/html/mala-kniha-programovania.html
-            Status        : UNIQUE (No duplicates)
-
-  Line 25 | Title         : Linux ako niečo navyše
-            Original URL  : https://greenie.elist.sk/knihy/linux-ako-nieco-navyse.pdf
-            Normalized URL: https://greenie.elist.sk/knihy/linux-ako-nieco-navyse.pdf
-            Status        : UNIQUE (No duplicates)
-
-Saved results to /Users/anshumanholkar/Desktop/S and AI/free-programming-books/tools/course_checks/../../work/R10-T003/results.json
+[R10-T003] Running self-test suite...
+  ✓ Assertion 1 passed: Exact duplicates successfully identified and proposed deletion generated.
+  ✓ Assertion 2 passed: Conservative trailing slash normalization on root domain matched.
+  ✓ Assertion 3 passed: Resources with distinct anchors kept distinct.
+  ✓ Assertion 4 passed: Query-dependent resources kept distinct.
+  ✓ Assertion 5 passed: Selected entries map to exact source lines (15, 20, 25) matching expected_selected.json.
+[R10-T003] All self-tests passed successfully (exit 0).

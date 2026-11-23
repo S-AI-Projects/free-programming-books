@@ -8,8 +8,9 @@ Features:
 - Conservative normalization: lowercases scheme/host, removes standard ports (80/443),
   strips trailing slash only on root domains.
 - Preserves query parameters and meaningful anchor fragments distinctly (does not merge them).
-- Maps each entry to its exact 1-based source line number.
-- Built-in --self-test mode with assertions that exit non-zero on failure.
+- Emits structured proposed_deletions with manual review tracking.
+- Compares field-by-field against expected_selected.json in self-test.
+- Built-in --self-test mode that works under python3 -O with clear failure messages.
 """
 
 import os
@@ -24,6 +25,12 @@ SELECTED_URLS = {
     "https://greenie.elist.sk/knihy/html/mala-kniha-programovania.html": "Malá kniha programovania",
     "https://greenie.elist.sk/knihy/linux-ako-nieco-navyse.pdf": "Linux ako niečo navyše"
 }
+
+def check(condition, message="Assertion failed"):
+    """Assertion helper safe under python3 -O (exits 1 on failure)."""
+    if not condition:
+        print(f"[R10-T003] SELF-TEST FAILED: {message}", file=sys.stderr)
+        sys.exit(1)
 
 def normalize_url(raw_url):
     """
@@ -69,6 +76,24 @@ def find_duplicates(entries):
     unique = [group[0] for norm, group in url_map.items() if len(group) == 1]
     return duplicates, unique
 
+def build_proposed_deletions(duplicates):
+    """
+    Builds a list of proposed deletion pairs with manual review tracking.
+    """
+    proposed = []
+    for norm_url, group in duplicates.items():
+        for i in range(len(group)):
+            for j in range(i + 1, len(group)):
+                proposed.append({
+                    "line_a": group[i]["line"],
+                    "title_a": group[i]["title"],
+                    "line_b": group[j]["line"],
+                    "title_b": group[j]["title"],
+                    "normalized_url": norm_url,
+                    "manual_review": "PROPOSED_DUPLICATE_REMOVE_SECONDARY"
+                })
+    return proposed
+
 def parse_markdown(file_path):
     """
     Parses markdown list file, extracting line number, title, and URL.
@@ -94,6 +119,7 @@ def parse_markdown(file_path):
 def run_self_test():
     """
     Runs self-test assertions. Exits non-zero on any failure.
+    Works under python3 -O.
     """
     print("[R10-T003] Running self-test suite...")
     base_dir = os.path.dirname(__file__)
@@ -105,49 +131,60 @@ def run_self_test():
     with open(os.path.join(fixtures_dir, "fixture_exact_dup.json"), "r", encoding="utf-8") as f:
         f_exact = json.load(f)
     dups_exact, _ = find_duplicates(f_exact)
-    assert len(dups_exact) == 1, f"Failed exact duplicate detection: expected 1 duplicate group, got {len(dups_exact)}"
-    print("  ✓ Assertion 1 passed: Exact duplicates successfully identified.")
+    check(len(dups_exact) == 1, f"Failed exact duplicate detection: expected 1 duplicate group, got {len(dups_exact)}")
+    deletions = build_proposed_deletions(dups_exact)
+    check(len(deletions) == 1, "Failed proposed deletions generation")
+    print("  ✓ Assertion 1 passed: Exact duplicates successfully identified and proposed deletion generated.")
 
     # Assertion 2: Conservative root trailing slash normalization
     with open(os.path.join(fixtures_dir, "fixture_trailing_slash.json"), "r", encoding="utf-8") as f:
         f_slash = json.load(f)
     dups_slash, _ = find_duplicates(f_slash)
-    assert len(dups_slash) == 1, "Failed trailing slash normalization matching on root domain."
+    check(len(dups_slash) == 1, "Failed trailing slash normalization matching on root domain.")
     print("  ✓ Assertion 2 passed: Conservative trailing slash normalization on root domain matched.")
 
     # Assertion 3: Distinct anchors must NOT be merged
     with open(os.path.join(fixtures_dir, "fixture_distinct_anchors.json"), "r", encoding="utf-8") as f:
         f_anchors = json.load(f)
     dups_anchors, unique_anchors = find_duplicates(f_anchors)
-    assert len(dups_anchors) == 0, f"Distinct anchors were wrongly merged as duplicates: {dups_anchors}"
-    assert len(unique_anchors) == 2, "Expected 2 distinct unique entries with different anchors."
+    check(len(dups_anchors) == 0, f"Distinct anchors were wrongly merged as duplicates: {dups_anchors}")
+    check(len(unique_anchors) == 2, "Expected 2 distinct unique entries with different anchors.")
     print("  ✓ Assertion 3 passed: Resources with distinct anchors kept distinct.")
 
     # Assertion 4: Query-dependent resources must NOT be merged
     with open(os.path.join(fixtures_dir, "fixture_query_distinct.json"), "r", encoding="utf-8") as f:
         f_queries = json.load(f)
     dups_queries, unique_queries = find_duplicates(f_queries)
-    assert len(dups_queries) == 0, f"Query-dependent resources were wrongly merged: {dups_queries}"
-    assert len(unique_queries) == 2, "Expected 2 distinct unique entries with different query params."
+    check(len(dups_queries) == 0, f"Query-dependent resources were wrongly merged: {dups_queries}")
+    check(len(unique_queries) == 2, "Expected 2 distinct unique entries with different query params.")
     print("  ✓ Assertion 4 passed: Query-dependent resources kept distinct.")
 
-    # Assertion 5: Target file entries line numbers mapping
+    # Assertion 5: Target file entries line numbers mapping and expected_selected.json comparison
     repo_file = TARGET_FILE
     if not os.path.exists(repo_file):
         repo_file = os.path.join(base_dir, "../../", TARGET_FILE)
     entries = parse_markdown(repo_file)
     selected = [e for e in entries if e["url"] in SELECTED_URLS]
-    assert len(selected) == 3, f"Expected 3 selected entries, got {len(selected)}"
-    lines = {e["url"]: e["line"] for e in selected}
-    assert lines["https://knihy.nic.cz"] == 15
-    assert lines["https://greenie.elist.sk/knihy/html/mala-kniha-programovania.html"] == 20
-    assert lines["https://greenie.elist.sk/knihy/linux-ako-nieco-navyse.pdf"] == 25
-    print("  ✓ Assertion 5 passed: Selected entries map back to source lines (15, 20, 25).")
+    check(len(selected) == 3, f"Expected 3 selected entries, got {len(selected)}")
+    
+    expected_path = os.path.join(fixtures_dir, "expected_selected.json")
+    check(os.path.exists(expected_path), f"expected_selected.json not found: {expected_path}")
+    with open(expected_path, "r", encoding="utf-8") as f:
+        expected_list = json.load(f)
+    expected_map = {item["url"]: item for item in expected_list}
 
-    # Assertion 6: Verify no false duplicate deletions proposed in real file
     dups_real, _ = find_duplicates(entries)
-    assert len(dups_real) == 0, f"Found unexpected duplicates in clean target file: {dups_real}"
-    print("  ✓ Assertion 6 passed: Verified no duplicate URLs in target file.")
+
+    for e in selected:
+        exp = expected_map.get(e["url"])
+        check(exp is not None, f"Unexpected selected URL: {e['url']}")
+        check(e["line"] == exp["line"], f"Line mismatch for {e['title']}: expected {exp['line']}, got {e['line']}")
+        check(e["title"] == exp["title"], f"Title mismatch: expected {exp['title']}, got {e['title']}")
+        computed_norm = normalize_url(e["url"])
+        check(computed_norm == exp["normalized_url"], f"Normalized URL mismatch: expected {exp['normalized_url']}, got {computed_norm}")
+        computed_status = "DUPLICATE" if computed_norm in dups_real else "UNIQUE"
+        check(computed_status == exp["status"], f"Status mismatch: expected {exp['status']}, got {computed_status}")
+    print("  ✓ Assertion 5 passed: Selected entries map to exact source lines (15, 20, 25) matching expected_selected.json.")
 
     print("[R10-T003] All self-tests passed successfully (exit 0).")
     return True
@@ -157,9 +194,6 @@ def main():
         try:
             run_self_test()
             sys.exit(0)
-        except AssertionError as err:
-            print(f"[R10-T003] SELF-TEST FAILED: {err}", file=sys.stderr)
-            sys.exit(1)
         except Exception as ex:
             print(f"[R10-T003] UNEXPECTED ERROR: {ex}", file=sys.stderr)
             sys.exit(2)
@@ -170,6 +204,7 @@ def main():
 
     entries = parse_markdown(repo_file)
     dups, unique = find_duplicates(entries)
+    proposed_deletions = build_proposed_deletions(dups)
     selected = [e for e in entries if e["url"] in SELECTED_URLS]
 
     print(f"Duplicate Analysis for {TARGET_FILE}:")
@@ -179,10 +214,11 @@ def main():
     print(f"Selected entries audit ({len(selected)}):")
     for e in selected:
         norm = normalize_url(e["url"])
+        computed_status = "DUPLICATE" if norm in dups else "UNIQUE (No duplicates)"
         print(f"  Line {e['line']:2d} | Title         : {e['title']}")
         print(f"            Original URL  : {e['url']}")
         print(f"            Normalized URL: {norm}")
-        print(f"            Status        : UNIQUE (No duplicates)")
+        print(f"            Status        : {computed_status}")
         print()
 
     out_dir = os.path.join(os.path.dirname(__file__), "../../work/R10-T003")
@@ -195,9 +231,12 @@ def main():
             "target_file": TARGET_FILE,
             "total_entries": len(entries),
             "duplicate_groups": dups,
+            "proposed_deletions": proposed_deletions,
             "selected_entries": selected
         }, f, indent=2, ensure_ascii=False)
-    print(f"Saved results to {out_file}")
+    
+    rel_out = os.path.relpath(out_file, os.path.join(os.path.dirname(__file__), "../../"))
+    print(f"Saved results to {rel_out}")
 
 if __name__ == "__main__":
     main()
