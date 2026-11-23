@@ -1,0 +1,7 @@
+[R10-T003] Running self-test suite...
+  ✓ Assertion 1 passed: Exact duplicates successfully identified and proposed deletion generated.
+  ✓ Assertion 2 passed: Conservative trailing slash normalization on root domain matched.
+  ✓ Assertion 3 passed: Resources with distinct anchors kept distinct.
+  ✓ Assertion 4 passed: Query-dependent resources kept distinct.
+  ✓ Assertion 5 passed: Selected entries map to exact source lines (15, 20, 25) matching expected_selected.json.
+[R10-T003] All self-tests passed successfully (exit 0).

@@ -1,0 +1,23 @@
+[
+  {
+    "line": 15,
+    "title": "Zodpovednosť na internete",
+    "url": "https://knihy.nic.cz",
+    "normalized_url": "https://knihy.nic.cz",
+    "status": "UNIQUE"
+  },
+  {
+    "line": 20,
+    "title": "Malá kniha programovania",
+    "url": "https://greenie.elist.sk/knihy/html/mala-kniha-programovania.html",
+    "normalized_url": "https://greenie.elist.sk/knihy/html/mala-kniha-programovania.html",
+    "status": "UNIQUE"
+  },
+  {
+    "line": 25,
+    "title": "Linux ako niečo navyše",
+    "url": "https://greenie.elist.sk/knihy/linux-ako-nieco-navyse.pdf",
+    "normalized_url": "https://greenie.elist.sk/knihy/linux-ako-nieco-navyse.pdf",
+    "status": "UNIQUE"
+  }
+]

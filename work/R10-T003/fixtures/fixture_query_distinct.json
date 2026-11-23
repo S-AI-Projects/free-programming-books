@@ -1,0 +1,12 @@
+[
+  {
+    "line": 101,
+    "title": "Resource Page 1",
+    "url": "https://example.com/books?page=1"
+  },
+  {
+    "line": 102,
+    "title": "Resource Page 2",
+    "url": "https://example.com/books?page=2"
+  }
+]
