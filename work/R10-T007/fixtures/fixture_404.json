@@ -1,0 +1,8 @@
+{
+  "url": "https://example.com/nonexistent-book.pdf",
+  "head_status": 404,
+  "get_status": 404,
+  "error": "HTTP Error 404: Not Found",
+  "classification": "NOT_FOUND_404",
+  "action": "MANUAL_CONFIRM_BEFORE_REMOVE"
+}

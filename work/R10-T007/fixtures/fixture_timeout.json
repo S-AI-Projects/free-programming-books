@@ -1,0 +1,8 @@
+{
+  "url": "https://slow.example.com/ebook",
+  "head_status": null,
+  "get_status": null,
+  "error": "TimeoutError: Request timed out after 5.0 seconds",
+  "classification": "TIMEOUT",
+  "action": "DO_NOT_REMOVE_TRANSIENT_ERROR"
+}

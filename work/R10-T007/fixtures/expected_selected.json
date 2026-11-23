@@ -1,0 +1,23 @@
+[
+  {
+    "line": 12,
+    "title": "Books - Telugu",
+    "url": "https://sites.google.com/nptel.iitm.ac.in/translated-ebook/telugu",
+    "classification": "LOGIN_WALL",
+    "recommendation": "MANUAL_REVIEW: Institutional translation archive behind Google sign-in wall"
+  },
+  {
+    "line": 17,
+    "title": "Introduction to C | Telugu",
+    "url": "https://www.computerintelugu.com/2012/11/cmenu.html",
+    "classification": "SUCCESS_200",
+    "recommendation": "KEEP: Active resource"
+  },
+  {
+    "line": 22,
+    "title": "Core Java in Telugu | Java Programming",
+    "url": "https://www.youtube.com/playlist?list=PLz8gl4BEGkEGYXNZrIRHJUSoxS_FPBrDy",
+    "classification": "SUCCESS_200",
+    "recommendation": "KEEP: Active resource"
+  }
+]
