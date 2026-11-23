@@ -1,0 +1,25 @@
+{
+  "target_file": "books/free-programming-books-sk.md",
+  "total_entries": 5,
+  "duplicate_groups": {},
+  "selected_entries": [
+    {
+      "line": 15,
+      "title": "Zodpovednosť na internete",
+      "url": "https://knihy.nic.cz",
+      "raw": "* [Zodpovednosť na internete](https://knihy.nic.cz) - Zodpovednosť na internete (PDF)"
+    },
+    {
+      "line": 20,
+      "title": "Malá kniha programovania",
+      "url": "https://greenie.elist.sk/knihy/html/mala-kniha-programovania.html",
+      "raw": "* [Malá kniha programovania](https://greenie.elist.sk/knihy/html/mala-kniha-programovania.html) - Stanislav Hoferek (HTML)"
+    },
+    {
+      "line": 25,
+      "title": "Linux ako niečo navyše",
+      "url": "https://greenie.elist.sk/knihy/linux-ako-nieco-navyse.pdf",
+      "raw": "* [Linux ako niečo navyše](https://greenie.elist.sk/knihy/linux-ako-nieco-navyse.pdf) - Stanislav Hoferek (PDF)"
+    }
+  ]
+}
