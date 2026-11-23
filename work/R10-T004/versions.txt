@@ -1,0 +1,6 @@
+Python version: 3.14.0
+OS: macOS Darwin arm64
+Date: 2026-11-23
+Repo: https://github.com/S-AI-Projects/free-programming-books
+Task: R10-T004
+Student: Anshuman Holkar (URN: e26b07f0734)
