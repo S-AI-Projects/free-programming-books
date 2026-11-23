@@ -1,27 +1,30 @@
 {
   "target_file": "books/free-programming-books-te.md",
   "total_entries": 5,
-  "selected_entries": [
+  "audit_results": [
     {
       "line": 12,
       "title": "Books - Telugu",
       "url": "https://sites.google.com/nptel.iitm.ac.in/translated-ebook/telugu",
       "classification": "LOGIN_WALL",
-      "action": "KEEP: Institutional translation repository behind Google Workspace auth"
+      "recommendation": "MANUAL_REVIEW: Institutional translation archive behind auth",
+      "detail": "Redirects to accounts.google.com ServiceLogin; requires manual reviewer confirmation"
     },
     {
       "line": 17,
       "title": "Introduction to C | Telugu",
       "url": "https://www.computerintelugu.com/2012/11/cmenu.html",
       "classification": "SUCCESS_200",
-      "action": "KEEP: Active accessible resource"
+      "recommendation": "KEEP: Active resource",
+      "detail": "Directly accessible via HTTP 200 OK"
     },
     {
       "line": 22,
       "title": "Core Java in Telugu | Java Programming",
       "url": "https://www.youtube.com/playlist?list=PLz8gl4BEGkEGYXNZrIRHJUSoxS_FPBrDy",
       "classification": "SUCCESS_200",
-      "action": "KEEP: Active accessible playlist"
+      "recommendation": "KEEP: Active resource",
+      "detail": "Public active YouTube playlist"
     }
   ]
 }

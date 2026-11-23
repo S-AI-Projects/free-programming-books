@@ -1,20 +1,11 @@
-Failure Classification & Availability Audit for books/free-programming-books-te.md:
-Total entries parsed: 5
-
-Selected entries audit (3):
-  Line 12 | Title         : Books - Telugu
-            URL           : https://sites.google.com/nptel.iitm.ac.in/translated-ebook/telugu
-            Classification: LOGIN_WALL
-            Action Policy : KEEP: Institutional translation repository behind Google Workspace auth
-
-  Line 17 | Title         : Introduction to C | Telugu
-            URL           : https://www.computerintelugu.com/2012/11/cmenu.html
-            Classification: SUCCESS_200
-            Action Policy : KEEP: Active accessible resource
-
-  Line 22 | Title         : Core Java in Telugu | Java Programming
-            URL           : https://www.youtube.com/playlist?list=PLz8gl4BEGkEGYXNZrIRHJUSoxS_FPBrDy
-            Classification: SUCCESS_200
-            Action Policy : KEEP: Active accessible playlist
-
-Saved results to /Users/anshumanholkar/Desktop/S and AI/free-programming-books/tools/course_checks/../../work/R10-T007/results.json
+[R10-T007] Running self-test suite...
+  ✓ Assertion 1 passed: HTTP 200 classified as SUCCESS_200 (KEEP).
+  ✓ Assertion 2 passed: HTTP 404 classified as NOT_FOUND_404 with manual confirmation requirement.
+  ✓ Assertion 3 passed: HTTP 429 classified as RATE_LIMITED_429 with explicit do-not-remove policy.
+  ✓ Assertion 4 passed: HEAD 405 -> GET 200 fallback correctly resolved as HEAD_405_GET_200 (KEEP_ACTIVE).
+  ✓ Assertion 5 passed: Network timeout classified as TIMEOUT with explicit do-not-remove policy.
+  ✓ Assertion 6 passed: All 5 primary failure modes produce mutually distinct classification labels.
+  ✓ Assertion 7 passed: DNS resolution failures portably classified across macOS and Linux resolver formats.
+  ✓ Assertion 8 passed: Authentication redirects classified as LOGIN_WALL (MANUAL_REVIEW_LOGIN_REQUIRED).
+  ✓ Assertion 9 passed: Selected entries map to exact source lines (12, 17, 22) matching expected_selected.json.
+[R10-T007] All self-tests passed successfully (exit 0).
