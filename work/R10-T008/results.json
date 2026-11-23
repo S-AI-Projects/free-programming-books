@@ -1,0 +1,28 @@
+{
+  "target_file": "more/free-programming-interactive-tutorials-ru.md",
+  "total_entries": 11,
+  "errors": [],
+  "selected_entries": [
+    {
+      "line": 14,
+      "title": "Учитесь веб-разработке бесплатно!",
+      "url": "http://codenamecrud.ru",
+      "author": null,
+      "section": "Веб-разработка"
+    },
+    {
+      "line": 15,
+      "title": "Open source воркшопы",
+      "url": "https://nodeschool.io/ru",
+      "author": null,
+      "section": "Веб-разработка"
+    },
+    {
+      "line": 20,
+      "title": "Microsoft Certified: Azure Fundamentals",
+      "url": "https://docs.microsoft.com/ru-ru/learn/certifications/azure-fundamentals/",
+      "author": "Microsoft",
+      "section": "Облачные вычисления"
+    }
+  ]
+}
