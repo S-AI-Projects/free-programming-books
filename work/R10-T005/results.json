@@ -1,102 +1,88 @@
 {
   "target_file": "courses/free-courses-ta.md",
   "total_entries": 110,
+  "validation_failures": [],
   "evidence_table": [
     {
       "line": 35,
       "url": "https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm",
       "field": "title",
-      "observed": "AI Tutorials in Tamil",
-      "proposed": "AI Tutorials in Tamil",
-      "status": "CONFIRMED"
+      "catalogue_value": "AI Tutorials in Tamil",
+      "official_value": "AI Tutorials in Tamil",
+      "official_source": "https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm&format=json",
+      "status": "CONFIRMED_MATCH"
     },
     {
       "line": 35,
       "url": "https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm",
       "field": "author",
-      "observed": "Endless Knowledge",
-      "proposed": "Endless Knowledge",
-      "status": "CONFIRMED"
+      "catalogue_value": "Endless Knowledge",
+      "official_value": "Endless Knowledge",
+      "official_source": "https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm&format=json",
+      "status": "CONFIRMED_MATCH"
     },
     {
       "line": 35,
       "url": "https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm",
       "field": "category",
-      "observed": "AI",
-      "proposed": "AI",
-      "status": "CONFIRMED"
-    },
-    {
-      "line": 35,
-      "url": "https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm",
-      "field": "url",
-      "observed": "https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm",
-      "proposed": "https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm",
-      "status": "CONFIRMED"
+      "catalogue_value": "AI",
+      "official_value": "AI",
+      "official_source": "https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm&format=json",
+      "status": "CONFIRMED_MATCH"
     },
     {
       "line": 36,
       "url": "https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV",
       "field": "title",
-      "observed": "Artificial Intelligence Course for Beginners in Tamil",
-      "proposed": "Artificial Intelligence Course for Beginners in Tamil",
-      "status": "CONFIRMED"
+      "catalogue_value": "Artificial Intelligence Course for Beginners in Tamil",
+      "official_value": "Artificial Intelligence Course for Beginners in Tamil",
+      "official_source": "https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV&format=json",
+      "status": "CONFIRMED_MATCH"
     },
     {
       "line": 36,
       "url": "https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV",
       "field": "author",
-      "observed": "Hope Artificial Intelligence",
-      "proposed": "Hope Artificial Intelligence",
-      "status": "CONFIRMED"
+      "catalogue_value": "Hope Artificial Intelligence",
+      "official_value": "Hope Artificial Intelligence",
+      "official_source": "https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV&format=json",
+      "status": "CONFIRMED_MATCH"
     },
     {
       "line": 36,
       "url": "https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV",
       "field": "category",
-      "observed": "AI",
-      "proposed": "AI",
-      "status": "CONFIRMED"
-    },
-    {
-      "line": 36,
-      "url": "https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV",
-      "field": "url",
-      "observed": "https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV",
-      "proposed": "https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV",
-      "status": "CONFIRMED"
+      "catalogue_value": "AI",
+      "official_value": "AI",
+      "official_source": "https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV&format=json",
+      "status": "CONFIRMED_MATCH"
     },
     {
       "line": 41,
       "url": "https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B",
       "field": "title",
-      "observed": "Android In Tamil 2019",
-      "proposed": "Android In Tamil 2019",
-      "status": "CONFIRMED"
+      "catalogue_value": "Android In Tamil 2019",
+      "official_value": "Android In Tamil 2019",
+      "official_source": "https://www.youtube.com/oembed?url=https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B&format=json",
+      "status": "CONFIRMED_MATCH"
     },
     {
       "line": 41,
       "url": "https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B",
       "field": "author",
-      "observed": "Tutor Joe's Stanley",
-      "proposed": "Tutor Joe's Stanley",
-      "status": "CONFIRMED"
+      "catalogue_value": "Tutor Joe's Stanley",
+      "official_value": "Tutor Joe's Stanley",
+      "official_source": "https://www.youtube.com/oembed?url=https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B&format=json",
+      "status": "CONFIRMED_MATCH"
     },
     {
       "line": 41,
       "url": "https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B",
       "field": "category",
-      "observed": "Android",
-      "proposed": "Android",
-      "status": "CONFIRMED"
-    },
-    {
-      "line": 41,
-      "url": "https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B",
-      "field": "url",
-      "observed": "https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B",
-      "proposed": "https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B",
-      "status": "CONFIRMED"
+      "catalogue_value": "Android",
+      "official_value": "Android",
+      "official_source": "https://www.youtube.com/oembed?url=https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B&format=json",
+      "status": "CONFIRMED_MATCH"
     }
   ],
   "selected_entries": [

@@ -1,24 +1,5 @@
-Metadata Verification Report for courses/free-courses-ta.md:
-Total entries parsed: 110
-
-Evidence Table (Stored fields vs Verified documentation):
----------------------------------------------------------------------------------------------------------
-Line  | Field      | Observed Value                   | Proposed Value                   | Status    
----------------------------------------------------------------------------------------------------------
-35    | title      | AI Tutorials in Tamil            | AI Tutorials in Tamil            | CONFIRMED 
-35    | author     | Endless Knowledge                | Endless Knowledge                | CONFIRMED 
-35    | category   | AI                               | AI                               | CONFIRMED 
-35    | url        | https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm | https://www.youtube.com/playlist?list=PLLHRrAfRqTbPbodOKyV6QeEOMx8KaBiSm | CONFIRMED 
----------------------------------------------------------------------------------------------------------
-36    | title      | Artificial Intelligence Course for Beginners in Tamil | Artificial Intelligence Course for Beginners in Tamil | CONFIRMED 
-36    | author     | Hope Artificial Intelligence     | Hope Artificial Intelligence     | CONFIRMED 
-36    | category   | AI                               | AI                               | CONFIRMED 
-36    | url        | https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV | https://www.youtube.com/playlist?list=PLMn73l82HB5B9oMtKeAexWVdXLRL_BChV | CONFIRMED 
----------------------------------------------------------------------------------------------------------
-41    | title      | Android In Tamil 2019            | Android In Tamil 2019            | CONFIRMED 
-41    | author     | Tutor Joe's Stanley              | Tutor Joe's Stanley              | CONFIRMED 
-41    | category   | Android                          | Android                          | CONFIRMED 
-41    | url        | https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B | https://youtube.com/playlist?list=PL4unWLKFsZfcGBja19mrwodNm6AyzZk2B | CONFIRMED 
----------------------------------------------------------------------------------------------------------
-
-Saved results to /Users/anshumanholkar/Desktop/S and AI/free-programming-books/tools/course_checks/../../work/R10-T005/results.json
+[R10-T005] Running self-test suite...
+  ✓ Assertion 1 passed: Valid fixture entries satisfy all required metadata fields.
+  ✓ Assertion 2 passed: Fixtures with missing required fields correctly failed validation.
+  ✓ Assertion 3 passed: All selected entries map to exact source lines (35, 36, 41) with complete metadata matching expected_selected.json.
+[R10-T005] All self-tests passed successfully (exit 0).
