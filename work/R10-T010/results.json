@@ -1,0 +1,165 @@
+{
+  "target_file": "books/free-programming-books-el.md",
+  "total_entries": 21,
+  "report": [
+    {
+      "source_line": 19,
+      "title": "Διαδικαστικός προγραμματισμός",
+      "url": "https://repository.kallipos.gr/bitstream/11419/1346/3/00_master%20document_KOY.pdf",
+      "section": "C",
+      "status": "OBSERVED",
+      "observed_facts": {
+        "url": "https://repository.kallipos.gr/bitstream/11419/1346/3/00_master%20document_KOY.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "verified_accessible": true,
+        "publisher": "Kallipos Academic Open Publications",
+        "observed_by": "manual_browser",
+        "observed_at": "2026-11-23",
+        "observation_method": "Manual browser inspection (interactive session bypasses Kallipos Cloudflare anti-bot challenge barrier; PDF document stream verified directly)",
+        "raw_evidence": "HTTP 200 OK; Content-Type: application/pdf; document title: ΔΙΑΔΙΚΑΣΤΙΚΟΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ - 00_master document_KOY.pdf verified visually"
+      },
+      "recommendations": {
+        "line": 19,
+        "url": "https://repository.kallipos.gr/bitstream/11419/1346/3/00_master%20document_KOY.pdf",
+        "decision": "KEEP",
+        "rationale": "Direct official bitstream PDF accessible and verified; no link change required",
+        "proposed_correction": null,
+        "decided_by": "Anshuman Holkar",
+        "decision_date": "2026-11-23",
+        "provenance": "manual_review"
+      },
+      "before_metadata": {
+        "title": "Διαδικαστικός προγραμματισμός",
+        "author": "Μαστοροκώστας Πάρις",
+        "format": "PDF",
+        "license": null,
+        "section": "C"
+      },
+      "after_metadata": {
+        "title": "Διαδικαστικός προγραμματισμός",
+        "author": "Μαστοροκώστας Πάρις",
+        "format": "PDF",
+        "license": null,
+        "section": "C"
+      },
+      "decision_provenance": {
+        "decided_by": "Anshuman Holkar",
+        "decision_date": "2026-11-23",
+        "decision": "KEEP",
+        "rationale": "Direct official bitstream PDF accessible and verified; no link change required"
+      },
+      "metadata_snapshot": {
+        "author": "Μαστοροκώστας Πάρις",
+        "format": "PDF",
+        "license": null
+      }
+    },
+    {
+      "source_line": 20,
+      "title": "Μια σύγχρονη προσέγγιση στη γλώσσα C",
+      "url": "https://repository.kallipos.gr/handle/11419/11683",
+      "section": "C",
+      "status": "OBSERVED",
+      "observed_facts": {
+        "url": "https://repository.kallipos.gr/handle/11419/11683",
+        "http_status": 200,
+        "content_type": "text/html",
+        "verified_accessible": true,
+        "publisher": "Kallipos Academic Open Publications",
+        "observed_by": "manual_browser",
+        "observed_at": "2026-11-23",
+        "observation_method": "Manual browser inspection (interactive session bypasses anti-bot challenge barrier; Kallipos item handle metadata verified)",
+        "raw_evidence": "HTTP 200 OK; Handle landing page rendered with metadata, abstract, and download links"
+      },
+      "recommendations": {
+        "line": 20,
+        "url": "https://repository.kallipos.gr/handle/11419/11683",
+        "decision": "KEEP",
+        "rationale": "Stable Kallipos handle landing page with full book text and metadata; conformant",
+        "proposed_correction": null,
+        "decided_by": "Anshuman Holkar",
+        "decision_date": "2026-11-23",
+        "provenance": "manual_review"
+      },
+      "before_metadata": {
+        "title": "Μια σύγχρονη προσέγγιση στη γλώσσα C",
+        "author": "Αλέξανδρος Τζάλλας, Χρήστος Γκόγκος, Ιωάννης Τσούλος",
+        "format": "PDF",
+        "license": "CC BY-NC-SA",
+        "section": "C"
+      },
+      "after_metadata": {
+        "title": "Μια σύγχρονη προσέγγιση στη γλώσσα C",
+        "author": "Αλέξανδρος Τζάλλας, Χρήστος Γκόγκος, Ιωάννης Τσούλος",
+        "format": "PDF",
+        "license": "CC BY-NC-SA",
+        "section": "C"
+      },
+      "decision_provenance": {
+        "decided_by": "Anshuman Holkar",
+        "decision_date": "2026-11-23",
+        "decision": "KEEP",
+        "rationale": "Stable Kallipos handle landing page with full book text and metadata; conformant"
+      },
+      "metadata_snapshot": {
+        "author": "Αλέξανδρος Τζάλλας, Χρήστος Γκόγκος, Ιωάννης Τσούλος",
+        "format": "PDF",
+        "license": "CC BY-NC-SA"
+      }
+    },
+    {
+      "source_line": 25,
+      "title": "Επίλυση προβλημάτων με τη γλώσσα C#",
+      "url": "https://repository.kallipos.gr/handle/11419/9349",
+      "section": "C#",
+      "status": "OBSERVED",
+      "observed_facts": {
+        "url": "https://repository.kallipos.gr/handle/11419/9349",
+        "http_status": 200,
+        "content_type": "text/html",
+        "verified_accessible": true,
+        "publisher": "Kallipos Academic Open Publications",
+        "observed_by": "manual_browser",
+        "observed_at": "2026-11-23",
+        "observation_method": "Manual browser inspection (interactive session bypasses anti-bot challenge barrier; Kallipos item handle metadata verified)",
+        "raw_evidence": "HTTP 200 OK; Handle landing page rendered with metadata, abstract, and download links"
+      },
+      "recommendations": {
+        "line": 25,
+        "url": "https://repository.kallipos.gr/handle/11419/9349",
+        "decision": "KEEP",
+        "rationale": "Stable Kallipos handle landing page with full textbook; conformant",
+        "proposed_correction": null,
+        "decided_by": "Anshuman Holkar",
+        "decision_date": "2026-11-23",
+        "provenance": "manual_review"
+      },
+      "before_metadata": {
+        "title": "Επίλυση προβλημάτων με τη γλώσσα C#",
+        "author": "Νικόλαος Ζάχαρης",
+        "format": "PDF",
+        "license": "CC BY-NC-SA",
+        "section": "C#"
+      },
+      "after_metadata": {
+        "title": "Επίλυση προβλημάτων με τη γλώσσα C#",
+        "author": "Νικόλαος Ζάχαρης",
+        "format": "PDF",
+        "license": "CC BY-NC-SA",
+        "section": "C#"
+      },
+      "decision_provenance": {
+        "decided_by": "Anshuman Holkar",
+        "decision_date": "2026-11-23",
+        "decision": "KEEP",
+        "rationale": "Stable Kallipos handle landing page with full textbook; conformant"
+      },
+      "metadata_snapshot": {
+        "author": "Νικόλαος Ζάχαρης",
+        "format": "PDF",
+        "license": "CC BY-NC-SA"
+      }
+    }
+  ]
+}

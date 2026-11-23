@@ -1,0 +1,7 @@
+[R10-T010] Running self-test suite...
+  ✓ Assertion 1 passed: Clear separation of observed facts from recommendations verified.
+  ✓ Assertion 2 passed: Missing facts/decisions produce null / UNOBSERVED without invented defaults.
+  ✓ Assertion 3 passed: Verified field-by-field against expected_selected.json.
+  ✓ Assertion 4 passed: Report output is stable and matches committed results.json.
+  ✓ Assertion 5 passed: Selected entries map back to exact source lines (19, 20, 25).
+[R10-T010] All self-tests passed successfully (exit 0).

@@ -1,0 +1,35 @@
+[
+  {
+    "url": "https://repository.kallipos.gr/bitstream/11419/1346/3/00_master%20document_KOY.pdf",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "verified_accessible": true,
+    "publisher": "Kallipos Academic Open Publications",
+    "observed_by": "manual_browser",
+    "observed_at": "2026-11-23",
+    "observation_method": "Manual browser inspection (interactive session bypasses Kallipos Cloudflare anti-bot challenge barrier; PDF document stream verified directly)",
+    "raw_evidence": "HTTP 200 OK; Content-Type: application/pdf; document title: ΔΙΑΔΙΚΑΣΤΙΚΟΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ - 00_master document_KOY.pdf verified visually"
+  },
+  {
+    "url": "https://repository.kallipos.gr/handle/11419/11683",
+    "http_status": 200,
+    "content_type": "text/html",
+    "verified_accessible": true,
+    "publisher": "Kallipos Academic Open Publications",
+    "observed_by": "manual_browser",
+    "observed_at": "2026-11-23",
+    "observation_method": "Manual browser inspection (interactive session bypasses anti-bot challenge barrier; Kallipos item handle metadata verified)",
+    "raw_evidence": "HTTP 200 OK; Handle landing page rendered with metadata, abstract, and download links"
+  },
+  {
+    "url": "https://repository.kallipos.gr/handle/11419/9349",
+    "http_status": 200,
+    "content_type": "text/html",
+    "verified_accessible": true,
+    "publisher": "Kallipos Academic Open Publications",
+    "observed_by": "manual_browser",
+    "observed_at": "2026-11-23",
+    "observation_method": "Manual browser inspection (interactive session bypasses anti-bot challenge barrier; Kallipos item handle metadata verified)",
+    "raw_evidence": "HTTP 200 OK; Handle landing page rendered with metadata, abstract, and download links"
+  }
+]
