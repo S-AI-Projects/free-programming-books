@@ -1,0 +1,8 @@
+{
+  "url": "https://api.example.com/rate-limited",
+  "head_status": 429,
+  "get_status": 429,
+  "error": "HTTP Error 429: Too Many Requests",
+  "classification": "RATE_LIMITED_429",
+  "action": "DO_NOT_REMOVE_RATE_LIMIT"
+}

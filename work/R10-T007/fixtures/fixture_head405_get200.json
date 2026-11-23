@@ -1,0 +1,8 @@
+{
+  "url": "https://example.com/disallow-head",
+  "head_status": 405,
+  "get_status": 200,
+  "error": null,
+  "classification": "HEAD_405_GET_200",
+  "action": "KEEP_ACTIVE"
+}

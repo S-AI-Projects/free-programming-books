@@ -1,0 +1,20 @@
+Failure Classification & Availability Audit for books/free-programming-books-te.md:
+Total entries parsed: 5
+
+Selected entries audit (3):
+  Line 12 | Title         : Books - Telugu
+            URL           : https://sites.google.com/nptel.iitm.ac.in/translated-ebook/telugu
+            Classification: LOGIN_WALL
+            Action Policy : KEEP: Institutional translation repository behind Google Workspace auth
+
+  Line 17 | Title         : Introduction to C | Telugu
+            URL           : https://www.computerintelugu.com/2012/11/cmenu.html
+            Classification: SUCCESS_200
+            Action Policy : KEEP: Active accessible resource
+
+  Line 22 | Title         : Core Java in Telugu | Java Programming
+            URL           : https://www.youtube.com/playlist?list=PLz8gl4BEGkEGYXNZrIRHJUSoxS_FPBrDy
+            Classification: SUCCESS_200
+            Action Policy : KEEP: Active accessible playlist
+
+Saved results to /Users/anshumanholkar/Desktop/S and AI/free-programming-books/tools/course_checks/../../work/R10-T007/results.json
