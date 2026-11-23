@@ -1,29 +1,35 @@
 [
   {
     "line": 12,
-    "title": "מבוא לתכנות בשפת C++‎",
+    "title": "מבוא לתכנות בשפת C++\u200e",
     "url": "https://campus.gov.il/course/course-v1-basmach-pc264/",
-    "platform": "Campus IL (Israel National Digital Agency)",
-    "official_citation": "https://campus.gov.il",
-    "access_requirement": "FREE_WITH_REGISTRATION",
-    "status": "UNVERIFIED"
+    "platform": "Campus IL (Israel National Digital Agency & Basmach)",
+    "official_citation": "https://campus.gov.il/course/course-v1-basmach-pc264/",
+    "observation_date": "2026-11-23",
+    "access_requirement": null,
+    "status": "UNVERIFIED",
+    "proposed_catalogue_wording": "* [מבוא לתכנות בשפת C++&lrm;](https://campus.gov.il/course/course-v1-basmach-pc264/) (קמפוסIL&lrm; ובסמ״ח) *(סטטוס לא מאומת)*"
   },
   {
     "line": 17,
-    "title": "Next.py –‎ הצעד הבא שלך בפייתון",
+    "title": "Next.py –\u200e הצעד הבא שלך בפייתון",
     "url": "https://campus.gov.il/course/course-v1-cs-gov-cs-nextpy102/",
     "platform": "Campus IL & Cyber Education Center",
-    "official_citation": "https://campus.gov.il",
-    "access_requirement": "FREE_WITH_REGISTRATION",
-    "status": "UNVERIFIED"
+    "official_citation": "https://campus.gov.il/course/course-v1-cs-gov-cs-nextpy102/",
+    "observation_date": "2026-11-23",
+    "access_requirement": null,
+    "status": "UNVERIFIED",
+    "proposed_catalogue_wording": "* [Next.py –&lrm; הצעד הבא שלך בפייתון](https://campus.gov.il/course/course-v1-cs-gov-cs-nextpy102/) (קמפוסIL&lrm; והמרכז לחינוך סייבר) *(סטטוס לא מאומת)*"
   },
   {
     "line": 18,
-    "title": "network.py‎ לתכנת במרחב הרשת",
+    "title": "network.py\u200e לתכנת במרחב הרשת",
     "url": "https://campus.gov.il/course/cs-gov-cs-networkpy103-2020-1/",
     "platform": "Campus IL & Cyber Education Center",
-    "official_citation": "https://campus.gov.il",
-    "access_requirement": "FREE_WITH_REGISTRATION",
-    "status": "UNVERIFIED"
+    "official_citation": "https://campus.gov.il/course/cs-gov-cs-networkpy103-2020-1/",
+    "observation_date": "2026-11-23",
+    "access_requirement": null,
+    "status": "UNVERIFIED",
+    "proposed_catalogue_wording": "* [network.py&lrm; לתכנת במרחב הרשת](https://campus.gov.il/course/cs-gov-cs-networkpy103-2020-1/) (קמפוסIL&lrm; והמרכז לחינוך סייבר) *(סטטוס לא מאומת)*"
   }
 ]

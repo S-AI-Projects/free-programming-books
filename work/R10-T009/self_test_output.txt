@@ -1,26 +1,6 @@
-Access Requirements Audit for courses/free-courses-he.md:
-Total entries parsed: 6
-
-Selected entries audit (3):
-  Line 12 | Title         : מבוא לתכנות בשפת C++
-            URL           : https://campus.gov.il/course/course-v1-basmach-pc264/
-            Platform      : Campus IL (Israel National Digital Agency & Basmach)
-            Access Model  : FREE_WITH_REGISTRATION
-            Status Label  : UNVERIFIED
-            Official Citation: https://campus.gov.il/about/
-
-  Line 17 | Title         : Next.py – הצעד הבא שלך בפייתון
-            URL           : https://campus.gov.il/course/course-v1-cs-gov-cs-nextpy102/
-            Platform      : Campus IL & Cyber Education Center
-            Access Model  : FREE_WITH_REGISTRATION
-            Status Label  : UNVERIFIED
-            Official Citation: https://campus.gov.il/about/
-
-  Line 18 | Title         : network.py לתכנת במרחב הרשת
-            URL           : https://campus.gov.il/course/cs-gov-cs-networkpy103-2020-1/
-            Platform      : Campus IL & Cyber Education Center
-            Access Model  : FREE_WITH_REGISTRATION
-            Status Label  : UNVERIFIED
-            Official Citation: https://campus.gov.il/about/
-
-Saved results to /Users/anshumanholkar/Desktop/S and AI/free-programming-books/tools/course_checks/../../work/R10-T009/results.json
+[R10-T009] Running self-test suite...
+  ✓ Assertion 1 passed: All 4 fixtures verified through classify_access (PAID, FREE_OPEN, FREE_REG, UNVERIFIED).
+  ✓ Assertion 2 passed: Verified zero credentials/tokens stored in records.
+  ✓ Assertion 3 passed: Dynamic classifier probe correctly separates paid vs open resources.
+  ✓ Assertion 4 passed: Selected entries map to source lines (12, 17, 18) and match expected_selected.json.
+[R10-T009] All self-tests passed successfully (exit 0).
