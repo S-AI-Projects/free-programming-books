@@ -1,0 +1,26 @@
+[
+  {
+    "line": 15,
+    "title": "Conceptos fundamentales: Bases de datos relacionales",
+    "url": "https://www.youtube.com/playlist?list=PLzSFZWTjelbJ01UciHPAWTqUFWesoGr9A",
+    "category": "Bases de Datos",
+    "author": "Programación y más",
+    "format": "screencast"
+  },
+  {
+    "line": 20,
+    "title": "BigDateame",
+    "url": "https://open.spotify.com/show/0aikWOJmQMglEmbmbHqv4q",
+    "category": "Ciencia de Datos",
+    "author": "Iker Gómez García",
+    "format": "podcast"
+  },
+  {
+    "line": 21,
+    "title": "DataFuturologyEspanol",
+    "url": "https://podcasts.apple.com/es/podcast/data-futurology-espa%C3%B1ol/id1523527265",
+    "category": "Ciencia de Datos",
+    "author": "Felipe Flores",
+    "format": "podcast"
+  }
+]

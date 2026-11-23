@@ -1,0 +1,7 @@
+[R10-T001] Running self-test suite...
+  ✓ Assertion 1 passed: Fenced-code fake link was correctly ignored.
+  ✓ Assertion 2 passed: URL containing fragment was preserved accurately.
+  ✓ Assertion 3 passed: All 3 selected real entries match expected_selected.json field-by-field (lines 15, 20, 21).
+  ✓ Assertion 4 passed: Malformed syntax correctly flagged (2 errors detected, 0 false positive entries).
+  ✓ Assertion 5 passed: URL containing balanced parentheses parses without truncation.
+[R10-T001] All self-tests passed successfully (exit 0).
