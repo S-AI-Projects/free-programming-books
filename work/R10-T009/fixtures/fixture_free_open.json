@@ -1,0 +1,9 @@
+{
+  "title": "Public YouTube Playlist",
+  "url": "https://youtube.com/playlist?list=PLpublic123",
+  "auth_required": false,
+  "registration_required": false,
+  "payment_required": false,
+  "access_model": "FREE_OPEN_ACCESS",
+  "official_source": "YouTube Public Domain"
+}

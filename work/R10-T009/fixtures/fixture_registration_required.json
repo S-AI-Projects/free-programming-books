@@ -1,0 +1,9 @@
+{
+  "title": "Campus IL Platform Course",
+  "url": "https://campus.gov.il/course/demo",
+  "auth_required": true,
+  "registration_required": true,
+  "payment_required": false,
+  "access_model": "FREE_WITH_REGISTRATION",
+  "official_source": "https://campus.gov.il/about/"
+}
