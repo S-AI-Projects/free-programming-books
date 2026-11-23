@@ -1,0 +1,12 @@
+[R10-T002] Running self-test suite...
+  ✓ Assertion 1 passed: 200 direct OK fixture classified as DIRECT_OK.
+  ✓ Assertion 2 passed: 301→200 redirect fixture classified as MOVED_PERMANENTLY.
+  ✓ Assertion 3 passed: Redirect loop fixture classified as REDIRECT_LOOP.
+  ✓ Assertion 4 passed: Timeout fixture classified as TIMEOUT.
+  ✓ Assertion 5 passed: Login wall fixture classified as LOGIN_WALL.
+  ✓ Assertion 6 passed: Legitimate URLs containing 'lessons' or 'authors' correctly classified as DIRECT_OK.
+  ✓ Assertion 7 passed: HTTP 308 classified as MOVED_PERMANENTLY.
+  ✓ Assertion 8 passed: Hop count exceeding budget without looping classified as BUDGET_EXCEEDED.
+  ✓ Assertion 9 passed: ConnectionResetError classified as TRANSIENT_FAILURE.
+  ✓ Assertion 10 passed: Selected entries map back to exact source lines (24, 25, 26) matching expected_selected.json.
+[R10-T002] All self-tests passed successfully (exit 0).

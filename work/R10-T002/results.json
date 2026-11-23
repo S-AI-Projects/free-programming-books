@@ -1,0 +1,33 @@
+{
+  "target_file": "casts/free-podcasts-screencasts-ru.md",
+  "observation_date": "2026-11-23",
+  "entries": [
+    {
+      "line": 24,
+      "title": "Квант безопасности",
+      "initial_url": "https://soundcloud.com/nikita-remezov",
+      "final_url": "https://soundcloud.com/nikita-remezov",
+      "classification": "DIRECT_OK",
+      "recommendation": "KEEP: Resource active at original URL",
+      "observation_date": "2026-11-23"
+    },
+    {
+      "line": 25,
+      "title": "LinkMeUp",
+      "initial_url": "http://linkmeup.ru",
+      "final_url": "https://linkmeup.ru/",
+      "classification": "MOVED_PERMANENTLY",
+      "recommendation": "UPDATE_HTTPS: Upgrade link to https://linkmeup.ru per repo HTTPS preference",
+      "observation_date": "2026-11-23"
+    },
+    {
+      "line": 26,
+      "title": "Noise Security Bit",
+      "initial_url": "https://noisebit.podster.fm",
+      "final_url": "https://podster.fm/podcasts/noisebit",
+      "classification": "MOVED_PERMANENTLY",
+      "recommendation": "UPDATE_FINAL: Domain redirected; official target is https://podster.fm/podcasts/noisebit",
+      "observation_date": "2026-11-23"
+    }
+  ]
+}

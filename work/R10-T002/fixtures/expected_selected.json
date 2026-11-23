@@ -1,0 +1,26 @@
+[
+  {
+    "line": 24,
+    "title": "Квант безопасности",
+    "initial_url": "https://soundcloud.com/nikita-remezov",
+    "final_url": "https://soundcloud.com/nikita-remezov",
+    "classification": "DIRECT_OK",
+    "recommendation": "KEEP"
+  },
+  {
+    "line": 25,
+    "title": "LinkMeUp",
+    "initial_url": "http://linkmeup.ru",
+    "final_url": "https://linkmeup.ru/",
+    "classification": "MOVED_PERMANENTLY",
+    "recommendation": "UPDATE_HTTPS"
+  },
+  {
+    "line": 26,
+    "title": "Noise Security Bit",
+    "initial_url": "https://noisebit.podster.fm",
+    "final_url": "https://podster.fm/podcasts/noisebit",
+    "classification": "MOVED_PERMANENTLY",
+    "recommendation": "UPDATE_FINAL"
+  }
+]

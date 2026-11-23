@@ -1,0 +1,16 @@
+{
+  "initial_url": "http://linkmeup.ru",
+  "hops": [
+    {
+      "status": 301,
+      "url": "http://linkmeup.ru",
+      "location": "https://linkmeup.ru/"
+    },
+    {
+      "status": 200,
+      "url": "https://linkmeup.ru/"
+    }
+  ],
+  "final_url": "https://linkmeup.ru/",
+  "classification": "MOVED_PERMANENTLY"
+}
