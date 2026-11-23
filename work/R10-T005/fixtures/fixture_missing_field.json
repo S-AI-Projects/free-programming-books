@@ -1,0 +1,26 @@
+[
+  {
+    "line": 100,
+    "title": "Invalid Missing Author",
+    "url": "https://youtube.com/playlist?list=PLinvalid1",
+    "author": null,
+    "category": "AI",
+    "error": "MISSING_REQUIRED_FIELD: author"
+  },
+  {
+    "line": 101,
+    "title": "",
+    "url": "https://youtube.com/playlist?list=PLinvalid2",
+    "author": "Some Author",
+    "category": "AI",
+    "error": "MISSING_REQUIRED_FIELD: title"
+  },
+  {
+    "line": 102,
+    "title": "Invalid Missing URL",
+    "url": "",
+    "author": "Some Author",
+    "category": "AI",
+    "error": "MISSING_REQUIRED_FIELD: url"
+  }
+]
