@@ -1,0 +1,22 @@
+Parsed 50 total entries from casts/free-podcasts-screencasts-es.md
+Selected entries (3):
+
+  Line   15 | Category: Bases de Datos
+             Title   : Conceptos fundamentales: Bases de datos relacionales
+             URL     : https://www.youtube.com/playlist?list=PLzSFZWTjelbJ01UciHPAWTqUFWesoGr9A
+             Author  : Programación y más
+             Format  : screencast
+
+  Line   20 | Category: Ciencia de Datos
+             Title   : BigDateame
+             URL     : https://open.spotify.com/show/0aikWOJmQMglEmbmbHqv4q
+             Author  : Iker Gómez García
+             Format  : podcast
+
+  Line   21 | Category: Ciencia de Datos
+             Title   : DataFuturologyEspanol
+             URL     : https://podcasts.apple.com/es/podcast/data-futurology-espa%C3%B1ol/id1523527265
+             Author  : Felipe Flores
+             Format  : podcast
+
+Saved results to /Users/anshumanholkar/Desktop/S and AI/free-programming-books/tools/course_checks/../../work/R10-T001/results.json
