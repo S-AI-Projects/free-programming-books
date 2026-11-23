@@ -1,11 +1,10 @@
 [R10-T007] Running self-test suite...
-  ✓ Assertion 1 passed: HTTP 200 classified as SUCCESS_200 (KEEP).
-  ✓ Assertion 2 passed: HTTP 404 classified as NOT_FOUND_404 with manual confirmation requirement.
-  ✓ Assertion 3 passed: HTTP 429 classified as RATE_LIMITED_429 with explicit do-not-remove policy.
-  ✓ Assertion 4 passed: HEAD 405 -> GET 200 fallback correctly resolved as HEAD_405_GET_200 (KEEP_ACTIVE).
-  ✓ Assertion 5 passed: Network timeout classified as TIMEOUT with explicit do-not-remove policy.
-  ✓ Assertion 6 passed: All 5 primary failure modes produce mutually distinct classification labels.
-  ✓ Assertion 7 passed: DNS resolution failures portably classified across macOS and Linux resolver formats.
-  ✓ Assertion 8 passed: Authentication redirects classified as LOGIN_WALL (MANUAL_REVIEW_LOGIN_REQUIRED).
-  ✓ Assertion 9 passed: Selected entries map to exact source lines (12, 17, 22) matching expected_selected.json.
+  ✓ Assertion 1 passed: 200 OK correctly classified as SUCCESS_200.
+  ✓ Assertion 2 passed: 404 Not Found requires manual confirmation before removal.
+  ✓ Assertion 3 passed: 429 Rate Limit correctly classified with DO_NOT_REMOVE policy.
+  ✓ Assertion 4 passed: HEAD-405/GET-200 fallback correctly resolved as active.
+  ✓ Assertion 5 passed: Timeout correctly classified with transient protection policy.
+  ✓ Assertion 6 passed: DNS failures across macOS and Linux resolvers correctly classified.
+  ✓ Assertion 7 passed: Google login wall redirect correctly classified and flagged for manual review.
+  ✓ Assertion 8 passed: Selected entries map to source lines (12, 17, 22) matching expected_selected.json.
 [R10-T007] All self-tests passed successfully (exit 0).
