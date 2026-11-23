@@ -1,21 +1,8 @@
-Formatting & Ordering Audit for more/free-programming-interactive-tutorials-ru.md:
-Total entries parsed: 11
-Formatting errors found: 1
-
-Selected entries audit (3):
-  Line 14 | Section : Веб-разработка
-            Title   : Учитесь веб-разработке бесплатно!
-            URL     : http://codenamecrud.ru
-            Format  : VALID_MARKDOWN_SYNTAX
-
-  Line 15 | Section : Веб-разработка
-            Title   : Open source воркшопы
-            URL     : https://nodeschool.io/ru
-            Format  : VALID_MARKDOWN_SYNTAX
-
-  Line 20 | Section : Облачные вычисления
-            Title   : Microsoft Certified: Azure Fundamentals
-            URL     : https://docs.microsoft.com/ru-ru/learn/certifications/azure-fundamentals/
-            Format  : VALID_MARKDOWN_SYNTAX
-
-Saved results to /Users/anshumanholkar/Desktop/S and AI/free-programming-books/tools/course_checks/../../work/R10-T008/results.json
+[R10-T008] Running self-test suite...
+  ✓ Assertion 1 passed: Valid fixture with Cyrillic text passed formatting checks cleanly.
+  ✓ Assertion 2 passed: All malformed syntax cases identified with exact source lines.
+  ✓ Assertion 3 passed: Skipped heading levels (## -> #####) correctly detected.
+  ✓ Assertion 4 passed: Standard in-construction note correctly parsed as valid.
+  ✓ Assertion 5 passed: Title with internal dash not falsely flagged.
+  ✓ Assertion 6 passed: Selected entries map to source lines (14, 15, 20) matching expected_selected.json.
+[R10-T008] All self-tests passed successfully (exit 0).

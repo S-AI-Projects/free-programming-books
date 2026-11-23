@@ -1,13 +1,7 @@
 {
   "target_file": "more/free-programming-interactive-tutorials-ru.md",
   "total_entries": 11,
-  "errors": [
-    {
-      "line": 48,
-      "raw": "* [SQL упражнения](https://www.sql-ex.ru/?Lang=0)",
-      "error": "OUT_OF_ORDER: 'SQL упражнения' appears after 'SQL-детектив'"
-    }
-  ],
+  "errors": [],
   "selected_entries": [
     {
       "line": 14,
