@@ -1,0 +1,8 @@
+{
+  "title": "Historical Course Run (Past Cohort)",
+  "url": "https://campus.gov.il/course/course-v1-cs-gov-cs-nextpy102/",
+  "http_status": 404,
+  "label": "UNVERIFIED",
+  "reason": "Course URL not responding with active run; labelled UNVERIFIED rather than broken or free per task policy",
+  "official_platform": "https://campus.gov.il"
+}

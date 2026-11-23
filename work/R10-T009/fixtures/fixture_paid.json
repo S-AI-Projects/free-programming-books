@@ -1,0 +1,9 @@
+{
+  "title": "Commercial Training Program",
+  "url": "https://example.com/paid-course",
+  "auth_required": true,
+  "registration_required": true,
+  "payment_required": true,
+  "access_model": "PAID_SUBSCRIPTION",
+  "official_source": "https://example.com/pricing"
+}

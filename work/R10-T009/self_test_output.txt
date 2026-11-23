@@ -1,0 +1,6 @@
+[R10-T009] Running self-test suite...
+  ✓ Assertion 1 passed: All 4 fixtures verified through classify_access (PAID, FREE_OPEN, FREE_REG, UNVERIFIED).
+  ✓ Assertion 2 passed: Verified zero credentials/tokens stored in records.
+  ✓ Assertion 3 passed: Dynamic classifier probe correctly separates paid vs open resources.
+  ✓ Assertion 4 passed: Selected entries map to source lines (12, 17, 18) and match expected_selected.json.
+[R10-T009] All self-tests passed successfully (exit 0).
