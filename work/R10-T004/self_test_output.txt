@@ -1,21 +1,6 @@
-Category Placement Audit for books/free-programming-books-ur.md:
-Total entries: 2
-Repeated headings: 0
-Misplaced entries: 0
-
-Selected entries audit (2):
-  Line  9 | Title            : C++ Sikhiyei (Urdu)
-            URL              : https://archive.org/details/CSikhiyeiUrduByAjnabiii
-            Current Category : C++
-            Expected Category: C++
-            Subject Matter   : C++ Programming in Urdu
-            Placement Status : VALID_CATEGORY
-
-  Line 14 | Title            : HTML In Urdu Complete Tutorial Learning Book
-            URL              : https://www.eislamicbook.com/html-in-urdu-complete-tutorial-learning-book/
-            Current Category : HTML
-            Expected Category: HTML
-            Subject Matter   : HTML web development in Urdu
-            Placement Status : VALID_CATEGORY
-
-Saved results to /Users/anshumanholkar/Desktop/S and AI/free-programming-books/tools/course_checks/../../work/R10-T004/results.json
+[R10-T004] Running self-test suite...
+  ✓ Assertion 1 passed: Valid fixture preserves correct categories with no repeated headings.
+  ✓ Assertion 2 passed: Deliberately misplaced fixture and duplicate heading correctly identified with subject citations.
+  ✓ Assertion 3 passed: Generalized misplacement detection flags entries based on content keywords rather than fixed URLs.
+  ✓ Assertion 4 passed: Real file entries map back to source lines (9, 14) and match expected_selected.json.
+[R10-T004] All self-tests passed successfully (exit 0).
