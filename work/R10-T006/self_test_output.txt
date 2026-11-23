@@ -1,23 +1,7 @@
-Offline Validation Report for courses/free-courses-si.md:
-Total entries parsed: 30
-
-Selected entries audit (3):
-  Line 19 | Category : Algorithms & Data Structures
-            Title    : Data Structures and Algorithms | Sinhala
-            URL      : https://www.youtube.com/playlist?list=PL495mke12zYDIwsabzb61OLdBpg3QDcXg
-            Author   : CodePRO LK
-            Status   : VALID (Offline verified)
-
-  Line 24 | Category : Artificial Intelligence
-            Title    : Deep Learning Tutorial | Sinhala
-            URL      : https://www.youtube.com/playlist?list=PL495mke12zYBLz2j_RoYbIltaYxvaTd9k
-            Author   : CodePRO LK
-            Status   : VALID (Offline verified)
-
-  Line 25 | Category : Artificial Intelligence
-            Title    : Machine Learning Tutorial | Sinhala
-            URL      : https://www.youtube.com/playlist?list=PL495mke12zYDHN9ONfcal1eQfo8VqmOgu
-            Author   : CodePRO LK
-            Status   : VALID (Offline verified)
-
-Saved results to /Users/anshumanholkar/Desktop/S and AI/free-programming-books/tools/course_checks/../../work/R10-T006/results.json
+[R10-T006] Running offline self-test suite...
+  ✓ Assertion 1 passed: Valid rows with Unicode and escaped pipes correctly parsed.
+  ✓ Assertion 2 passed: Malformed rows safely rejected and recorded (3 errors detected, 0 false positive entries).
+  ✓ Assertion 3 passed: Unusual URL characters (percent encoding, query params, fragments) preserved.
+  ✓ Assertion 4 passed: URLs containing balanced parentheses parsed accurately without truncation.
+  ✓ Assertion 5 passed: Selected entries map to source lines (19, 24, 25) with exact metadata matching expected_selected.json.
+[R10-T006] All offline self-tests passed successfully (exit 0).
