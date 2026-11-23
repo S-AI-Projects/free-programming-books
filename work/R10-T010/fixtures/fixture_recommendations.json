@@ -1,0 +1,23 @@
+[
+  {
+    "line": 19,
+    "url": "https://repository.kallipos.gr/bitstream/11419/1346/3/00_master%20document_KOY.pdf",
+    "decision": "KEEP",
+    "rationale": "Direct official bitstream PDF accessible and verified; no link change required",
+    "proposed_correction": null
+  },
+  {
+    "line": 20,
+    "url": "https://repository.kallipos.gr/handle/11419/11683",
+    "decision": "KEEP",
+    "rationale": "Stable Kallipos handle landing page with full book text and metadata; conformant",
+    "proposed_correction": null
+  },
+  {
+    "line": 25,
+    "url": "https://repository.kallipos.gr/handle/11419/9349",
+    "decision": "KEEP",
+    "rationale": "Stable Kallipos handle landing page with full textbook; conformant",
+    "proposed_correction": null
+  }
+]

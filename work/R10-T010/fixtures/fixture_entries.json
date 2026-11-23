@@ -1,0 +1,29 @@
+[
+  {
+    "line": 19,
+    "title": "Διαδικαστικός προγραμματισμός",
+    "url": "https://repository.kallipos.gr/bitstream/11419/1346/3/00_master%20document_KOY.pdf",
+    "author": "Μαστοροκώστας Πάρις",
+    "format": "PDF",
+    "license": null,
+    "section": "C"
+  },
+  {
+    "line": 20,
+    "title": "Μια σύγχρονη προσέγγιση στη γλώσσα C",
+    "url": "https://repository.kallipos.gr/handle/11419/11683",
+    "author": "Αλέξανδρος Τζάλλας, Χρήστος Γκόγκος, Ιωάννης Τσούλος",
+    "format": "PDF",
+    "license": "CC BY-NC-SA",
+    "section": "C"
+  },
+  {
+    "line": 25,
+    "title": "Επίλυση προβλημάτων με τη γλώσσα C#",
+    "url": "https://repository.kallipos.gr/handle/11419/9349",
+    "author": "Νικόλαος Ζάχαρης",
+    "format": "PDF",
+    "license": "CC BY-NC-SA",
+    "section": "C#"
+  }
+]

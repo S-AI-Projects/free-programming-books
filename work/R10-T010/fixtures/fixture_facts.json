@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://repository.kallipos.gr/bitstream/11419/1346/3/00_master%20document_KOY.pdf",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "verified_accessible": true,
+    "publisher": "Kallipos Academic Open Publications"
+  },
+  {
+    "url": "https://repository.kallipos.gr/handle/11419/11683",
+    "http_status": 200,
+    "content_type": "text/html",
+    "verified_accessible": true,
+    "publisher": "Kallipos Academic Open Publications"
+  },
+  {
+    "url": "https://repository.kallipos.gr/handle/11419/9349",
+    "http_status": 200,
+    "content_type": "text/html",
+    "verified_accessible": true,
+    "publisher": "Kallipos Academic Open Publications"
+  }
+]

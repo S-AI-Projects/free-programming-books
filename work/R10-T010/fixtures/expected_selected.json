@@ -1,0 +1,23 @@
+[
+  {
+    "line": 19,
+    "title": "Διαδικαστικός προγραμματισμός",
+    "url": "https://repository.kallipos.gr/bitstream/11419/1346/3/00_master%20document_KOY.pdf",
+    "section": "C",
+    "decision": "KEEP"
+  },
+  {
+    "line": 20,
+    "title": "Μια σύγχρονη προσέγγιση στη γλώσσα C",
+    "url": "https://repository.kallipos.gr/handle/11419/11683",
+    "section": "C",
+    "decision": "KEEP"
+  },
+  {
+    "line": 25,
+    "title": "Επίλυση προβλημάτων με τη γλώσσα C#",
+    "url": "https://repository.kallipos.gr/handle/11419/9349",
+    "section": "C#",
+    "decision": "KEEP"
+  }
+]
