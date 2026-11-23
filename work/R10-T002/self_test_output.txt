@@ -1,22 +1,12 @@
-Verified redirect verification report for casts/free-podcasts-screencasts-ru.md:
-Observation Date: 2026-11-23
-
-  Line 24 | Title         : Квант безопасности
-            Initial URL   : https://soundcloud.com/nikita-remezov
-            Final URL     : https://soundcloud.com/nikita-remezov
-            Class         : DIRECT_OK
-            Recommendation: KEEP: Resource active at original URL
-
-  Line 25 | Title         : LinkMeUp
-            Initial URL   : http://linkmeup.ru
-            Final URL     : https://linkmeup.ru/
-            Class         : MOVED_PERMANENTLY
-            Recommendation: UPDATE_HTTPS: Upgrade link to https://linkmeup.ru per repo HTTPS preference
-
-  Line 26 | Title         : Noise Security Bit
-            Initial URL   : https://noisebit.podster.fm
-            Final URL     : https://podster.fm/podcasts/noisebit
-            Class         : MOVED_PERMANENTLY
-            Recommendation: UPDATE_FINAL: Domain redirected; official target is https://podster.fm/podcasts/noisebit
-
-Saved results to /Users/anshumanholkar/Desktop/S and AI/free-programming-books/tools/course_checks/../../work/R10-T002/results.json
+[R10-T002] Running self-test suite...
+  ✓ Assertion 1 passed: 200 direct OK fixture classified as DIRECT_OK.
+  ✓ Assertion 2 passed: 301→200 redirect fixture classified as MOVED_PERMANENTLY.
+  ✓ Assertion 3 passed: Redirect loop fixture classified as REDIRECT_LOOP.
+  ✓ Assertion 4 passed: Timeout fixture classified as TIMEOUT.
+  ✓ Assertion 5 passed: Login wall fixture classified as LOGIN_WALL.
+  ✓ Assertion 6 passed: Legitimate URLs containing 'lessons' or 'authors' correctly classified as DIRECT_OK.
+  ✓ Assertion 7 passed: HTTP 308 classified as MOVED_PERMANENTLY.
+  ✓ Assertion 8 passed: Hop count exceeding budget without looping classified as BUDGET_EXCEEDED.
+  ✓ Assertion 9 passed: ConnectionResetError classified as TRANSIENT_FAILURE.
+  ✓ Assertion 10 passed: Selected entries map back to exact source lines (24, 25, 26) matching expected_selected.json.
+[R10-T002] All self-tests passed successfully (exit 0).
