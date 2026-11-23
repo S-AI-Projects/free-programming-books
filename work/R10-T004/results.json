@@ -1,0 +1,20 @@
+{
+  "target_file": "books/free-programming-books-ur.md",
+  "total_entries": 2,
+  "repeated_headings": [],
+  "misplaced_entries": [],
+  "selected_entries": [
+    {
+      "line": 9,
+      "title": "C++ Sikhiyei (Urdu)",
+      "url": "https://archive.org/details/CSikhiyeiUrduByAjnabiii",
+      "category": "C++"
+    },
+    {
+      "line": 14,
+      "title": "HTML In Urdu Complete Tutorial Learning Book",
+      "url": "https://www.eislamicbook.com/html-in-urdu-complete-tutorial-learning-book/",
+      "category": "HTML"
+    }
+  ]
+}

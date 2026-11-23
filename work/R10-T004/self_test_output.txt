@@ -1,0 +1,6 @@
+[R10-T004] Running self-test suite...
+  ✓ Assertion 1 passed: Valid fixture preserves correct categories with no repeated headings.
+  ✓ Assertion 2 passed: Deliberately misplaced fixture and duplicate heading correctly identified with subject citations.
+  ✓ Assertion 3 passed: Generalized misplacement detection flags entries based on content keywords rather than fixed URLs.
+  ✓ Assertion 4 passed: Real file entries map back to source lines (9, 14) and match expected_selected.json.
+[R10-T004] All self-tests passed successfully (exit 0).
