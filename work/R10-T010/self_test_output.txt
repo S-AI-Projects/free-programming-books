@@ -1,42 +1,7 @@
-Repeatable Maintenance Pass Report for books/free-programming-books-el.md:
-Total entries parsed: 21
-
-Selected entries audit (3):
-
-  Source Line : 19
-  Title       : Διαδικαστικός προγραμματισμός
-  Section     : C
-  URL         : https://repository.kallipos.gr/bitstream/11419/1346/3/00_master%20document_KOY.pdf
-  Observed Facts:
-    - HTTP Status : 200
-    - Accessible  : True
-    - Publisher   : Kallipos Academic Open Publications
-  Recommendations / Decisions:
-    - Decision    : KEEP
-    - Rationale   : Direct official bitstream PDF accessible and verified; no link change required
-
-  Source Line : 20
-  Title       : Μια σύγχρονη προσέγγιση στη γλώσσα C
-  Section     : C
-  URL         : https://repository.kallipos.gr/handle/11419/11683
-  Observed Facts:
-    - HTTP Status : 200
-    - Accessible  : True
-    - Publisher   : Kallipos Academic Open Publications
-  Recommendations / Decisions:
-    - Decision    : KEEP
-    - Rationale   : Stable Kallipos handle landing page with full book text and metadata; conformant
-
-  Source Line : 25
-  Title       : Επίλυση προβλημάτων με τη γλώσσα C#
-  Section     : C#
-  URL         : https://repository.kallipos.gr/handle/11419/9349
-  Observed Facts:
-    - HTTP Status : 200
-    - Accessible  : True
-    - Publisher   : Kallipos Academic Open Publications
-  Recommendations / Decisions:
-    - Decision    : KEEP
-    - Rationale   : Stable Kallipos handle landing page with full textbook; conformant
-
-Saved results to /Users/anshumanholkar/Desktop/S and AI/free-programming-books/tools/course_checks/../../work/R10-T010/results.json
+[R10-T010] Running self-test suite...
+  ✓ Assertion 1 passed: Clear separation of observed facts from recommendations verified.
+  ✓ Assertion 2 passed: Missing facts/decisions produce null / UNOBSERVED without invented defaults.
+  ✓ Assertion 3 passed: Verified field-by-field against expected_selected.json.
+  ✓ Assertion 4 passed: Report output is stable and matches committed results.json.
+  ✓ Assertion 5 passed: Selected entries map back to exact source lines (19, 20, 25).
+[R10-T010] All self-tests passed successfully (exit 0).
