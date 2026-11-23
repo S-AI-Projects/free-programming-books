@@ -1,0 +1,21 @@
+Formatting & Ordering Audit for more/free-programming-interactive-tutorials-ru.md:
+Total entries parsed: 11
+Formatting errors found: 1
+
+Selected entries audit (3):
+  Line 14 | Section : Веб-разработка
+            Title   : Учитесь веб-разработке бесплатно!
+            URL     : http://codenamecrud.ru
+            Format  : VALID_MARKDOWN_SYNTAX
+
+  Line 15 | Section : Веб-разработка
+            Title   : Open source воркшопы
+            URL     : https://nodeschool.io/ru
+            Format  : VALID_MARKDOWN_SYNTAX
+
+  Line 20 | Section : Облачные вычисления
+            Title   : Microsoft Certified: Azure Fundamentals
+            URL     : https://docs.microsoft.com/ru-ru/learn/certifications/azure-fundamentals/
+            Format  : VALID_MARKDOWN_SYNTAX
+
+Saved results to /Users/anshumanholkar/Desktop/S and AI/free-programming-books/tools/course_checks/../../work/R10-T008/results.json

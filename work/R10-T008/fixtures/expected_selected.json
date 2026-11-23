@@ -1,0 +1,26 @@
+[
+  {
+    "line": 14,
+    "title": "Учитесь веб-разработке бесплатно!",
+    "url": "http://codenamecrud.ru",
+    "section": "Веб-разработка",
+    "format_valid": true,
+    "ordering_valid": true
+  },
+  {
+    "line": 15,
+    "title": "Open source воркшопы",
+    "url": "https://nodeschool.io/ru",
+    "section": "Веб-разработка",
+    "format_valid": true,
+    "ordering_valid": true
+  },
+  {
+    "line": 20,
+    "title": "Microsoft Certified: Azure Fundamentals",
+    "url": "https://docs.microsoft.com/ru-ru/learn/certifications/azure-fundamentals/",
+    "section": "Облачные вычисления",
+    "format_valid": true,
+    "ordering_valid": true
+  }
+]
